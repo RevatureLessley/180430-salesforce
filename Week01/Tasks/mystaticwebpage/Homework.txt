@@ -1,0 +1,21 @@
+HOMEWORK
+
+Make static website 4/30/18 DUE 5/7/18
+	index.html
+		homepage
+		describe what the webpage is
+		hyperlinks to the following:
+			aboutme.html
+				bio
+					name, degree, hobbies, born
+			hobby.html
+				page dedicated to something you like
+				if you want, put hobby in here and not in aboutme.html
+			coolwebsite.html
+				a website that you really like. SFW please.
+	REQUIRED TAGS
+		<p>
+		<table>
+		<ul>
+		<ol>
+		<img>

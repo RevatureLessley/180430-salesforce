@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		
+		<title>Kyle Chiu: The Form</title>
+	
+	</head>
+	
+	<body>
+		<a href="index.html">Byack</a>
+		<hr>
+		<h1>FORMS</h1>
+		<p>
+			Forms are elements that are used to collect user input from the website and send it to a server.
+			Input is typically gathered from the &lt;input&gt; tags.
+		</p>
+		
+		<!-- all input tags are grouped together with a form tag. there is no need to close <input> tags by using </input>! -->
+		<form>
+			
+			<!-- style attribute references a block of css code. anything within the quotation marks is css code.
+			this particular code will hide bullet points for this unordered list -->
+			<ul style="list-style-type:none">
+				<li><label for="fname"><b>FIRST NAME<b></label></li>
+				<!-- input tags are determined by their type. "text" is simply text, "password" will hide the input text and block copy/paste functions,
+					 email will require a valid email format, number will allow only numbers and add arrows to increment count, and date will take only mm/dd/yyyy format-->
+				<!-- BONUS: <label> lets users click on whatever the label encapsulates, then forwards focus to the linked input tag. in this case, clicking on the text
+					 "FIRST NAME" will direct typing to its input box. we can redirect it elsewhere by changing which input holds the corresponding label -->
+				<li><input type="text" id="fname" required></li>
+				<li><b>LAST NAME<b></li>
+				<li><input type="text" required></li>
+				<li><b>PASSWORD<b></li>
+				<li><input type="password" required></li>
+				<li><b>EMAIL<b></li>
+				<li><input type="email" required></li>
+				<li><b>AGE<b></li>
+				<li><input type="number" required></li>
+				<li><b>BIRTHDAY<b></li>
+				<li><input type="date" required></li>
+				<!-- these will become buttons. the button's value is its shown text, and its function is defined by its type -->
+				<li><input type="submit" value="Submit"><input type="reset" value="Clear"></li>
+				
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><font size=1>Do a little dance!</font>
+				
+				<hr>
+				
+				<h4>How do you refer to doggos, puppers, and woofers, respectively?</h4>
+				<!-- Checkboxes belong in groups. these groups are labelled using the "name" attribute. the "value" attribute indicates the value of the corresponding checkbox -->
+				<li>
+					<input type="checkbox" name="leCheckeroni" value="Doggo">Doggo
+					<input type="checkbox" name="leCheckeroni" value="Pupper">Pupper
+					<input type="checkbox" name="leCheckeroni" value="Woofer">Woofer
+				</li>
+				
+				<!-- "radio" input type allow for ONE item to be selected -->
+				<li>
+					<h4> Don't you dare swear on this Christian webpage! </h4>
+				
+					<input type="radio" name="whozit" value="Yowzah">Yowzah
+					<input type="radio" name="whozit" value="Hoowee">Hoowee
+					<input type="radio" name="whozit" value="Heckin'...">Heckin'...
+				</li>
+				
+				
+				<h4> Favorite Ice Creme? </h4>
+				
+				<!-- <select> brings up a dropdown menu. <option> adds values to a <select> menu -->
+				<select>
+					<option value="Select Option">Select Option</option>
+					<option value="Pistachio">Pistachio</option>
+					<option value="Burnt Espresso">Burnt Espresso</option>
+					<option value="Too Much Whip On My Machiatto">Too Much Whip On My Machiatto</option>
+				</select>
+				
+				
+			</ul>
+			
+		</form>
+		
+	</body>
+
+</html>
