@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms, love em!</title>
+    </head>
+    <body>
+        <a href="index.html">BACK</a>
+        <hr>
+        <h1>FORMS</h1>
+        <p>
+            Forms are elements that are used to collect
+            user input from the website and send it to a server
+            Input is typically gathered from the &lt;input&gt;
+            <!-- Ampersand thingies are -->
+            Note in order to use reserved characters such as &lt;,
+            you have to use entity references. Which typically
+            reference the spcific character in between a &amp;
+            and &semi; symbol
+        </p>
+        <form>
+            <!-- All input tags are grouped together with a form tag -->
+            <ul style="list-style-type: none">
+                <!--
+                    The 'style' attribute references a block of css code
+                    Anything withtin the quotes, is a block of css. In the aboe, I set the
+                    list-style-type key to 'none', which will hide the bullet points fo my list
+                -->
+                <li><label for="fname"><b>FIRST NAME</b></label></li>
+                <!-- Label shifts focus from the clicked text to the corresponding input element -->
+                <li><input type="text" id="fname" required></li>
+                <li><b>LAST NAME</b></li>
+                <li><input type="text" required></li>
+                <br>
+                <li><b>PASSWORD</b></li>
+                <li><input type="password" required></li>
+                
+                <li><b>EMAIL</b></li>
+                <li><input type="email" required></li>
+                
+                <li><b>AGE</b></li>
+                <li><input type="number" required></li>
+                
+                <li><b>BIRTHDAY</b></li>
+                <li><input type="date" required></li>
+                <!-- Input tags are determined by their type attribute -->
+                
+                <li><input type="reset" value="RESET"><input type="submit" value="SUBMIT"></li>
+                <!--
+                    In the case of submit and reset, value is the text of
+                    the button
+                -->
+                <hr>
+                <li>
+                    <input type="checkbox" name="favoriteAnimal" value="dog">Dog
+                    <input type="checkbox" name="favoriteAnimal" value="cat">Cat
+                    <input type="checkbox" name="favoriteAnimal" value="Tyranosaurous Bobbert"> T-Bob
+                    <input type="checkbox" name="favoriteAnimal" value="toolbar" checked> <span style="color:white;">Install Bing Toolbar</span>
+                </li>
+                <li>
+                    <input type="radio" name="toolbarReminder" value="hourFromNow"> Hour from now
+                    <input type="radio" name="toolbarReminder" value="tomorrow"> Tomorrow
+                    <input type="radio" name="toolbarReminder" value="everyDay"> Every day
+                </li>
+                <!--
+                    With checkboxes, you first indicate which textboxes are grouped together.
+                    This is done with 'name' tag. Value indicates which value each text box
+                    represents
+                -->
+                <li>
+                    <h4>Favorite Ice cream</h4>
+                    <select>
+                        <option>Select Option</option>
+                        <option>Vanilla</option>
+                        <option>Chocolate</option>
+                        <option>Bobbert</option>
+                    </select>
+                </li>
+            </ul>
+        </form>
+    </body>
+</html>
