@@ -1,0 +1,78 @@
+<!-- The index.html is usually a home of any webpage-->
+
+<!-- This is the doctype declaration. It tells the browsers what version of html they are interpreting. 
+    The default is html5
+-->
+<!DOCTYPE html>
+
+<!-- The root tag for any html file will be <html>-->
+<html>
+    <!-- the head tag is used to store meta data such as, page title, or charset encodings-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms</title> <!-- it will display on the top of pages, and tabs-->
+    </head>
+    <!-- body tag is where everything displayed to the user-->
+    <body>
+       <a href="index.html">Back</a>
+
+       <h1>FORMS</h1>
+       <p>forms collect user &lt;input&gt; and send it to a server.
+           you have to use entity references. such as &amp; and &semi;
+       </p>
+
+       <form>
+            <!-- all input tags are grouped together with a form tag-->
+            <ul style ="list-style-type:none">
+                <!-- the 'style' attribute references a block of css code-->
+                <li><label><b>FIRST NAME</b></label></li>
+                <li><input type = "text" required></li>
+                <li><b>LAST NAME</b></li>
+                <li><input type = "text" required></li>
+                <!-- input tags are determined by there attribute-->
+                <li><b>PASSWORD</b></li>
+                <li><input type = "password" required></li>
+                <li><b>EMAIL</b></li>
+                <li><input type = "email" required></li>
+                <li><b>AGE</b></li>
+                <li><input type = "number" required></li>
+                <li><b>BIRTHDAY</b></li>
+                <li><input type = "date" required></li>
+                <BR>
+                <li><input type = "submit" value="submit"> <input type = "reset" value="reset"></li>
+                <hr>
+                    <h4>Pick your favorite animals!</h4>
+                <li>
+                    <input type="checkbox" name ="favoriteAninal" value ="Dog">Dog
+                    <input type="checkbox" name ="favoriteAninal" value ="Cat">Cat
+                    <input type="checkbox" name ="favoriteAninal" value ="Trex">Trex
+
+                </li>
+                <br>
+                <li>
+                    <input type="radio" name ="toolbarReminder" value ="An Hour from now">1hr from now
+                    <input type="radio" name ="toolbarReminder" value ="Tomorrow">Tomorrow
+                    <input type="radio" name ="toolbarReminder" value ="Everyday" checked>Everyday
+    
+                </li>
+                <br>
+                <li>
+                    <h4>Favorite Ice Cream</h4>
+                    <select>
+                        <option>Select one</option>
+                        <option>Vanilla</option>
+                        <option>Strawberry</option>
+                        <option>Chocolate</option>
+                        <option>Bobbert</option>
+                       
+                    </select>
+    
+                </li>
+     
+            </ul>
+
+       </form>
+        
+    </body>
+
+</html>
