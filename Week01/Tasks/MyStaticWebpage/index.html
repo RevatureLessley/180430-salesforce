@@ -1,27 +1,77 @@
+<!-- Use these tags to write comments. 
+	The index.html is typically the homepage of any web application. -->
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>file:///C:/Users/ryanm/Desktop/180430-gitexample/Week01/_InClassExamples/MyStaticWebpage/index.html</title><link rel="stylesheet" type="text/css" href="index_files/viewsource.css"></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="comment">&lt;!-- Use these tags to write comments. 
-<span id="line2"></span>    The index.html is typically the homepage of any web
-<span id="line3"></span>application.  --&gt;</span><span>
-<span id="line4"></span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
-<span id="line5"></span></span><span class="comment">&lt;!-- This is the DOCTYPE declaration. It tells the browsers
-<span id="line6"></span>what version of html they are interpreting. If you just use html,
-<span id="line7"></span>it will default to html 5. --&gt;</span><span>
-<span id="line8"></span></span><span>&lt;<span class="start-tag">html</span>&gt;</span><span>
-<span id="line9"></span></span><span class="comment">&lt;!-- The root tag for any html file will be &lt;html&gt; --&gt;</span><span>
-<span id="line10"></span>    </span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
-<span id="line11"></span>        </span><span class="comment">&lt;!-- The &lt;head&gt; tag is used to store metadata about the page
-<span id="line12"></span>            such as, page title, or charset encodings. --&gt;</span><span>
-<span id="line13"></span>        </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">UTF-8</a>"&gt;</span><span>
-<span id="line14"></span>        </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>My Fantastic Website :D</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
-<span id="line15"></span>        </span><span class="comment">&lt;!-- The title tag is simply that. It will display on the top of pages, and tabs. --&gt;</span><span>
-<span id="line16"></span>    </span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
-<span id="line17"></span>    </span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
-<span id="line18"></span>        </span><span class="comment">&lt;!-- The &lt;body&gt; tag is what is actually displayed to the user
-<span id="line19"></span>            on the browser. --&gt;</span><span>
-<span id="line20"></span>        </span><span>&lt;<span class="start-tag">h1</span>&gt;</span><span>WELCOME TO MY WEBSITE</span><span>&lt;/<span class="end-tag">h1</span>&gt;</span><span>
-<span id="line21"></span>        </span><span class="comment">&lt;!-- Header1 tag --&gt;</span><span>
-<span id="line22"></span>        </span><span>&lt;<span class="start-tag">p</span>&gt;</span><span>Please stay a while, and listen.</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
-<span id="line23"></span>        </span><span class="comment">&lt;!-- paragraph tag --&gt;</span><span>
-<span id="line24"></span>    </span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
-<span id="line25"></span></span><span class="error" title="End of file seen when looking for tag name. Ignoring tag.">&lt;/<span class="end-tag">html</span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line…" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
+<!-- This is the DOCTYPE declaration. It tells the browsers what version of
+	html they are interpreting. If you just use html, it will default to html 5.
+	-->
+<html>
+<!-- The root tag for any html file will be <html> -->
+	<head>
+		<!--The <head> tag is used to store metadata about the page such as page
+			title or charset encodings. -->
+		<meta charset="UTF-8">
+		<title>My Fantastic Website :D</title>
+		<!-- The <title> tag is simply that. It will display on the top of pages
+			and tabs.-->
+	</head>
+	<body>
+		<!-- The <body> tag is what is actually displayed to the user on the
+			browser. -->
+		<h1>WELCOME TO MY WEBSITE</h1>
+		<!-- Header1 tag -->
+		<img src="https://i.pinimg.com/736x/de/31/93/de319328eecb113a2801a98300f759b3--trainers-ryan-oneal.jpg"
+			width="240px" height="200px">
+		<!-- auto-closeable tags are tags that do not require an ending forward
+			slash tag. -->
+		<p>Please stay awhile and listen.</p>
+		<hr>
+		<table border=2px>
+		<!--Tag sets a spot for the actual table.-->
+			<tr> <!-- table row -->
+				<th>Name</td> <!-- table header -->
+				<th>State born</td>
+			</tr>
+			<tr>
+				<td>Ryan</td> <!-- same as th minus the formatting changes -->
+				<td>Alaska</td>
+			</tr>
+			<tr>
+				<td>Bobbert</td>
+				<td>Mississlanta</td>
+			</tr>
+			<tr>
+				<td>Clarence</td>
+				<td>Ohio</td>
+			</tr>
+		</table>
+		<hr>
+		<h3>Anchor tags!</h3>
+		<p>Anchor tags are used to set up hyperlings that can reroute users to
+			different pages!</p>
+		<a href="http://www.google.com">yahoo.com</a>
+		<br> <!-- Represents a line break -->
+		<a href="http://www.reddit.com/r/aww">Reddit</a>
+		<ol>
+			<li><a href="http://www.google.com">yahoo.com</a></li>
+			<li><a href="http://www.reddit.com/r/aww">Reddit</a></li>
+			<li><a href="forms.html">Forms</a></li>
+		</ol>
+		<ul>
+			<li>Dog</li>
+			<li>Cat</li>
+			<li>Gingerbread man</li>
+		</ul>
+		<hr>
+		<h3>Formatting</h3>
+		<p>There exists various formats you can apply to text using tags.</p>
+		<ul>
+			<li><b>Bold text</b></li>
+			<li><i>Italicized text</i></li>
+			<li><u>Underlined text</u></li>
+			<li><s>Strikethrough text</s></li>
+			<li><em>Emphasized text</em></li>
+			<li><q>Quoted text</q></li>
+			<li><mark>Marked text</mark></li>
+		</ul>
+	</body>
+</html>
