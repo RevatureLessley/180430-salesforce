@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+	<book category="Romance">
+		<title language="English">My Lovely Nightmare</title>
+		<author>J. E. Ward</author>
+		<year>1993</year>
+		<price>2000 Yen</price>
+	</book>
+	
+	<book category="Suspense">
+		<title language="French">My Deadly Nightmare</title>
+		<author>JDogg Ward</author>
+		<year>2001</year>
+		<price>1 Yen</price>
+	</book>
+	
+	<book category="Romance">
+		<title language="Mandarin">My Gorgeous Nightmare</title>
+		<author>J. Lo</author>
+		<year>3002</year>
+		<price>500000 Yen</price>
+	</book>
+</bookstore>
