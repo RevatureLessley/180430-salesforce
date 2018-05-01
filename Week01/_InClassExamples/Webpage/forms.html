@@ -1,0 +1,89 @@
+<!-- use these tags to write comments
+The index.html is typically the homepage of any web application.-->
+<!Doctype html>
+<!--This is the DOCTYPE declaration. It tells you the browsers what version
+of html they are interpreting. If you just use html, it will default to HTML5.-->
+<html>
+    <!-- The root tag for any html file will be <html>-->
+        <head>
+            <!--the head tag is used to store metadata about the page such
+            as page title or charset encodings.-->
+            <meta charset="UTF-8">
+            <title>Forms, love em!</title>
+            <!--the title tag is simply that. It will display on top of pages and tabs.-->
+        </head>
+
+        <body>
+            <a href="index.html">Back</a>
+            <hr>
+            <h1>FORMS</h1>
+            <p>
+                Forms are elements that are used to collect user input from the website and set it to a server.
+                Input is typically gathered from the &lt;input&gt; tags.
+                Note: In order to use reserved characters such as &lt;, you have to use entity 
+                references which typically reference the specific character between &amp; and &semi; symbol.
+            </p>
+
+            <form>
+                <!--all input tags are grouped together with a form tag-->
+                <ul style="list-style-type:none">
+                    <!--the style attribute references a block of css code.
+                    Anything within the quotes is a block of css. In the above, I set
+                    the list-style-type key to none, which will hide the bullet points for the list-->
+                        <li><label for "fname">
+                            <b>FIRST NAME</b></label> 
+                            <!--The label tag lets users click on whatever the label encapsulates and forwards
+                            focus to the linked input tag.-->
+                        </li>
+                        <li><input type="text" id="fname" required></li>
+                        <li>
+                            <b>LAST NAME</b>
+                        </li>
+                        <li><input type="text" required></li>
+                        <li><b>PASSWORD</b></li>
+                        <li>
+                            <input type="password" required>
+                        </li>
+                        <li><b>EMAIL</b></li>
+                        <li>
+                            <input type="email" required>
+                        </li>
+                        <li><b>AGE</b></li>
+                        <li>
+                            <input type="number" required>
+                        </li>
+                        <h4>Pick your favorite animals!</h4>
+                        <li>
+                            <input type="checkbox" name="myCheckbox" value="dog">Dog
+                            <input type="checkbox" name="myCheckbox" value="cat">Cat
+                            <input type="checkbox" name="myCheckbox" value="tyrannosaurus bobbert" checked>T-Bob
+                            <input type="checkbox" name="myCheckbox" value="toolbar" checked><span style="color:white">Install bing toolbar</span>
+                        </li>
+                        <!--with checkboxes, you first indicate which textboxes are grouped together.  This is done with the "name" tag
+                        Value indicates which value each check box represents.-->
+                        <li>
+                            <input type="radio" name="Toolbar Reminder", value="hourFromNow">One Hour from Now
+                            <input type="radio" name="Toolbar Reminder", value="tomorrow">Tomorrow
+                            <input type="radio" name="Toolbar Reminder", value="everyDay" checked>Every Day
+                        </li>
+
+                        <li>
+                            <h4>Favorite Ice Cream</h4>
+                            <select>
+                                <option>Select Option</option>
+                                <option>Vanilla</option>
+                                <option>Chocolate</option>
+                                <option>Strawberry</option>
+                                <option>Bobbert</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="submit" value="submit"> <input type="reset" value="reset">
+                            <!--In the case of submit and reset, value is the text of the button-->
+                        </li>
+
+                        <!--input tags are determined by their 'type' attribute-->
+                </ul>
+            </form>
+        </body>
+</html>

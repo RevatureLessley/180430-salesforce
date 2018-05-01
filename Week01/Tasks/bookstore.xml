@@ -1,0 +1,26 @@
+<bookstore>
+	<book category="Fiction">
+		<title language="en">
+			Harry Potter
+		</title>
+		<author>J.K. Rowling</author>
+		<year>2004</year>
+		<price>19.95</price>
+	</book>
+	<book category="Fiction">
+		<title language="en">
+			Ramona and Beezus
+		</title>
+		<author>Judy Blume</author>
+		<year>1955</year>
+		<price>7.85</price>
+	</book>
+	<book category="Non-Fiction">
+		<title language="cn">
+			Encyclopedia Chinesica
+		</title>
+		<author>Various Authors</author>
+		<year>2018</year>
+		<price>39.99</price>
+	</book>
+</bookstore>
