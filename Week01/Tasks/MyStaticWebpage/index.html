@@ -13,37 +13,43 @@
 		<title>My Fantastic Website :D</title>
 		<!-- The <title> tag is simply that. It will display on the top of pages
 			and tabs.-->
+			<link rel="stylesheet" type="text/css" href="css/
+				mainstylesheet.css">
 	</head>
 	<body>
-		<!-- The <body> tag is what is actually displayed to the user on the
-			browser. -->
-		<h1>WELCOME TO MY WEBSITE</h1>
-		<!-- Header1 tag -->
-		<img src="https://i.pinimg.com/736x/de/31/93/de319328eecb113a2801a98300f759b3--trainers-ryan-oneal.jpg"
+	<!-- The <body> tag is what is actually displayed to the user on the
+		browser. -->
+		<div class="container">
+			<h1>WELCOME TO MY WEBSITE</h1>
+			<!-- Header1 tag -->
+			<img src="https://i.pinimg.com/736x/de/31/93/
+			de319328eecb113a2801a98300f759b3--trainers-ryan-oneal.jpg"
 			width="240px" height="200px">
-		<!-- auto-closeable tags are tags that do not require an ending forward
-			slash tag. -->
-		<p>Please stay awhile and listen.</p>
+			<!-- auto-closeable tags are tags that do not require an ending
+				forward slash tag. -->
+			<p>Please stay awhile and listen.</p>
+		</div>
 		<hr>
-		<table border=2px>
+		<div class="container">><table border=2px>
 		<!--Tag sets a spot for the actual table.-->
 			<tr> <!-- table row -->
 				<th>Name</td> <!-- table header -->
 				<th>State born</td>
 			</tr>
 			<tr>
-				<td>Ryan</td> <!-- same as th minus the formatting changes -->
+				<td class="names">Ryan</td> <!-- same as th minus the formatting
+												 changes -->
 				<td>Alaska</td>
 			</tr>
 			<tr>
-				<td>Bobbert</td>
+				<td class="names">Bobbert</td>
 				<td>Mississlanta</td>
 			</tr>
 			<tr>
 				<td>Clarence</td>
-				<td>Ohio</td>
+				<td id="ohio">Ohio</td>
 			</tr>
-		</table>
+		</table></div>
 		<hr>
 		<h3>Anchor tags!</h3>
 		<p>Anchor tags are used to set up hyperlings that can reroute users to
@@ -55,6 +61,7 @@
 			<li><a href="http://www.google.com">yahoo.com</a></li>
 			<li><a href="http://www.reddit.com/r/aww">Reddit</a></li>
 			<li><a href="forms.html">Forms</a></li>
+			<li><a href="betterIndex.html">BETTER INDEX</a></li>
 		</ol>
 		<ul>
 			<li>Dog</li>

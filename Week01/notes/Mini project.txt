@@ -1,0 +1,18 @@
+Make a static website
+ - index.html
+   - homepage
+   - should describe what the webpage is
+   - hyperlinks to the following:
+     - aboutme.html
+       - your bio
+         - name, degree, born
+     - hobby.html
+       - page dedicated to something you like
+     - link to a "cool" SFW website to discuss
+
+Required tags:
+- p
+- table
+- ul
+- ol
+- img

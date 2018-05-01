@@ -1,0 +1,60 @@
+CSS
+- Cascading style sheets
+- HTML describes content
+- CSS formats content
+
+CSS selectors
+- How CSS identifies given elements to format
+
+CSS
+- Class: <p class="bobberts">
+  - Typically used for many elements
+  - Selected by the . character:
+    .bobberts {
+
+    }
+
+- ID: <p id="bobbert">
+  - Typically used to identify one unique element
+  - Selected by the # character:
+    #bobbert {
+
+    }
+
+Using CSS
+- inline
+  <div style="background-color:blue">
+- internal style sheet
+  - uses the "style" tag to create a CSS block inside of the given HTML page
+    <style>
+      div {
+        background color:blue;
+      }
+    </style>
+- external style sheet
+  - CSS saved as a separate file
+  - brought in with the <link> tag
+    <link rel="stylesheet" type="text/css" href="directory location">
+
+Absolute vs. relative path
+- Absolute: full directory starting from root folder
+  Windows: C:/F1/F2/F3/file.txt
+
+- Relative: Path starting from current location
+  - Assuming we are in F2:
+    Windows: F3/file.txt
+
+Bootstrap
+- Collection of CSS and JS files for designing fluid, mobile friendly websites
+- Utilizes a grid system for horizontally formatting CSS.
+  - class=container
+  - class=row
+  - class=col
+
+col-size-width
+  - size: how big of a screen you expect users to have
+    - xs: mobile
+    - sm: tablets
+    - md: standard computers
+    - lg: large monitors
+  - width (1-12): how much real estate your specific column takes
