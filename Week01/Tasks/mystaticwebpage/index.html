@@ -6,26 +6,18 @@
 		<!-- store metadata about page, like page title or charset encodings-->
 		<meta charset="UTF-8" http-equiv="Content-Type">
 		<style>
+		<!--set font and size of all text within <p> tags-->
 		p{ 
 			color:white;
 			font-family: "Times New Roman", Times, serif;
 			font-style: italic;
-			font-size: 22px;
+			font-size: 29px;
 			font-weight: bold;
-		}
-		body{
-			background-color: gray;
-		}
-		table{
-			background-color:white;
-		}
-		h2{
-			background-color:white;
 		}
 		</style>
 	</head>
 	<body id="body">
-		<!--where the display of the webpageis defined-->
+		<!--Title header and main text for this webpage, all with individual IDs-->
 		<title>My website</title>
 		<h1 id="header">Website from Week1 Day1</h1>
 		<p id="desc">This is the homepage for the first mini project, it contains links to other pages (at the bottom of the page).<br>It also changes color on occasion and displays todays date and time. <br>Thank you.</p>
@@ -42,7 +34,9 @@
 				<td>Content</td>
 			</tr>
 		</table>-->
+		<!-- javascript to change the webpages color and update the date time paragraph-->
 		<script>
+			<!--update the webpage, changing color and updating the date time displayed-->
 			function update(i){
 				var d=new Date();
 				var color="blue";
@@ -59,18 +53,20 @@
 					default:
 						break;
 				}
+				document.getElementById("date").style.color=antiColor;
 				document.getElementById("body").style.backgroundColor=color;
 				document.getElementById("body").style.color=antiColor;
-				document.getElementById("date").style.color=antiColor;
 				//document.getElementById("header").style.color=color;
 				document.getElementById("dateJavascript").style.color=antiColor;
 				document.getElementById("desc").style.color=antiColor;
 				var square=String.fromCharCode(1);
 				document.getElementById("dateJavascript").innerHTML="today is "+d+" "+square+"";
+				<!--update the webpage every second-->
 				setTimeout(update,1000,Math.floor(Math.random()*Math.floor(3)));
 			}
 			update();
 		</script>
+		<!--links to the other pages in this project-->
 		<h3>Here be links</h3>
 		<ol>
 			<li><a href="hobby.html" style="color:white">hobby</a></li>
