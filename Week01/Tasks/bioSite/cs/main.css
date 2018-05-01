@@ -1,0 +1,47 @@
+html {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  overflow: hidden;
+  height: 100%;
+  width: 100%; 
+}
+
+body {
+  background-color: #000000;
+  height: 100%;
+  width: 100%; 
+}
+
+/*Nav bar and all that resides inside of it */
+nav {
+  line-height: 10px; 
+}
+
+.bgColorNav {
+  background-color: #000000; 
+}
+
+#logo {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 32px; 
+}
+
+#logo:hover {
+  color: #FF0000; 
+}
+
+#two {
+	margin-top: -25px;
+}
+
+#about, #hobby, .mainText {
+	color: #FFFFFF;
+}
+
+#about:hover, #hobby:hover {
+	color: #FF0000;
+}
+
+.meBro {
+	border-radius: 25px;
+}
