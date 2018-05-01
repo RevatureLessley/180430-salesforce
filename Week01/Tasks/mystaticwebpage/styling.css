@@ -1,0 +1,56 @@
+/*
+	CSS Comments
+	
+	NOTE:
+	Last up, first served. the final CSS code in a file will take effect.
+	the more specific the css selector, the more precedence it has.
+		children have the final say.
+		body will effect the entire webpage, but something like div will override formatting within its sector.
+*/
+
+th{
+	background-color:purple;
+	color:aquamarine;
+}
+p{
+	font-family:fantasy;
+}
+
+.name{
+	color:violet;
+	font-size:69px; /*Nice*/
+}
+
+#washington{
+	color:forestgreen;
+	font-size:72px;
+}
+
+#waaah{
+	color:#8D0089;
+	font-size:100px;
+}
+
+/* 
+	More advanced CSS selectors
+	
+	"*" selects ALL elements
+	*{	
+		stuff
+	}
+	
+	"," allows for multiple, specific elements
+	e1, e2{
+		stuff
+	}
+	
+	selects ANY e2 that is within the tags of e1
+	e1 e2{
+		stuff
+	}
+	
+	">" selects only DIRECT CHILDREN of e1
+	e1 > e2{
+		stuff
+	}
+*/

@@ -14,11 +14,26 @@
 		
 		<!-- <title> will display its text on the top of pages and in tabs -->
 		<title>Kyle Chiu: The Website</title>
+		
+		<!-- internal stylesheets -->
+		<style>
+		
+			div{background-color:dimgray;
+				color:silver;
+				}
+		
+		</style>
+		
+		<!-- external stylesheets -->
+		<link rel="stylesheet" type="text/css" href="styling.css">
 	
 	</head>
 	
 	<!-- <body> is where things are displayed on the browser -->
-	<body>
+	<body style="background-color:floralwhite;color:#A246A4"> <!-- inline css. color can be in keyword, hexadecimal, or rgb(R, G, B) format -->
+	
+		<!-- "divider" or "division", I dunno. with the internal stylesheet above, these will be a difference format. P.S. it's ugly -->
+		<div>
 	
 		<!-- largest header tag -->
 		<h1>"Whale"come to my website!</h1>
@@ -29,10 +44,12 @@
 		<!-- paragraph tag -->
 		<p>Why is "dark" spelled with a "k" and not a "c"?</p>
 		<p>Because you can't "c" in the dark!</p>
+		</div>
 		
 		<!-- Horizontal Rule - this will set a horizontal line down the page -->
 		<hr>
 		
+		<div>
 		<!-- Anchor tags <a> are used to set up hyperlinks that can reroute users to different pages -->
 		<h3> Anchor Tags?? </h3>
 		<a href="http://www.neopets.com">Cash for Gold!</a>
@@ -48,6 +65,7 @@
 			<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Free Riot Points!</a>
 			<li><a href="forms.html">Forms</a>		
 		</ol>
+		</div>
 		
 		<!-- unordered list. just a list, with no order -->
 		<ul>
@@ -85,14 +103,14 @@
 			<tr>
 				
 				<!-- table data - same as <th>, but without the formatting -->
-				<td>Kyle Chiu</td>
-				<td>Washington</td>
+				<td class="name">Kyle Chiu</td>
+				<td id="washington">Washington</td>
 				
 			</tr>
 			<tr>
 			
-				<td>Elyk Uihc</td>
-				<td>Waaahhshington</td>
+				<td class="name">Elyk Uihc</td>
+				<td id="waaah">Waaahhshington</td>
 			
 			</tr>
 		
