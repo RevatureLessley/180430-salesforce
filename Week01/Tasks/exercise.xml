@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+	<book category="drama">
+		<title language="english">Romeo and Juliet</title>
+		<author>William Shakespeare</author>
+		<year>1600</year>
+		<price>$19.95</price>
+	</book>
+	<book category="drama">
+		<title language="english">Death of a Salesman</title>
+		<author>Arthur Miller</author>
+		<year>1950</year>
+		<price>$19.95</price>
+	</book>
+	<book category="tragedy">
+		<title language="greek">The Odyssey</title>
+		<author>Homer</author>
+		<year>300 B.C.</year>
+		<price>$24.95</price>
+	</book>
+</bookstore>
