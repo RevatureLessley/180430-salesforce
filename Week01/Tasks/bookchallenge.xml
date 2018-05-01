@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <bookstore>
 
 <book category="fantasy">
@@ -17,11 +16,10 @@
 </book>
 
 <book category="futurism">
-<title language="???">1Q84</title>
-<author>Haruki Murakami</author>
-<year>2010</year>
+<title language="日本語">世界の終りとハードボイルド・ワンダーランド</title>
+<author>村上 春樹</author>
+<year>1991</year>
 <price>20</price>
 </book>
 
 </bookstore>
-</xml>
