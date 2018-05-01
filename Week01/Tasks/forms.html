@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+</head>
+<body>
+    <a href="index.html">BACK</a>
+    <hr>
+    <h1>FORMS</h1>
+    <p>Forms are used to collect user input from website and send to
+        server.  Input is typically gathered from the &lt;input&gt; tags.
+        Note:  In order to use reserved characters such as &lt;, you have to
+        use entity references, which typically reference the specific character in between a &amp; and &semi;
+        symbol.
+    </p>
+    <form>
+        <!-- All input tags are grouped together with a form tag -->
+        <ul style="list-style-type:none">
+            <!-- The style attribute references the block of css code.
+            Anything within the quotes is a block of css.  In the above, I set the
+        list-style-type attribute to 'none', which will hide the bullet points for my list-->
+            <li><label for="fname"><b>FIRST NAME</b></label></li>
+            <li><input type="text" required></li>
+            <!-- Input tags are determined by their type attribute -->
+            <li><b>LAST NAME</b></li>
+            <li><input type='text' required></li>
+            <li><b>PASSWORD</b></li>
+            <li><input type="password"></li>
+            <li><b>EMAIL</b></li>
+            <li><input type="email" required></li>
+            <li><b>AGE</b></li>
+            <li><input type="number" required></li>
+            <li><b>BIRTHDAY</b></li>
+            <li><input type="date" required></li>
+            <li><input type="submit" value="Submit"><input type="reset" value="Reset"></li>
+            <!-- In the case of submit and reset, the value is the text of the button -->
+            <hr>
+            <!-- With checkboxes you first indicate which textboxes are grouped together.
+            This is done with the name tag.  Value indicates what each checkbox represents -->
+            <li>
+                <input type="checkbox" name="favoriteAnimal" value="dog">Dog
+                <input type="checkbox" name="favoriteAnimal" value="cat">Cat
+                <input type="checkbox" name="favoriteAnimal" value="trex" checked>TRex
+            </li>
+        </ul>
+
+    </form>
+</body>
+</html>

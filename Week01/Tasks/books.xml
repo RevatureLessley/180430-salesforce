@@ -1,0 +1,20 @@
+<bookstore>
+	<book category="thriller">
+		<title language="english">How to not Die in Virginia</title>
+		<author>Zach Wilhelm</author>
+		<year>1795</year>
+		<price>1000000</price>
+	</book>
+	<book category="comedy">
+		<title language="english">How to not Die in Virginia</title>
+		<author>William Bradley</author>
+		<year>2018</year>
+		<price>0</price>
+	</book>
+	<book category="tragedy">
+		<title language="english">How to not Die in Virginia</title>
+		<author>Wilhelm Bradley</author>
+		<year>2000</year>
+		<price>10</price>
+	</book>
+</bookstore>
