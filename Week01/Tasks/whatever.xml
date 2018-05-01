@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+<book category="drama">
+<title language="english">
+Book about dramma
+</title >
+<author>
+dramatic guy
+</author>
+<year>
+2018
+</year>
+<price>
+5 bucks
+</price>
+</book>
+<book category="action">
+<title language="english">
+crime fighting mongoose
+</title >
+<author>
+the mongoose himself
+</author>
+<year>
+1824
+</year>
+<price>
+$5000.00
+</price>
+</book>
+<book category="sci-fi">
+<title language="english">
+special beans from outerspace
+</title >
+<author>
+Alberto Einstein
+</author>
+<year>
+2020
+</year>
+<price>
+4 cents
+</price>
+</book>
+</bookstore>
