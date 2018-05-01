@@ -1,17 +1,30 @@
 body {
   background-color: #484C54;
+
 }
 
 
 #title {
     text-align: center;
-    font-size: 32px;
+    font-size: 64px;
 }
 
 .bodyContainer {
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  margin: 50px 50px 50px 50px;
+  color: #484C54;
+  padding: 10px 10px 10px 10px;
   background-color: white;
+}
+
+.secondaryContainer {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 70%;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  background-color: #484C54;
+  border-style: outset;
+  border-radius: 1px;
+  border-width: thin;
+
 }

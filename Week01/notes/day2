@@ -44,3 +44,11 @@ CSS:
 
     - relative: assumes that root is the current directory
     - f3/file.txt
+
+  BOOSTRAP:
+    - Collection of css and js files for design fluid mobile friendly websites
+    - utilizes a grid system for horizontally formatting css.
+
+    container > row > col-size-width
+    width is on a 12 point scale.
+    col-sm-3
