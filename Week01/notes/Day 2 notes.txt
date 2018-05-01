@@ -1,4 +1,5 @@
 CSS
+---
 - Cascading style sheets
 - HTML describes content
 - CSS formats content
@@ -6,7 +7,6 @@ CSS
 CSS selectors
 - How CSS identifies given elements to format
 
-CSS
 - Class: <p class="bobberts">
   - Typically used for many elements
   - Selected by the . character:
@@ -45,6 +45,7 @@ Absolute vs. relative path
     Windows: F3/file.txt
 
 Bootstrap
+---------
 - Collection of CSS and JS files for designing fluid, mobile friendly websites
 - Utilizes a grid system for horizontally formatting CSS.
   - class=container
@@ -58,3 +59,53 @@ col-size-width
     - md: standard computers
     - lg: large monitors
   - width (1-12): how much real estate your specific column takes
+
+XML-eXtensible Markup Language
+  - often used for distributing info over the internet
+  - designed to store & transport data
+  - self-descriptive
+  - Doesn't DO anything
+  - XML carries data, HTML, displays data
+
+Syntax
+  - follows the same structure as HTML (i.e. tags, elements, attributes, etc.)
+    - attributes are typically used for metadata (data of data)
+  - MUST have ONE root tag
+  - Optionally have a prolog
+    - Must be the first line if used
+    - <? xml version="1.0" encoding="UTF-8" ?>
+  - All elements MUST have closing tags
+  - Tags MUST match case.
+  - Attributes MUST be quoted.
+  - If used, reserved symbols (e.g. & ;) require entity references.
+  - Note: White space preserved
+  - no overlapping tags
+  - Follow all of these rules properly then will have well-formed XML
+
+Namespaces and prefixes
+-----------------------
+To avoid clashing words that are used for other reasons, we can use prefixes with namespaces.
+- <root xmlns:prefix="some URI, it's arbitrary">
+    <prefix:table>
+      <prefix:tr>
+      </prefix:tr>
+    </prefix:table>
+  </root>
+  <tables xmlns:xml="custom tables">
+    <xml:table>
+      <xml:tr>
+        <xml:td>Stuff</xml:td>
+        <xml:td>Stuff2</xml:td>
+      </xml:tr>
+    </xml:tr>
+  </tables>
+
+DTD: Document Type Definition
+ - external or internal file that XML can use to enforce specific naming conventions and structure
+XSD: XML Schema Definition
+ - Same goals and use as a DTD
+ - However, it is stronger
+   - has more complex rulesets such as datatype enforcement
+ - Written in XML
+
+If your XML is well-formed and perfectly conforms to an XSD or DTD, then you have valid XML.
