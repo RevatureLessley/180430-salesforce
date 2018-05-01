@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+<bookstore>
+
+<book category="fantasy">
+<title language="English">Harry Potter and the Philosopher's Stone</title>
+<author>JK Rowling</author>
+<year>1999</year>
+<price>10</price>
+</book>
+
+<book category="thriller">
+<title language="English">10 Little Indians</title>
+<author>Agatha Christie</author>
+<year>1910's</year>
+<price>0</price>
+</book>
+
+<book category="futurism">
+<title language="???">1Q84</title>
+<author>Haruki Murakami</author>
+<year>2010</year>
+<price>20</price>
+</book>
+
+</bookstore>
+</xml>
