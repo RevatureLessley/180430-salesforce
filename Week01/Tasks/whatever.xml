@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>
+	
+	<book category="sci-fi">
+		
+		<title language="english">
+			The Land Before Time
+		</title>
+		
+		<author>
+			Jimmy Dean
+		</author>
+		
+		<year>
+			1984
+		</year>
+		
+		<price>
+			$16.99
+		</price>
+		
+	</book>
+	
+	<book category="ungood">
+		
+		<title language="neo-german">
+			The Little Engine that Couldn't But Kept Trying Anyway Even Though It Was Really Bad
+		</title>
+		
+		<author>
+			A Little Engine Boi
+		</author>
+		
+		<year>
+			1773
+		</year>
+		
+		<price>
+			$7.89, but in neo-german currency which equates to about 27 USD
+		</price>
+	
+	</book>
+
+	<book category="fantastic original by ya boi">
+		
+		<title language="chinese">
+			 我要吃蛋糕！
+		</title>
+		
+		<author>
+			Kyle Chiu
+		</author>
+		
+		<year>
+			2018
+		</year>
+		
+		<price>
+			$420.69
+		</price>
+	
+	</book>
+
+</xml>
