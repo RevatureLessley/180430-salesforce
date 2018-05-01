@@ -4,23 +4,37 @@
     <head>
         <meta charset = "UTF-8">
         <title>Biography</title>
-        <style>
-            h1 {text-align:center;}
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                } 
-            p {text-align:center;}
+        <style> 
+            p {text-align:center;
+                color:red;
+            }
         </style>
+        <link rel="stylesheet" text = "text/css" href="aboutMe.css">
     </head>
-    <body>
-        <h1>You want to know about me?</h1>
+    <body style = "background-color: black">
+        <h1 style = "color:red">About me</h1>
         <image src="butwhy.gif"
             style="width:50%;">
         <p>OK fine</p>
         <hr>
-        
+        <table border = 2px style = "color: red">
+                <!-- Tag sets a spot for the actual table -->
+            <tr> <!-- table row -->
+                <th>Name</th> <!-- Table header-->
+                <th>Birthdate</th>
+                <th>Degree</th>
+                <th>Alma Mater</th>
+                <th>Hobbies/Interests</th>
+            </tr>
+            <tr>
+                <td class = "name">Kyle</td> <!-- Table data same as th minus the formatting changes-->
+                <td class = "bday" id = "DoB">07/02/1988</td>
+                <td class = "degree" id = "deg">Computer Science</td>
+                <td class = "almaMater" id = "UGA">University of Georgia</td>
+                <td class = "hobbies" id = "hobs"><a href="hobbies.html">Click here for Hobbies</a></td>
+            </tr>
+            
+        </table>
     </body>
 
 </html>
