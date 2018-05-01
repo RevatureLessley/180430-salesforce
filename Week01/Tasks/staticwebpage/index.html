@@ -11,16 +11,27 @@
     <head>
         <meta charset="UTF-8">
         <title>My Fantastic Website :D</title> <!-- it will display on the top of pages, and tabs-->
+
+        <!-- Internal style sheet-->
+        <style>
+            div{
+                background-color:blueviolet;
+                color:greenyellow;
+            }
+           
+        </style>
+        <link href = "maintemplate.css" type="text/css" rel="stylesheet">
     </head>
     <!-- body tag is where everything displayed to the user-->
-    <body>
+    <body style = "background-color: #333333 ; color:#cc8800">
+        <div>
         <h1> Welcome to my Website</h1><!--Header1 tag-->
         
-        <img src="">
+        <img src="https://www.google.com/search?q=golfing&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQx72b4eTaAhUGy1kKHc7HAe8Q_AUICygC&biw=639&bih=619#imgrc=8JNSnHON1joGuM:">
 
         <p> Learn Something here</p> <!-- Paragraph tag-->
         <hr> 
-
+    </div>
         <h3>Tables!</h3>
         <table border =5px>
             <tr>
@@ -29,10 +40,11 @@
                 
             </tr>
             <tr>
-                <td>Dev</td>
-                <td>More</td>
+                <td class="firstnames">Dev</td>
+                <td id="lastname">More</td>
             </tr>
         </table>
+    
         <hr>
 
         <h3>Anchor tags!</h3>
@@ -41,7 +53,7 @@
             <li> <a href="https://www.yahoo.com">Yahoo.com!</a></li>
             <li> <a href="https://www.google.com">Google.com!</a> </li>
             <li> <a href="https://www.google.com">Google.com!</a> </li>
-            <li> <a href="forms.html">Form</a> </li>
+            <li> <a href="betterindex.html">Better HTML</a> </li>
         </ol>
         <ul>
             <li> Dog are awesome</li>

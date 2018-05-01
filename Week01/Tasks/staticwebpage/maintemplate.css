@@ -1,0 +1,43 @@
+/** css template
+note: with css, the last css to apply, trumps all other css
+the more specific the css selector, the more precesence
+
+body will affect everything but a div tag will take css precedenec over a bosy tag.*/
+
+th{
+    background-color:lightgray;
+    color: black;
+}
+p{
+    font-family: fantasy;
+}
+a{
+    color:white;
+}
+.firstnames{
+    color:violet;
+    font-size: 30px;
+}
+#lastname{
+    font-size: 10px;
+}
+/*
+    more advanced css selectors
+    *{ //every element 
+        stuff
+    }
+
+    el1, el2{
+        //selected all el1 and el2
+    }
+    el1 el2{
+        //selects any el2 that is within the tags of el1. any parent level
+    }
+    el1>el2{
+
+    }// selects only el2 that are direct children of el1
+
+
+
+
+*/
