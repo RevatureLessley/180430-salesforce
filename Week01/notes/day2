@@ -1,0 +1,46 @@
+CSS
+- Cascading Style Sheets
+- html describes content
+- css forms content
+- css selectors
+  * how css identifies given elements to format
+
+Document Object Model: DOM
+
+css DOM syntax:
+  html body div div p {
+    color: red;
+  }
+
+COMMENT YOUR CODE
+CSS:
+  Class:
+    <p class="bobbert">
+    * Typically used for many elements
+    * Selected by the . character EX: .bobbert { }
+  ID:
+    <p id="bobbert">
+    * Typically used to identify one unique elements
+    * Selected by the #bobbert { }
+    *** # is called a octothorp
+
+  Inline:
+    - Style is placed in the tage
+      * <div style="backaground-color: blue;">
+
+  Internal Style Sheet:
+    - Uses the "style" tag to create a css block inside of the html page
+      * <style> background-color: blue; </style>
+
+
+  External Style Sheet:
+    - All of the styles are placed inside of an external file with any extension
+      using the <link> tag.
+        * <link rel="stylesheet" type="text/css" href="---location of file---">
+
+  Absolute Path vs Relative Path:
+    - absolute:
+    * C:/f1/f2/f3/file.txt
+
+    - relative: assumes that root is the current directory
+    - f3/file.txt

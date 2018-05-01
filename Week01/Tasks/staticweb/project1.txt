@@ -1,0 +1,21 @@
+MINI PROJECT
+- make a static website
+  - use index.html as home page
+    * should describe what the webpage is
+  - should have hyperlinks to the following
+    * aboutme.html
+      - includes you bio
+      - name
+      - degree
+      - hobbies
+      - born
+    * hobby.html
+      - page dedicated to something you like
+      - link to "cool website" SAFE FOR WORK
+
+REQUIRED TAGS
+<p>
+<table>
+<ul>
+<ol>
+<img>

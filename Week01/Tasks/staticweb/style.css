@@ -1,0 +1,17 @@
+body {
+  background-color: #484C54;
+}
+
+
+#title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.bodyContainer {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  background-color: white;
+}
