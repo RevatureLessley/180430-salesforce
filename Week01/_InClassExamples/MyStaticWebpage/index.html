@@ -14,14 +14,25 @@ it will default to html 5. -->
     <meta charset="UTF-8">
     <title>My Fantastic Website :D</title>
     <!-- The title tag is simply that. It will display on the top of pages, and tabs. -->
+
+    <!-- Internal Style Sheet-->
+    <style>
+        div{
+            background-color:blueviolet;
+            color:greenyellow;
+        }
+    </style>
+
+    <!-- External Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="css/maintemplate.css"
 </head>
 
-<body>
+<body style="background-color:#333333;color:rgb(245,148,22)"> <!-- #RRGGBB-->
     <!-- The <body> tag is what is actually displayed to the user
             on the browser. -->
         <h1>WELCOME TO MY WEBSITE</h1>
         <!-- Header1 tag -->
-        <img scr="https://www.healthypawspetinsurance.com/dog-and-puppy-insurance"
+        <img src=""
             width="240px" height="200px">
         <!-- auto-closable tags are tags that do not require an ending forward 
         slash or end tag-->
@@ -37,16 +48,16 @@ it will default to html 5. -->
                 <th>State Born</th> 
             </tr>
             <tr>
-                <td>Taylor</td> <!-- Same as th, minus the formating changes of th-->
+                <td class="name">Taylor</td> <!-- Same as th, minus the formating changes of th-->
                 <td>New York</td> 
             </tr>
             <tr>
-                <td>Bobbert</td>
+                <td class="name">Bobbert</td>
                 <td>Mississlanta</td> 
             </tr>
             <tr>
-                <td>Clarence</td>
-                <td>Ohio</td> 
+                <td class="name">Clarence</td>
+                <td id="ohio">Ohio</td> 
             </tr>
         </table>
 
