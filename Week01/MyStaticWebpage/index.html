@@ -11,18 +11,31 @@
         <meta charset = "UTF-8">
         <title>My Fantastic Website :D</title>
         <!-- The Title tag is simply that. It will display on the top of pages and tabs -->
+            <!-- Internal style sheets-->
+            <style>
+                div{
+                    background-color: red;
+                    color: black;
+                }
+            </style>
+            <!-- external style sheets-->
+            <link rel="stylesheet" text = "text/css" href="CSS/mainTemplate.css">
     </head>
-    <body>
+    <body style="background-color: #333333; color:#FF0000"> <!--#RRGGBB-->
         <!-- The <body> tag is what is actually displayed to the user on the browser. -->
+        <div>
         <h1>WELCOME TO MY WEBSITE</h1>
         <!-- Header 1 tag -->
         <image src="http://www.fieldstforum.com/wp-content/uploads/2016/09/uga-sec-logo-e1474832842800.jpg"
             width ="300px" height = "200px">
             <!-- auto closable tags are tags not requiring a / or end tag -->
+        </div>
+        <div>
         <p>Please stay a while, and listen. </p>
         <!-- paragraph tag-->
         <hr>
         <!-- Horizontal rule-->
+        </div>
         <h3>Tables</h3>
         <table border = 2px>
         <!-- Tag sets a spot for the actual table -->
@@ -31,12 +44,12 @@
                 <th>State Born</th>
             </tr>
             <tr>
-                <td>Kyle</td> <!-- Table data same as th minus the formatting changes-->
-                <td>Georgia</td>
+                <td class = "name">Kyle</td> <!-- Table data same as th minus the formatting changes-->
+                <td class = "state" id = "GA">Georgia</td>
             </tr>
             <tr>
-                <td>Chris</td> <!-- Table data same as th minus the formatting changes-->
-                <td>Indiana</td>
+                <td class = "name">Chris</td> <!-- Table data same as th minus the formatting changes-->
+                <td class = "state" id = "indy">Indiana</td>
             </tr>
         </table>
 
@@ -70,7 +83,7 @@
             <li><em>Emphasized</em></li>
             <li><mark>Marked</mark></li>
         </ul>
-
+        
     </body>
 
  </html>

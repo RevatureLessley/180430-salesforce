@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<bookstore>
+    <book category="fantasy">
+        <title language="en">Oathbringer</title>
+        <author>Brandon Sanderson</author>
+        <year>2017</year>
+        <price>19.99</price>
+    </book>
+    <book category="fantasy">
+        <title language="en">Bands of Mourning</title>
+        <author>Brandon Sanderson</author>
+        <year>2016</year>
+        <price>19.99</price>
+    </book>
+</bookstore>

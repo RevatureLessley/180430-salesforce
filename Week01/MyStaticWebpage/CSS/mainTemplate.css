@@ -1,0 +1,54 @@
+/*
+    CSS comments
+    Note: With CSS, for competing css, the last css to apply trumps all other CSS
+    The more specific the css selector, the more precendence.
+    So body will affect everything, but div tags take precedence over body tags because div are children of body
+*/
+
+/*table header*/
+th{  
+    background-color: green;
+    color: yellow;
+}
+
+p{
+    font-family: fantasy;
+}
+
+.name{
+    color: violet;
+    font-size: 49px;
+}
+
+#indy{
+    color: blue;
+    font-size: 49px;
+}
+
+a:hover{
+    background-color: white;
+    font-size: 49px;
+}
+
+a:active{
+    background-color: green;
+    font-size: 100px;
+}
+/*More advanced CSS selectors
+
+*{//every element
+    stuff
+}
+el1,el2{
+    selects all e1 and el2
+}
+
+el1 el2{
+    selects any el2 that is within the tags of el1(any parent level)
+}
+
+el1 > el2{
+    selects only el2 that are direct children of el1
+}
+
+*/
