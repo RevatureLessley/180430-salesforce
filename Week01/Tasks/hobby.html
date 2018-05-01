@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sarah's Hobbies</title>
+        <style>
+        #edgyEasterEgg {
+            transition: opacity 1s ease-out;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        span:hover + span#edgyEasterEgg {
+            display: inline-block;
+            opacity: 1;
+            height: auto;
+            width: auto;
+            transition: all 1s linear;
+            background-color:black;
+            color: grey;
+            font-style: italic;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-style:italic">I am developer</h1>
+        <img src="vemoji.png">
+
+        <p>When not indulging in the exciting world of CRM platform development, I can be found studying Deep Learning, and making the vidya game.  <a href="https://www.youtube.com/watch?time_continue=4&v=XKXQMuKds5Y">One game I worked on</a> got an <a href="https://www.indiecade.com/">award thingy</a>.</p>
+
+        <div>
+        I have a <a href="https://github.com/sarahckohl">GitHub</a> full of (mostly unfinished) pet <span>projects</span><span id="edgyEasterEgg">&nbsp; and broken dreams</span>.  The greatest hits can be found at <a href="https://sarahkohl.me/">SarahKohl.me</a>. 
+        </div>
+            
+    </body>
+</html>
