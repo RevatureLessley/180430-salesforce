@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bookstore>
+  <book category="education">
+    <title language ="en">XML Guide</title>
+    <author>Marcas, Matt</author>
+    <year>02/03/1990</year>
+    <price>44.95</price>
+  </book>"
+<book category="education">
+    <title language ="en">C# Programming</title>
+    <author>Gamas, Garcias</author>
+    <year>02/03/1985</year>
+    <price>48.95</price>
+  </book>"
+<book category="education">
+    <title language="en">C++ </title>
+    <author>Doodie, Dante</author>
+    <year>12/21/1999</year>
+    <price>49.95</price>
+  </book>"
+</bookstore>
