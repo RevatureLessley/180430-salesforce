@@ -33,13 +33,28 @@
 		 in mobile-friendly ways. One main goal of bootstrap is to make your website handle mobile users w/o
 		 causing chaos for mobile users.
 	-->
-	<body>
+	<body style="background-color:#333333">
 	
 		<!-- Containers
 			 all bootstrap elements are typically made to be inside of containers. Container class simply formats
 			 the content within to be able to handle dynamic screen sizes, as well as force contents to more
 			 aesthetically fit with the window size.
+			 
+			 Container encapsulates and allows formatting for a section of a page.
+			 there are 2 types:
+				"container"
+					centers the container content, providing padding on the sides
+				"container-fluid", which uses more real estate than the normal container
+			NOTE: containers cannot be within other containers
 		-->
+		
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="betterIndex.html">
+				</div>
+			</div>
+		</nav>
 		<div class="container">
 		
 			<div class="well" style="background-color:dimgray" style="padding-top:50px">
