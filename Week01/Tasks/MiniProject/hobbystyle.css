@@ -1,0 +1,17 @@
+body{
+    text-align: left;
+    background-color: green;
+    color: pink;
+}
+
+h1{
+    color:purple;
+}
+
+h3{
+    color:yellow;
+}
+
+p{
+    color:gray;
+}

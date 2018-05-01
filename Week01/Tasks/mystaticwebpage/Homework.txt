@@ -13,6 +13,21 @@ Make static website 4/30/18 DUE 5/7/18
 				if you want, put hobby in here and not in aboutme.html
 			coolwebsite.html
 				a website that you really like. SFW please.
+	at least one of each:
+		inline css
+		external css
+		internal css
+	all pages should have their own css file
+	
+	OPTIONAL
+		leverage bootstrap
+		use at least 3 3 different css selector types, such as:
+			e1
+			e1>e2
+			e1~e2
+			e1 e2
+			...
+	
 	REQUIRED TAGS
 		<p>
 		<table>

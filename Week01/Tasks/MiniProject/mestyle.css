@@ -1,0 +1,57 @@
+body{
+    text-align: left;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color:rgb(0, 112, 50);
+}
+
+h2, h3{
+    color:rgb(0, 189, 132);
+}
+
+p{
+    color:silver;
+}
+
+/*
+    this will apply to all headers in a row.
+*/
+tr>th{
+    text-align:center;
+    color:rosybrown;
+}
+
+/*
+    this will affect all data in the tables
+    with the way I've layed them out.
+    if another table is made that has a header
+    row, rather than headers in the first column,
+    then this will not apply to data of that table.
+*/
+th~td{
+    color:forestgreen;
+}
+
+/*
+    above, I have the same settings for h2 and h3.
+    if they're in this format, though, I wnat them
+    to be a little different. spice things up a bit.
+*/
+h2~h3{
+    color:darksalmon;
+}
+
+h2~p{
+    color:black;
+}
+
+h2~p:hover{
+    color:deeppink;
+}
+
+h2 p{
+    color:purple;
+}

@@ -2,61 +2,73 @@
 
 <html>
 
-	<head>
-	
-		<style>
-			body{
-				text-align: left;
-				background-color: black;
-				color: white;
-			}
-			h1{color:white;}
-			h3{color:white;}
-			p{color:white;}
-		</style>
-	
-		<meta charset="UTF-8">
-		
-		<title>It's all about me!</title>
-	
-	</head>
-	
-	<body>
-	
-		<h1>Welcome to the page that's all about me!</h1>
-		
-		<h3>My stats</h3>
-		
-		<table border="1">
-			
-			<tr>
-				<th>Name</th>
-				<td>Kyle Chiu</td>
-			</tr>
-			<tr>
-				<th>Age</th>
-				<td>23</td>
-			</tr>
-			<tr>
-				<th>Degree</th>
-				<td>Computer Science</td>
-			</tr><tr>
-				<th>Born in</th>
-				<td>Washington State</td>
-			</tr>
-			</tr><tr>
-				<th>Music </th>
-				<td>Soft Rock + whatever is pleasant to my ears</td>
-			</tr>
-			
-		</table>
-		
-		<p>I enjoy eating, playing games, <s>long walks on the beach</s>, and RomComs</p>
-		
-		<p>I've met the current minimum requirements. Please <a href="index.html">leave</a>.
-		
-		<hr>
-	
-	</body>
+<head>
+
+	<link rel="stylesheet" href="mestyle.css">
+
+	<meta charset="UTF-8">
+
+	<title>It's all about me!</title>
+
+</head>
+
+<body>
+
+	<h1>Welcome to the page that's all about me!</h1>
+
+	<h3>My stats</h3>
+
+	<table border="1">
+
+		<tr>
+			<th>Name</th>
+			<td>Kyle Chiu</td>
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>23</td>
+		</tr>
+		<tr>
+			<th>Degree</th>
+			<td>Computer Science</td>
+		</tr>
+		<tr>
+			<th>Born in</th>
+			<td>Washington State</td>
+		</tr>
+		<tr>
+			<th>Music </th>
+			<td>Soft Rock + whatever is pleasant to my ears</td>
+		</tr>
+
+	</table>
+
+	<p>I enjoy eating, playing games,
+		<s>long walks on the beach</s>, and RomComs</p>
+
+	<p>I've met the current minimum requirements. Please
+		<a href="index.html">leave</a>.</p>
+
+	<hr>
+
+	<h2>I really like dad jokes. Here's a good one:
+
+		<!-- 
+			having this h3 nested within this h2 causes some issues.
+			the browser places the <p> block below OUTSIDE of the <h2> tag here
+			for some odd reason when this <h3> is within as well.
+			this causes minor issues when using CSS selectors; specifically
+			it messes with e1~e2 and e1 e2.
+		-->
+		<h3>Why is "dark" spelled with a "k" and not a "c"?</h3>
+
+		<p>
+			<font size="2">Because you can't "c" in the dark.</font>
+		</p>
+
+	</h2>
+
+
+</body>
 
 </html>
