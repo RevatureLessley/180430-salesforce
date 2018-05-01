@@ -12,19 +12,36 @@
             such as, page title, or charset encodings.
         -->
         <meta charset="UTF-8">
-    </head>
-    <body>
-        <!--
-            The <body> tag is what is actually displayed to the user
-            on the browser.
-        -->
         <title>My Fantastic Website UwU</title>
         <!--
             The title tag is simply that. It will display on the top
             of pages and tabs
         -->
-        <h1>WELCOME TO THE JUNGLE</h1>
-        <p>No fun. No games. only work >:(</p>
+        <!-- Internal stylesheet-->
+        <style>
+            div
+            {
+                background-color: blueviolet;
+                color : gold;
+            }
+            body
+            {
+                background : gray;
+            }
+        </style>
+        <!-- External Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="main_template.css">
+    </head>
+    <body style="background-color:#424242; color : rgb(249, 194, 56);">
+        <!--
+            The <body> tag is what is actually displayed to the user
+            on the browser.
+        -->
+        <div>
+            <h1>WELCOME TO THE JUNGLE</h1>
+            <img scr="https://images.pexels.com/photos/396714/pexels-photo-396714.jpeg" width="400px" height="auto">
+            <p>No fun. No games. only work >:(</p>
+        </div>
         <!-- paragraph tag -->
         <hr>
         <h3>Tables</h3>
@@ -36,16 +53,16 @@
                 <th>State Born</th>
             </tr>
             <tr>
-                <td>Ryan</td><!-- Table Data-->
+                <td class="name">Ryan</td><!-- Table Data-->
                 <td>Alaska</td>
             </tr>
             <tr>
-                <td>Bobbert</td><!-- Table Data-->
+                <td class="name">Bobbert</td><!-- Table Data-->
                 <td>Missasslanta</td>
             </tr>
             <tr>
-                <td>David</td><!-- Table Data-->
-                <td>California</td>
+                <td class="name">David</td><!-- Table Data-->
+                <td><span id="Cali">California</span></td>
             </tr>
         </table>
         <hr>
@@ -57,7 +74,8 @@
         <ol>
             <li><a href="https://www.google.com">Yahoo.com</a></li>
             <li><a href="https://www.reddit.com">Reddit</a></li>
-            <li><a href="forms.html">Forms</a></li>
+            <li><a href="forms.html">Forms</a></li>            
+            <li><a href="betterindex.html">bEtTeR iNdEx</a></li>
         </ol>
         <ul style="list-style-type: none">
             <li>Dog</li>
@@ -78,4 +96,15 @@
             <li><mark>Marked</mark></li>
         </ul>
     </body>
+    <div>
+        <ul>
+            <div>
+                <li>
+                    <p>
+                        TEST
+                    </p>
+                </li>
+            </div>
+        </ul>
+    </div>
 </html>
