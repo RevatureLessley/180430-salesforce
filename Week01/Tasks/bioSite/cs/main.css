@@ -1,12 +1,12 @@
 html {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-  overflow: hidden;
   height: 100%;
   width: 100%; 
 }
 
 body {
   background-color: #000000;
+	color: #FFFFFF;
   height: 100%;
   width: 100%; 
 }
@@ -44,4 +44,8 @@ nav {
 
 .meBro {
 	border-radius: 25px;
+}
+
+.languages {
+	margin: auto;
 }
