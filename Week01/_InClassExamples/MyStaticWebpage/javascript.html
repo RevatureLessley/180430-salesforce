@@ -1,0 +1,48 @@
+<!DOCTYPE=html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src ="javascript/my.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="well">
+                    <h1>Welcome to JavaScript!</h1>
+            </div>
+
+            <div class="well">
+                <h3>Printing to page...</h3>
+                <p id="para1">No one is going to see this</p>
+                <hr>
+                <button onclick="appendText()">Click Me!</button>
+                <hr>
+                <p>Printing to the console!</p>
+                <button onclick="logit()">Log it!</button>
+                <hr>
+                <p>Writing stuff!</p>
+                <button onclick="writeit()">Write it!</button>
+                <hr>
+                <button onclick="window.alert(window.prompt('Type Something!'))">Prompt and Alert!</button>
+            </div>
+        </div>
+
+        <script>
+            setTimeout(function(){ 
+            document.getElementById("para1").innerHTML="<b>I used javascript to write this!</b>";
+            // has to be located below the ID it is referencing (at least without timeout function)
+            },2500)
+        </script>
+
+    </body>
+
+</html>
