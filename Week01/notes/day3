@@ -1,0 +1,46 @@
+Day 3
+
+JS Topics
+  - datatypes
+  - arrays
+  - array methods
+  - functions
+  - control statements
+  - truthy falsy
+  - type coercion
+  - scopes
+  - variable hoisting
+  - let, car, const
+
+Closure:
+  - encapsulating data in a function by returning a function and accessing the
+  scope of the original function and calling the second function.
+  - effectively creating private variables for functions
+
+  add = function(x,y) {
+	 if(!(y===undefined) {
+      return  x + y;
+   }
+      return function(z) {
+        return x + z;
+      }
+  }
+
+Auto Invoking functions (not called this)
+  - Immediately invoked functions
+
+
+Abstracting:
+  - hiding code complexity
+
+Encapsulation:
+  - Data hiding
+  - Access restriction of data
+  - fridge analogy
+    - food for you
+    - food for guests
+    - food for your roommates
+    - food for strangers?
+  - Grouping data together and keeping
+
+Prototyping 

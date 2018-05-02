@@ -13,6 +13,16 @@ MINI PROJECT
       - page dedicated to something you like
       - link to "cool website" SAFE FOR WORK
 
+  - At least one of each
+    - inline CSS
+    - internal CSS
+    - external CSS
+      * ALL PAGES HAVE THEIR OWN CSS FILE
+
+  - Leverage bootstrap * optional
+
+  - Use at least 3 different CSS Selector types
+    ex: e1 > e2 { }  e1 e2 { } a:
 REQUIRED TAGS
 <p>
 <table>
