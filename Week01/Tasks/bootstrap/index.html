@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Javascript Central</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<head>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bring Bootstrap 3 libraries -->
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="javascript/myjs.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="well">
+                <h1>Welcome to JavaScript!</h1>
+            </div>
+            <div class="well">
+                <h3>Printing to the page...</h3>
+                <p id="para1">No one is going to see this!!!</p>
+                <hr>
+                <button onclick="appendText()">Click Me!</button>
+                <hr>
+                <button onclick="logIt()">Log It!</button>
+                <hr>
+                <button onclick="write()">Write It!</button>
+                <hr>
+                <button onclick="window.alert('CHECK ME OUT!');")>ALERT!</button>
+                <hr>
+                <button onclick="window.alert(window.prompt('Type something!'))")>PROMPT AND ALERT</button>
+            </div>
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bring in supplemental javascript for bootstrap -->
-</head>
-
-<body>
-    <div class="container">
-        <div class="col-xs-3">
-            <div class="well" style="background-color: red">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.
-                </p>
+            <div class="well" onmouseover="changeWell">
+                <h1>Check Me Out!</h1>
+            </div>
+            <div class="well">
+                <h3>Dynamic Tables</h3>
+                <ul style="list-style-type: none">
+                    <li><b>EMPLOYEE NAME</b></li>
+                    <li><input type="text" id="empName"></li>
+                    <li><b>FAVORITE DOG</b></li>
+                    <li><input type="text" id="favDog"></li>
+                    <li onclick="addEmp()"><button>SUBMIT</button></li>
+                </ul>
+                <br>
+                <table border=2px id="theTable">
+                    <tr>
+                        <th>E_ID</th>
+                        <th>Employee Name</th>
+                        <th>Favorite Dog</th>
+                    </tr>
+                </table>
+            </div>
+            <script>
+                setTimeout(function(){
+                    document.getElementById("para1").innerHTML = "<b>I used JavaScript to write this."
+                }, 2500);
+            </script>
+            
+        </div>
+        <div class="well">
+            <h1>Bubbling and Capturing</h1>
+            <div style="padding: 50px; background-color: red">
+                <div style="padding: 50px; background-color: blue">
+                    <div style="padding: 50px; background-color: yellow">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="well" style="background-color: blue">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="col-xs-3">
-            <div class="well" style="background-color: green">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-        <div class="col-xs-3">
-            <div class="well" style="background-color: yellow">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-        </div>
-    </div>
-</body>
-
+        
+    </body>
 </html>
