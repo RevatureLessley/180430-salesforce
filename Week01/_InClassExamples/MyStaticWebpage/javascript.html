@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javasctipt 👀</title>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="javascript/my.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="well">
+            <h1>Welcome to JavaScript!</h1>
+        </div>
+        <div class="well">
+            <h3>Printing to the page...</h3>
+            <p id="para1">
+                No one is gonna see this
+            </p>
+            <hr>
+            <button onclick="appendText()"> Click Me! </button>
+            <hr>
+            <button onclick="( function () { console.log( 'Logged it!:' + ++addCount); })()"> Log it! </button>
+
+            <hr>
+            <h3>Document.write!</h3>
+            <button onclick="documentWrite()"> Click Me! </button>
+            <hr>
+            <button onclick="window.alert('CHECK ME OUT')"> Alert </button>
+            <hr>
+            <button onclick="window.alert( window.prompt('type something'))"> PROMPT </button>
+        </div>
+
+        <!--
+                <div id="magicWell"></div>
+            -->
+
+        <div class="well">
+            <h3>Dynamic Tables</h3>
+            <ul style="list-style-type:none">
+                <li>
+                    <b>EMPLOYEE NAME</b>
+                </li>
+                <li>
+                    <input type="text" id="e_name">
+                </li>
+                <li>
+                    <b>FAVORITE DOG</b>
+                </li>
+                <li>
+                    <input type="text" id="f_dog">
+                </li>
+                <li>
+                    <button onclick="addEmp()">SUBMIT</button>
+                </li>
+            </ul>
+        </div>
+        <table id="e_table" border="2px">
+            <tr>
+                <th>E_ID</th>
+                <th>Employee Name</th>
+                <th>Favorite Dog</th>
+            </tr>
+        </table>
+    </div>
+    <div class="well">
+        <h1>Bubbling and Capturing</h1>
+        <div id="d1" style="padding:50px;background-color:red">
+            <div id="d2" style="padding:50px;background-color:blue">
+                <div id="d3" style="padding:50px;background-color:yellow">
+                    <h3>Click me!</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        setTimeout(
+            () => { document.getElementById("para1").innerHTML = "Nothing personnel kid 😎"; },
+            2000
+        )
+    </script>
+</body>
+
+
+</html>
