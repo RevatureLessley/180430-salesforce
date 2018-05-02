@@ -2,22 +2,73 @@
 <!-- Doug's Homepage -->
 <html lang="en-us">
     <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- Set metadata about webpage -->
         <meta charset="utf-8">
         <title>Doug's Homepage</title>
-
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Page 1</a></li>
+                      <li><a href="#">Page 2</a></li> 
+                      <li><a href="#">Page 3</a></li> 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        <!-- Internal stylesheet for image and page title -->
+        <style>
+            #headerImg {
+                width: 400px;
+                height: 600px;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                margin: 25px;
+            }
+            div > img {
+                display: block;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                min-height: 100%;
+                min-width:  100%;
+                transform: translate(-50%, -50%);
+                float: left;
+            }
+        </style>
         
     </head>
     <body>
         <!-- Image and page title -->
         <div id="headerImg">
-                <img src="https://tse4.mm.bing.net/th?id=OIP.viUAfnpsYhdp4kBM5bF13gHaE8&w=291&h=188&c=7&o=5&pid=1.7"
-                alt="Man standing on outcropped rock high over a valley">
+            <img src="images/business2.jpg" alt="Man posing in suit">
+        </div>
+        <div id="headerContent">
+            <div class="col">
+                <h1 style="background-color: peachpuff; clear:right">Doug's Homepage</h1>
             </div>
-            <div id="headerContent">
-                <div class="col">
-                    <h1>Doug's Homepage</h1>
-                </div>
-            </div>
+        </div>
     </body>
 </html>
