@@ -16,3 +16,15 @@ Required tags:
 - ul
 - ol
 - img
+
+At least one of each:
+ - inline CSS
+ - internal CSS
+ - external CSS
+All pages should have their own CSS file.
+
+Optional - leverage Bootstrap
+ - Use at least 3 different CSS selector types, e.g.
+	el
+	el > el2
+	el ~ el3

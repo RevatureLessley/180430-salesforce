@@ -109,3 +109,49 @@ XSD: XML Schema Definition
  - Written in XML
 
 If your XML is well-formed and perfectly conforms to an XSD or DTD, then you have valid XML.
+
+Javascript
+----------
+Interpreted runtime language
+- Supported by most browsers by default
+- NOT Java
+- Originally called mocha, then changed to Livescript, then shipped with Netscape as Javascript.
+- Created in 10 days
+- Still weakly typed to this day
+
+Where to insert Javascript
+- Javascript can internally be used within <script> tags.
+- Script tag can be used to import external JS files.
+
+Scopes
+------
+Global scope
+- accessible from anywhere
+Function scope
+- accessible only within a function it is created in
+Lexical scope * ECMA 6+
+- only accessible in the block it is created in
+
+ECMA Script 6 (ES6)
+-------------------
+ECMA Script is what Javascript is built on.
+- ES6 brought us:
+  - Let & Const variable declarators
+  - Arrow notation
+  - Private data types
+  - Classes
+  
+var x = 5;
+
+function fun() {
+  var y = 8
+  for (let i = 0; i < 10; i++) {
+	// do stuff
+  }
+  console.log(y)
+  console.log(i)
+}
+
+console.log(x)
+console.log(y)
+console.log(i)

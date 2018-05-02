@@ -1,0 +1,11 @@
+data types
+arrays
+array methods
+functions
+control statements
+truthy falsey
+type coercion
+scopes
+variable hoisting
+ECMA script
+let, var, const

@@ -1,0 +1,21 @@
+Closures
+--------
+Encapsulation is essentially data hiding (but you remember that, don't you? :P)
+
+function foo() {
+  var x = 5;
+  var y = 10;
+  return function() {
+    getX = function() {
+      return x; 
+    }
+  }
+}
+
+Call-back functions
+-------------------
+- A function (A) takes a function definition (B) as input.
+- A performs an anction that takes a variable that takes a variable amount of time to complete (1 second-30 gigayears)
+- The user's system is not locked waiting for it to complete.
+- Once A completes task, A invokes the B definition.
+  - Control is brought back to A in order to receive B's output.
