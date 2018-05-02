@@ -1,0 +1,52 @@
+/**
+    Css comment
+    note:
+    with css for competing css, the LAST css to apply trups all other css
+    the more specific the css selector the more precedence
+    so body will effect everything but a div age will take css precedence over body tat, since div tags
+    will always be children of the body tag
+*/
+th{
+    background-color:aqua;
+    color: blanchedalmond;
+}
+p{
+    font-family:'Times New Roman';
+}
+.names{
+    color:violet;
+    font-size:49px;
+}
+#ohio{
+    font-size:small;
+}
+a:hover{
+    background-color:yellowgreen;
+    font-size:59px;
+}
+a:active{
+    background-color:red;
+    font-size:59px;
+}
+ div  ul{
+    background-color:khaki;
+    }
+
+/*More advanced css selectors
+*{  //every element
+    stugg
+    }
+
+    el1,el2{
+    //selects all el1 and el2
+    }
+
+     el1 el2{
+    //selects Any el2 that is within the tags of el1 (any parent leve
+    }
+    
+    el1>el2{
+    //selects only el2 that are directly childern of el1
+    }
+
+*/

@@ -13,18 +13,37 @@ application.  -->
 <meta charset="UTF-8">
 <title>My Fantastic Website :D</title>
 <!-- The title tag is simply that. It will display on the top of pages, and tabs. -->
-</head>
-<body>
-    <!-- The <body> tag is what is actually displayed to the user
-        on the browser.-->
-    <h1>WELCOME TO MY wEBSITE</h1>
-    <img src="https://i.pinimg.com/originals/de/31/93/de319328eecb113a2801a98300f759b3.jpg"
-         width="240px" height="200px">
-    <!-- auto-closeable tags are tags that do not require an ending
-    forward slash or end tag. -->
 
-    <p>Please Stay a while, and listen.</p>
-    <!-- paragraph tag -->
+    <!-- Internal Stylesheets @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <style>
+        div{
+            background-color:purple;
+                color:yellow;
+        }
+        body{
+            background-color:greenyellow;
+        }
+        </style>
+
+    <!-- External Style sheet@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <link rel="stylesheet" type="text/css" href="css/maintemp.css">
+</head>
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@In line Css-->
+<body style="background-color:#333333; color:#ff6a00"> <!-- #RR GG BB -->
+    <div>
+        <!-- The <body> tag is what is actually displayed to the user
+           on the browser.-->
+        <h1>WELCOME TO MY wEBSITE</h1>
+        <img src="https://i.pinimg.com/originals/de/31/93/de319328eecb113a2801a98300f759b3.jpg"
+             width="240px" height="200px">
+        <!-- auto-closeable tags are tags that do not require an ending
+        forward slash or end tag. -->
+    </div>
+    <div>
+        <p>Please Stay a while, and listen.</p>
+        <!-- paragraph tag -->
+    </div>
     <hr>
     <h3>Tables!</h3>
     <table border=2px>
@@ -46,7 +65,7 @@ application.  -->
         </tr>
         <tr>
             <td>Clarence</td>
-            <td>Ohio</td>
+            <td id="ohio">Ohio</td>
         </tr>
     </table>
     
@@ -66,7 +85,7 @@ application.  -->
             <a href="http://www.reddit.com/r/aww/">Reddit</a>
         </li>
         <li>
-            <a href="form.html">Forms</a>
+            <a href="betterIndex.html">Forms</a>
         </li>
     </ol>
     <hr>
@@ -85,16 +104,30 @@ application.  -->
     <hr>
 
     <h3>Formatting</h3>
-    <p>There exists various formats you can apply to text using tags.</p>
-    <ul>
-        <li><b>Bold text</b></li>
-        <li><i>Italicised text</i></li>
-        <li><u>underline text</u></li>
-        <li><s>strike through</s></li>
-        <li><q>Quote</q></li>
-        <li><em>Emphasized</em></li>
-        <li><mark>Marked</mark></li>
-    </ul>
+    <div>
+        <p>There exists various formats you can apply to text using tags.</p>
+        <ul>
+            <li><b>Bold text</b></li>
+            <li><i>Italicised text</i></li>
+            <li><u>underline text</u></li>
+            <li><s>strike through</s></li>
+            <li><q>Quote</q></li>
+            <li><em>Emphasized</em></li>
+            <li><mark>Marked</mark></li>
+
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <div>
+                <li>
+
+                </li>
+            </div>
+
+        </ul>
+
+    </div>
 </body>
 
 </html>

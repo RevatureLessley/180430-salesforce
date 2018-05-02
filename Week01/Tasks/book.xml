@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookStore>
+  <book category ="horror">
+    <title language ="en">book1</title>
+    <author>author1</author>
+    <year>2000</year>
+    <price>10.00</price>
+  </book>
+  <book category ="romance">
+    <title language ="jp">book2</title>
+    <author>author2</author>
+    <year>2001</year>
+    <price>11.00</price>
+  </book>
+  <book category ="comedy">
+    <title language ="ko">book3</title>
+    <author>author3</author>
+    <year>2002</year>
+    <price>12.00</price>
+  </book>
+  </bookStore>
