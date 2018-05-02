@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Javascript Central</title>
+  <link rel="stylesheet" type="text/css"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bring Bootstrap 3 libraries -->
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+
+</head>
+<!-- <body onload="fizzBuzz()"> -->
+<body>
+  <div class="container-fluid">
+    <div class="well">
+      <h1> Welcome to Javascript </h1>
+    </div>
+    <!-- <div class="well">
+    <p id="fizzbuzz"> </p>
+  </div> -->
+  <div class="well">
+    <hr>
+    <button onclick="appendText()" class="btn btn-primary"> Count</button>
+    <hr>
+    <button onclick="logit()" class="btn btn-primary"> Log it</button>
+    <hr>
+    <button onclick="writeToDocument()" class="btn btn-primary"> Write to Document </button>
+    <hr>
+    <button onclick="window.alert(window.prompt('Type Something'))" class="btn btn-primary"> Prompt then Alert</button>
+    <hr>
+    <h3> Printing to the page </h3>
+    <p id="para1"></p>
+    <div class="well" >
+      <h1 id="magic-well" onclick=""="changeWell()"> Check me out </h1>
+    </div>
+  </div>
+  <div class="well">
+    <h3> Dynamic Tables </h3>
+    <ul style="list-style-type:none">
+      <li><b> EMPLOYEE NAME </b> </li>
+      <li><input type="text"></li>
+      <li><b> Favorite Dog </b> </li>
+      <li><input type="text"></li>
+      <li><button>SUBMIT </button></li>
+    </ul>
+    <br>
+    <table border=2px id="theTable">
+      <tr>
+        <th>E_ID</th>
+        <th>Employee Name</th>
+        <th>Dog name</th>
+      </tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>

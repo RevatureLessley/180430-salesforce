@@ -43,4 +43,19 @@ Encapsulation:
     - food for strangers?
   - Grouping data together and keeping
 
-Prototyping 
+Prototyping
+
+Synchronous
+  - Sequiential
+    *ex: I walked to the store, I picked up items, I go to checkout, I place 1 item on belt, item is checked out. etc...
+
+Asynchronous
+  - you do something, don't wait for the results. do something else while that is working.
+
+Callback functions
+  - a function takes a function definition as input
+  - (A) function preforms an action that takes a variable amount of time to
+    complete. 1 second to 30 years.
+  - user system is not locked waiting on something to complete
+  - once A completes task, A invokes the b definition.
+    - control is brough back to A in order to receive B's output.
