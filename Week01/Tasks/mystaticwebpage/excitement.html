@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>YavaScrip</title>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById("blah").innerHTML = "yoovascreept";
+    </script>
+
+    <script src="javascript/javascript.js"></script>
+
+</head>
+
+<body>
+
+    <div class- "container-fluid">
+
+        <div class="well">
+
+            <h1>Walcom to YavaScrip</h1>
+
+        </div>
+
+        <div class="well">
+            <button onclick=appendText();>CLICK ME! DO IT!</button>
+        </div>
+        <div class="well">
+
+            <h3>Printing to the page...</h3>
+
+            <!-- there's nothing in this paragraph block! but wait...-->
+            <p id="blah"></p>
+
+            <hr>
+
+            <p>Print to the console</p>
+            <button onclick=logit();>boop</button>
+
+            <hr>
+
+            <!-- this script will print to the current page directly -->
+            <script>document.write("<h1>Document.write!</h1>")</script>
+            <!-- 
+                this button, which uses the same script as above, will print to a new page.
+                oddly enough, this breaks the page when you go back, but if you go forward
+                from the broken page, it will be restored. you can also just refresh the page.
+            -->
+            <button onclick="writeToPage()">WRITE!</button>
+
+            <hr>
+
+            <!-- 
+                this button will give the browser an alert, and prompt you to type something
+            -->
+            <button onclick="window.alert(window.prompt('TYPE SOMETHING!'))">alert and prompt!</button>
+
+            <div class="well" onmouseover="changeWell()">
+
+                <h1 id="magicWell">Check Me Out!</h1>
+
+            </div>
+
+            <div class="well">
+
+                <h3>Dynamic Tables</h3>
+                <ul style="list-style-type:none">
+
+                    <li>
+                        <b>EMPLOYEE NAME</b>
+                    </li>
+                    <li>
+                        <input type="text" id="emp_name">
+                    </li>
+                    <li>
+                        <b>FAVORITE DOGGO</b>
+                    </li>
+                    <li>
+                        <input type="text" id="fav_dog">
+                    </li>
+                    <li>
+                        <button onclick="addEmp()">SUBMIT</button>
+                    </li>
+                </ul>
+                <br>
+
+                <table border="2px" id="theTable">
+                    <tr>
+                        <th>E_ID</th>
+                        <th>Employee Name</th>
+                        <th>Favorite Pupper</th>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--
+        javascript code is in the window.onload block.
+        clicking the outer well will give a single alert.
+        clicking the second well will give two alerts, d2 then d1.
+        clicking the central well will trigger all three events, d3 then d2 then d1.
+
+        this is bubbling, where the click goes through the stack
+        from top to bottom.
+        capturing is the opposite, from the bottom of the stack up.
+    -->
+    <div class="well">
+
+        <h1>BUBBLING AND CAPTURING</h1>
+
+        <div style="padding: 50px; background-color:red" id="d1">
+            <div style="padding: 50px; background-color:green" id="d2">
+                <div style="padding: 50px; background-color:blue" id="d3">
+                    <h3>CLICK ME</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 
+            This javascript here will fill in the p block above, according to its id.
+            "innerHTML" is simply everything between tags. if we add something to the 
+            above p block, it will be overwritten by this script.
+            if we want to add to the original innerHTML above using this script,
+            we can use += instead of = in the script below.
+            the script below inserts things into html, which implies that you can use
+            html tags within the printed statement. if you want to actually type
+            out reserved characters, you have to use entities.
+        -->
+    <script>
+        /*
+            block comments in javascript look like this
+        */
+        // in-line comments in javascript look like this
+        setTimeout(function () {
+            document.getElementById("blah").innerHTML = "<em>I use YavaScrip to write dis!</em>";
+        }, 2500);
+    </script>
+
+</body>
+
+</html>
