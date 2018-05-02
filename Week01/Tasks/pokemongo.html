@@ -8,211 +8,291 @@
 
     <meta charset="UTF-8">
     <title>Pokémon Go</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css" href="css/pogo.css">
+    <style>
+        table {
+            table-layout: auto;
+            width: 60%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .theader {
+            background-color: #444444;
+            color: white;
+            text-align: center;
+        }
+
+        .col1 {
+            width: 100px;
+        }
+    </style>
 
 </head>
 
 <!-- Start BODY block-->
 
-<body>
-    <a href="index.html">&lt;&lt;Back</a>
-    <hr>
-    <h1>Pokémon Go</h1>
-    <p>
-        Pokémon Go (PoGo) is a fun way to get out and explore your city with a fun augmented reality game to help you along. PoGo
-        is a mobile game compatible with Android and iOS that uses your device's GPS to track your location, allowing the
-        game to follow
-        <b>you</b> around to search for Pokémon, PokéStops, and Gyms.
-    </p>
-    <h3>Pokémon Available to Capture</h3>
-    <p>
-        Currently, PoGo allows you to capture any Pokémon up to and including Generation 3 (there are around 400 available to capture!).
-        The more rare breeds of pokemon can only be acquired by teaming up with others to complete raids in which you use
-        your Pokémon to take down and possibly capture the rare beast.
-    </p>
-    <h3>Pokéstops</h3>
-    <p>
-        Pokéstops are PoGo's representation of smaller landmarks marked in your city. While walking, you will encounter several Pokéstops
-        which you can
-        <q>spin</q> for valuable resources such as pokéballs (used to capture Pokémon) and battling supplies such as potions
-        and revives. There is also a rare chance to obtain a special evolution item which will help certain Pokémon reach
-        their final and most powerful stage. It is important to have strong Pokémon on your team so you can compete with
-        other trainers in local Gyms.
-    </p>
-    <h3>Gyms</h3>
-    <p>
-        Pokémon Gyms are PoGo's representation of larger landmarks marked in your city. At these gyms, trainers from three different
-        teams can battle with each other to claim that particular gym as their own... until another team takes it down. Only
-        trainers with strong Pokémon can compete in these gyms as a strong defence from another team will withstand the assault
-        from a much weaker opponent.
-    </p>
+<body style="padding-top:70px;padding-bottom:70px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Jared's Website</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="pokemongo.html">Pokémon Go</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <h3>The Top 10 Gym Attackers</h3>
-    <p>The following table shows a list of the top 10 Pokémon to use when attacking an opposing team's gym as well as their
-        suggested attack moves:
-    </p>
-    <table border="2px">
-        <tr>
-            <th></th>
-            <th>Rank</th>
-            <th>Pokémon</th>
-            <th>Normal Attack</th>
-            <th>Charge attack</th>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/150-315fc396915935c002d742b2eae13c10fc89936ea0431008739caf47d5f48c93.png"></td>
-            <td>1</td>
-            <td>Mewtwo</td>
-            <td>Confusion</td>
-            <td>Shadow Ball</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/384-62e8115487edcaa3bee33a6590a99d9a8e7ffcfb0f3e190fbeaf10ae5d51519d.png"></td>
-            <td>2</td>
-            <td>Rayquaza</td>
-            <td>Dragon Tail</td>
-            <td>Outrage</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/149-cf5d8b185a59bd7f692c72b0f4e12e9b8d94a1d911ea0aa5ef778a1d47c0072f.png"></td>
-            <td>3</td>
-            <td>Dragonite</td>
-            <td>Dragon Tail</td>
-            <td>Outrage</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/373-660958664b58cba3b61902f901d6f8605532b847ffa7679b6748cb5cb76344dd.png"></td>
-            <td>4</td>
-            <td>Salamence</td>
-            <td>Dragon Tail</td>
-            <td>Draco Meteor</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/68-c9bb59f3926198a50355ed91da81bca70ebf97ec0caa94f20f371475dcc9f12b.png"></td>
-            <td>5</td>
-            <td>Machamp</td>
-            <td>Counter</td>
-            <td>Dynamic Punch</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/248-cb07f72f1b392391b5d52b7c8bd45b60c237d813a0c074ffb9de1ec54380fa92.png"></td>
-            <td>6</td>
-            <td>Tyranitar</td>
-            <td>Bite</td>
-            <td>Stone Edge</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/65-dc51b6d529e68222f4b9af06ec90a439d90ba928b6bc29060889d6cb8d7ddebb.png"></td>
-            <td>7</td>
-            <td>Alakazam</td>
-            <td>Confusion</td>
-            <td>Future Sight</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/382-dc7fb67c1777f7263471e91a54a3a95ec88713e6e3ed5771a481cea61530b387.png"></td>
-            <td>8</td>
-            <td>Kyogre</td>
-            <td>Waterfall</td>
-            <td>Hydro Pump</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/146-359b4b6183ac987cdfeffb3a58391c79b100faf6f39514d86718f91a7a730e24.png"></td>
-            <td>9</td>
-            <td>Moltres</td>
-            <td>Fire Spin</td>
-            <td>Overheat</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/243-31dade8ee1f4e4b12d086c51958c686cee40f544055624255257193946242767.png"></td>
-            <td>10</td>
-            <td>Raikou</td>
-            <td>Thunder Shock</td>
-            <td>Wild Charge</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1>Pokémon Go</h1>
+        <p>
+            Pokémon Go (PoGo) is a fun way to get out and explore your city with a fun augmented reality game to help you along. PoGo
+            is a mobile game compatible with Android and iOS that uses your device's GPS to track your location, allowing
+            the game to follow
+            <b>you</b> around to search for Pokémon, PokéStops, and Gyms.
+        </p>
+        <h3>Pokémon Available to Capture</h3>
+        <p>
+            Currently, PoGo allows you to capture any Pokémon up to and including Generation 3 (there are around 400 available to capture!).
+            The more rare breeds of pokemon can only be acquired by teaming up with others to complete raids in which you
+            use your Pokémon to take down and possibly capture the rare beast.
+        </p>
+        <h3>Pokéstops</h3>
+        <p>
+            Pokéstops are PoGo's representation of smaller landmarks marked in your city. While walking, you will encounter several Pokéstops
+            which you can
+            <q>spin</q> for valuable resources such as pokéballs (used to capture Pokémon) and battling supplies such as potions
+            and revives. There is also a rare chance to obtain a special evolution item which will help certain Pokémon reach
+            their final and most powerful stage. It is important to have strong Pokémon on your team so you can compete with
+            other trainers in local Gyms.
+        </p>
+        <h3>Gyms</h3>
+        <p>
+            Pokémon Gyms are PoGo's representation of larger landmarks marked in your city. At these gyms, trainers from three different
+            teams can battle with each other to claim that particular gym as their own... until another team takes it down.
+            Only trainers with strong Pokémon can compete in these gyms as a strong defence from another team will withstand
+            the assault from a much weaker opponent.
+        </p>
 
-    <h3>The Top 10 Gym Defenders</h3>
-    <p>The following table shows a list of the top 10 Pokémon to use when defending against an opposing team's gym as well as
-        their suggested attack moves:
-    </p>
-    <table border="2px">
-        <tr>
-            <th></th>
-            <th>Rank</th>
-            <th>Pokémon</th>
-            <th>Normal Attack</th>
-            <th>Charge attack</th>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/242-27bbea2872c490299df5fe64d025c2695646c55823fb0a930a19678fda2be7b1.png"></td>
-            <td>1</td>
-            <td>Blissey</td>
-            <td>Zen Headbut</td>
-            <td>Dazzling Gleam</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/143-4333c118cb431ddd598e635277a6289572d808b7e6472077f53dc6e2756c203f.png"></td>
-            <td>2</td>
-            <td>Snorlax</td>
-            <td>Zen Headbut</td>
-            <td>Hyper Beam</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/289-cc4252da2a72133c5a7b9670ac86a84eab7ec602a3ff87d3bc998b8a1e03322b.png"></td>
-            <td>3</td>
-            <td>Slaking</td>
-            <td>Yawn</td>
-            <td>Play Rough</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/282-711ac88646aa33079411f70e01cabd1c143dcbb877572382ce274182849d7893.png"></td>
-            <td>4</td>
-            <td>Gardevoir</td>
-            <td>Confusion</td>
-            <td>Dazzling Gleam</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/149-cf5d8b185a59bd7f692c72b0f4e12e9b8d94a1d911ea0aa5ef778a1d47c0072f.png"></td>
-            <td>5</td>
-            <td>Dragonite</td>
-            <td>Dragon Tail</td>
-            <td>Outrage</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/130-863cdb3e0aef8f870fbc5df138224c1a185eaefe9a322d43b166219ae9971c68.png"></td>
-            <td>6</td>
-            <td>Gyarados</td>
-            <td>Dragon Tail</td>
-            <td>Outrage</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/248-cb07f72f1b392391b5d52b7c8bd45b60c237d813a0c074ffb9de1ec54380fa92.png"></td>
-            <td>7</td>
-            <td>Tyranitar</td>
-            <td>Iron Tail</td>
-            <td>Crunch</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/199-073367abd81be4d5f2de70a6e20d5a72609e8136b941eed8bbb7eb002822c007.png"></td>
-            <td>8</td>
-            <td>Slowbro/Slowking</td>
-            <td>Confusion</td>
-            <td>Ice Beam/Fire Blast</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/131-88357cb3eaf91cdb43786d57fc642564cb603f89ab153bdaa4ca4eb1e5aaaf70.png"></td>
-            <td>9</td>
-            <td>Lapras</td>
-            <td>Frost Breath</td>
-            <td>Ice Beam</td>
-        </tr>
-        <tr>
-            <td><img src="https://pokeassistant.com/assets/mons/112-4e7d8d8a96f6eec1f8aa82f9eca78cddbb0c69071e88f0ea56ec2df6106a1c45.png"></td>
-            <td>10</td>
-            <td>Rhydon</td>
-            <td>Mud-Slap</td>
-            <td>Earthquake</td>
-        </tr>
-    </table>
+        <h3>The Top 10 Gym Attackers</h3>
+        <p>The following table shows a list of the top 10 Pokémon to use when attacking an opposing team's gym as well as their
+            suggested attack moves:
+        </p>
+        <table border="2px">
+            <tr>
+                <th class="col1"></th>
+                <th class="theader">Rank</th>
+                <th class="theader">Pokémon</th>
+                <th class="theader">Normal Attack</th>
+                <th class="theader">Charge attack</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/150-315fc396915935c002d742b2eae13c10fc89936ea0431008739caf47d5f48c93.png">
+                </td>
+                <td>1</td>
+                <td>Mewtwo</td>
+                <td class="psychic">Confusion</td>
+                <td class="ghost">Shadow Ball</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/384-62e8115487edcaa3bee33a6590a99d9a8e7ffcfb0f3e190fbeaf10ae5d51519d.png">
+                </td>
+                <td>2</td>
+                <td>Rayquaza</td>
+                <td class="dragon">Dragon Tail</td>
+                <td class="dragon">Outrage</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/149-cf5d8b185a59bd7f692c72b0f4e12e9b8d94a1d911ea0aa5ef778a1d47c0072f.png">
+                </td>
+                <td>3</td>
+                <td>Dragonite</td>
+                <td class="dragon">Dragon Tail</td>
+                <td class="dragon">Outrage</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/373-660958664b58cba3b61902f901d6f8605532b847ffa7679b6748cb5cb76344dd.png">
+                </td>
+                <td>4</td>
+                <td>Salamence</td>
+                <td class="dragon">Dragon Tail</td>
+                <td class="dragon">Draco Meteor</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/68-c9bb59f3926198a50355ed91da81bca70ebf97ec0caa94f20f371475dcc9f12b.png">
+                </td>
+                <td>5</td>
+                <td>Machamp</td>
+                <td class="fighting">Counter</td>
+                <td class="fighting">Dynamic Punch</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/248-cb07f72f1b392391b5d52b7c8bd45b60c237d813a0c074ffb9de1ec54380fa92.png">
+                </td>
+                <td>6</td>
+                <td>Tyranitar</td>
+                <td class="dark">Bite</td>
+                <td class="rock">Stone Edge</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/65-dc51b6d529e68222f4b9af06ec90a439d90ba928b6bc29060889d6cb8d7ddebb.png">
+                </td>
+                <td>7</td>
+                <td>Alakazam</td>
+                <td class="psychic">Confusion</td>
+                <td class="psychic">Future Sight</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/382-dc7fb67c1777f7263471e91a54a3a95ec88713e6e3ed5771a481cea61530b387.png">
+                </td>
+                <td>8</td>
+                <td>Kyogre</td>
+                <td class="water">Waterfall</td>
+                <td class="water">Hydro Pump</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/146-359b4b6183ac987cdfeffb3a58391c79b100faf6f39514d86718f91a7a730e24.png">
+                </td>
+                <td>9</td>
+                <td>Moltres</td>
+                <td class="fire">Fire Spin</td>
+                <td class="fire">Overheat</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/243-31dade8ee1f4e4b12d086c51958c686cee40f544055624255257193946242767.png">
+                </td>
+                <td>10</td>
+                <td>Raikou</td>
+                <td class="electric">Thunder Shock</td>
+                <td class="electric">Wild Charge</td>
+            </tr>
+        </table>
+
+        <h3>The Top 10 Gym Defenders</h3>
+        <p>The following table shows a list of the top 10 Pokémon to use when defending against an opposing team's gym as well
+            as their suggested attack moves:
+        </p>
+        <table border="2px">
+            <tr>
+                <th class="col1"></th>
+                <th class="theader">Rank</th>
+                <th class="theader">Pokémon</th>
+                <th class="theader">Normal Attack</th>
+                <th class="theader">Charge attack</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/242-27bbea2872c490299df5fe64d025c2695646c55823fb0a930a19678fda2be7b1.png">
+                </td>
+                <td>1</td>
+                <td>Blissey</td>
+                <td class="psychic">Zen Headbutt</td>
+                <td class="fairy">Dazzling Gleam</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/143-4333c118cb431ddd598e635277a6289572d808b7e6472077f53dc6e2756c203f.png">
+                </td>
+                <td>2</td>
+                <td>Snorlax</td>
+                <td class="psychic">Zen Headbutt</td>
+                <td class="normal">Hyper Beam</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/289-cc4252da2a72133c5a7b9670ac86a84eab7ec602a3ff87d3bc998b8a1e03322b.png">
+                </td>
+                <td>3</td>
+                <td>Slaking</td>
+                <td class="normal">Yawn</td>
+                <td class="fairy">Play Rough</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/282-711ac88646aa33079411f70e01cabd1c143dcbb877572382ce274182849d7893.png">
+                </td>
+                <td>4</td>
+                <td>Gardevoir</td>
+                <td class="psychic">Confusion</td>
+                <td class="fairy">Dazzling Gleam</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/149-cf5d8b185a59bd7f692c72b0f4e12e9b8d94a1d911ea0aa5ef778a1d47c0072f.png">
+                </td>
+                <td>5</td>
+                <td>Dragonite</td>
+                <td class="dragon">Dragon Tail</td>
+                <td class="dragon">Outrage</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/130-863cdb3e0aef8f870fbc5df138224c1a185eaefe9a322d43b166219ae9971c68.png">
+                </td>
+                <td>6</td>
+                <td>Gyarados</td>
+                <td class="dragon">Dragon Tail</td>
+                <td class="dragon">Outrage</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/248-cb07f72f1b392391b5d52b7c8bd45b60c237d813a0c074ffb9de1ec54380fa92.png">
+                </td>
+                <td>7</td>
+                <td>Tyranitar</td>
+                <td class="steel">Iron Tail</td>
+                <td class="dark">Crunch</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/199-073367abd81be4d5f2de70a6e20d5a72609e8136b941eed8bbb7eb002822c007.png">
+                </td>
+                <td>8</td>
+                <td>Slowking</td>
+                <td class="psychic">Confusion</td>
+                <td class="ice">Ice Beam</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/131-88357cb3eaf91cdb43786d57fc642564cb603f89ab153bdaa4ca4eb1e5aaaf70.png">
+                </td>
+                <td>9</td>
+                <td>Lapras</td>
+                <td class="ice">Frost Breath</td>
+                <td class="ice">Ice Beam</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://pokeassistant.com/assets/mons/112-4e7d8d8a96f6eec1f8aa82f9eca78cddbb0c69071e88f0ea56ec2df6106a1c45.png">
+                </td>
+                <td>10</td>
+                <td>Rhydon</td>
+                <td class="ground">Mud-Slap</td>
+                <td class="ground">Earthquake</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
