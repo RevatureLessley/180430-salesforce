@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body style="background-color:#333333">
     <!-- BOOTSTRAP 
             Bootstrap is a css and javascript library that has a ton of predefined files
         for formatting websites in a mobile friendly way. One of the main goals of 
@@ -34,13 +34,37 @@
             to handle dynamic screen sizes. As well as force the contents to more 
             aesthetically fit with the window size.-->
 
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="betterIndex.html">Bobbert's Domain</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="betterIndex.html">HOME</a>
+                </li>
+                <li>
+                    <a href="forms.html">FORMS</a>
+                </li>
+                <li>
+                    <a href="index.html">OLD INDEX</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- 
         Container
         -Container is, like the name suggests, a css class to 
         encapsualte and format a section of the page.
         -There are 2 types of containers.
+        -"container"-> which centers the container content more
+        towards the middle, providing more padding on the sides.
+        -"container-fluid", which uses more real estate that the
+        normal container.
+        NOTE: You can NOT have containers in containers.
     -->
-    <div class="container">
+    <div class="container-fluid" style="padding-top:50px">
         <div class="well">
             <h3>WELCOME TO MY SITE, PART 2</h3>
         </div>
