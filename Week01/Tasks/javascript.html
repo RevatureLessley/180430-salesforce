@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Javascript Page</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+    <script src="Javascript/my.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="well">
+            <h1>Welcome to JavaScript!</h1>
+        </div>
+
+        <div class="well">
+            <h3>Printing to the page...</h3>
+            <p id="para1"></p>
+            <hr>
+            <button onclick="appendText()">Click Me!</button>
+            <hr>
+            <p>Printing to the console!</p>
+            <button onclick="logit()">Log It!</button>
+            <hr>
+            <h3>Document.write!</h3>
+            <button onclick="writeToPage()">WRITE!</button>
+            <hr>
+            <button onclick="window.alert(window.prompt('Type something!'))")>Prompt and ALERT!</button>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            document.getElementById("para1").innerHTML="I used JavaScript to write this!";
+        }, 2500);
+    </script>
+</body>
+
+</html>
