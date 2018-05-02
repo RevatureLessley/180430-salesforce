@@ -3,10 +3,8 @@
 */
 
 
-h1 {text-align:center;}
+h1 {text-align:left;}
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     }
