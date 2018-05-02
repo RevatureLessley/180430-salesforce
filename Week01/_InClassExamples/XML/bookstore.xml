@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+    <bookstore>
+        <book category="Fiction">
+            <title language="Spanish">El amor de mi esposo</title>
+            <author>Daniel De La Rosa</author>
+            <year>1996</year>
+            <price>$10.00</price>
+        </book>
+        <book category="Non-fiction">
+            <title language="English">Try not to cringe - My Life Edition</title>
+            <author>Zach Smith</author>
+            <year>2017</year>
+            <price>$25.00</price>
+        </book>
+        <book category="Fantasy">
+            <title language="Boberese">Bobbert's Bobbertation</title>
+            <author>Bobbert Bobson</author>
+            <year>1810</year>
+            <price>$15.00</price>
+        </book>
+        <book category="Self Help">
+            <title language="English">Clean your room you idiot</title>
+            <author>Your Mom</author>
+            <year>2018</year>
+            <price>$0.00</price>
+        </book>
+    </bookstore>
+</root>

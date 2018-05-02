@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body style="background-color:#333333">
     <!--
             Bootstrap is a CSS and JS library that has a ton of predefined files for
             formatting websites in a mobile friendly way. One of the main goals of bootstrap
@@ -36,8 +36,24 @@
             size.
 
             There are 2 types of containers
-        -->
+                "container" which centers container content and provides margin spacing on the edges
+                "container-fluid" which uses more real estate
 
+            NOTE: You can not have a container within a container
+    -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="betterIndex.html">HOME</a></li>
+            <li><a href="forms.html">FORMS</a></li>
+            <li><a href="index.html">OLD INDEX</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <h3 class="well">
             WELCOME TO MY SITE, PART2
