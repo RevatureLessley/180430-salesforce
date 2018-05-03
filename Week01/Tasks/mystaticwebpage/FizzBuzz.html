@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Fizz Buzz?!</title>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="FizzBuzz.css">
+
+    <script src="Javascript/FizzBuzz.js"></script>
+
+</head>
+
+<body>
+
+    <!-- title bar, I suppose -->
+    <div class="container">
+        <div class="well" style="background-color:#333333;border-width:0px">
+            <h1 style="text-align:center;color:floralwhite">Fizz or Buzz?</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left container is for user input -->
+        <div class="col-sm-6">
+            <div class="well" style="background-color:#1a1a1a;border-width:0px;">
+                <ul style="list-style-type:none">
+                    <li>
+                        <h2 style="color:rgb(179, 23, 18)">Pick a number - any number!</h2>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <th style="color:rgb(179, 23, 18)">
+                                    Lower Bound:
+                                </th>
+                                <td>
+                                    <input type="number" id="lo" placeholder="Positive numbers, please!">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="color:rgb(179, 23, 18)">
+                                    Upper Bound:
+                                </th>
+                                <td>
+                                    <input type="number" id="hi" placeHolder="Higher than the lower!">
+                                </td>
+                            </tr>
+                        </table>
+                        <button onclick="doThing()" style="width:273px">
+                            <em>DO IT!</em>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- Right container is for output -->
+        <div class="col-sm-6">
+            <div class="well" style="background-color:rgb(179, 23, 18);border-width:0px;">
+                <h5 id="out" style="color:#1a1a1a;"></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

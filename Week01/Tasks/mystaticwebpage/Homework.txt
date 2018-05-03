@@ -34,3 +34,16 @@ Make static website 4/30/18 DUE 5/7/18
 		<ul>
 		<ol>
 		<img>
+
+FIZZBUZZ
+
+	generate a list of given numbers. 
+	if a number is divisible by 3, write "Fizz" instead. 
+	if a number is divisible by 5, write "Buzz" instead.
+	if a number is divisible by both, write "FizzBuzz" instead.
+
+	REQUIREMENTS:
+
+		all results must be displayed on the page
+		user input for the number range
+		must be able to change the numbers and regenerate

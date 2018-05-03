@@ -1,25 +1,29 @@
 body{
     text-align: left;
-    background-color: black;
+    background-color: #1a1a1a !important; /*the !important keyword will override the bootstrap default*/
     color: white;
 }
 
-h1{
+nav h1{ /* div needs to be specified for some reason */
     color:rgb(0, 112, 50);
 }
 
-h2, h3{
+div h2{
     color:rgb(0, 189, 132);
 }
 
-p{
+div h3{
+    color:rgb(0, 189, 132);
+}
+
+div p{
     color:silver;
 }
 
 /*
     this will apply to all headers in a row.
 */
-tr>th{
+div tr>th{
     text-align:center;
     color:rosybrown;
 }
@@ -31,7 +35,7 @@ tr>th{
     row, rather than headers in the first column,
     then this will not apply to data of that table.
 */
-th~td{
+div th~td{
     color:forestgreen;
 }
 
@@ -40,18 +44,30 @@ th~td{
     if they're in this format, though, I wnat them
     to be a little different. spice things up a bit.
 */
-h2~h3{
+div h2~h3{
     color:darksalmon;
 }
 
-h2~p{
-    color:black;
+div h2~p{
+    color:#1a1a1a;
 }
 
-h2~p:hover{
+div h2~p:hover{
     color:deeppink;
 }
 
-h2 p{
-    color:purple;
+#leave{
+    background-color:maroon;
+    border-color:orchid;
+    border-width:2px;
+    width:420px;
+    text-align:center;
+    height:64px;
+}
+
+#joke{
+    background-color:#1a1a1a;
+    border-width:3px;
+    border-color:forestgreen;
+    text-align:center;
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+        </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="javascript/AJAX.js"></script>
+
+    <title>
+        AJAX
+    </title>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="well">
+            <h3> The Pokemans</h3>
+            <ul style="list-style-type:none">
+                <li>Input a Pokeman ID number</li>
+                <li>
+                    <input type="number" id="pkmnID" placeholder="Pokeman ID">
+                </li>
+                <li>
+                    <button onclick="retrieve()">SUBMIT</button> <!-- call the retrieve function that we made in AJAX.js -->
+                </li>
+            </ul>
+            <hr>
+            <div id="pokediv"></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
