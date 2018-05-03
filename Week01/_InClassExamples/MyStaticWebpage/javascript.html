@@ -69,11 +69,11 @@
             </tr>
         </table>
     </div>
-    <div class="well">
+    <div class="well" style="overflow:visible">
         <h1>Bubbling and Capturing</h1>
-        <div id="d1" style="padding:50px;background-color:red">
-            <div id="d2" style="padding:50px;background-color:blue">
-                <div id="d3" style="padding:50px;background-color:yellow">
+        <div id="d1" style="padding:50px;background-color:red;overflow:visible;">
+            <div id="d2" style="padding:50px;background-color:blue;overflow:visible;"></div>
+                <div id="d3" style="padding:50px;background-color:yellow;position:relative;top:-200px">
                     <h3>Click me!</h3>
                 </div>
 
