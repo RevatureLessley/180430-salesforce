@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FizzBuzz</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="fizzbuzz.js"></script>
+    </head>
+    <body>
+        <h1>INTRODUCTION</h1>
+        <p>This application will take your input for a range of integers and generate
+            a message based on each number.
+        </p>
+        <br>
+        <div class="container">
+            <div class="well">
+                <ul id="input">
+                    <li>Enter minimum integer</li>
+                    <li><input type="number" id="min"></li>
+                    <li>Enter maximum integer</li>
+                    <li><input type="number" id="max"></li>
+                    <button onclick = "input()">SUBMIT</button>
+                </ul>
+            </div>
+            <hr>
+            <div class="well">
+                <table id="table">
+                    <tr>
+                        <th>Row /+ /"     /"</th>
+                        <th>Output</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
