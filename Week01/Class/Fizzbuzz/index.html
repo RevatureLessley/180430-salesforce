@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Better Site</title>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="./js/main.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">JDogg's Fizzbuzz</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="well">
+			<label for="lend"><b>Low end</b></label>
+			<input type="text" id="lend" class="form-control" required>
+
+			<label for="hend"><b>High end</b></label>
+			<input type="text" id="hend" class="form-control" required>
+
+			<button type="submit" class="btn btn-primary" onClick="setRange()">Submit</button>			
+		</div>
+		
+		<div class="well" id="results">
+			<h4>Results</h4>
+		
+		</div>
+	</div>
+	
+</body>
+</html>
