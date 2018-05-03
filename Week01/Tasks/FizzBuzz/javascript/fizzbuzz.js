@@ -3,10 +3,7 @@ function count() {
 	console.log("Number " + max + " submitted.");
 	
 	document.getElementById("numbers").innerHTML = ""; // Clear previous
-	
-	// All console.log() statements are for me to debug my code.
 
-	
 	for (var i = 1; i <= max; i++) {
 		if (i % 15 == 0) {
 			document.getElementById("numbers").innerHTML += "fizzbuzz ";
@@ -21,5 +18,4 @@ function count() {
 			document.getElementById("numbers").innerHTML += (i + " ");
 		}
 	}
-	console.log("Counting complete.");
 }
