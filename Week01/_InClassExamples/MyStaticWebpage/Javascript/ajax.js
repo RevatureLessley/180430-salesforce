@@ -34,6 +34,69 @@ function retrieve() {
                 // run this code only if we guarantee the request is finished
                 // and it was successful. status 200 = OK
 
+
+                let response = JSON.parse(xhr.response);
+
+                let pkid = document.createTextNode( response.id);
+                let pkname = document.createTextNode( response.name );
+
+                let type1 = response.types[0].type.name;
+                let type2 = response.types[1].type.name;
+
+                let typeStr = ( type2 )? "" + type1 + " " + type2 : "" + type1;
+                
+                let type = document.createTextNode( typeStr );
+
+                let sprite = response.sprite.front_default;
+
+                let td1 = document.createElement('td');
+                let td2 = document.createElement('td');
+                let td3 = document.createElement('td');
+                let td4 = document.createElement('td');
+                let td5 = document.createElement('td');
+
+                let img = document.createElement('img');
+
+                img.setAttribute("src", sprite);
+
+                let tr = document.createElement('tr');
+                let table = document.createElement('table');
+                table.setAttribute("border", "2px");
+
+                td1.appendChild(pkid);
+                td2.appendChild(pkname);
+                td3.appendChild(type);
+                td4.appendChild(img);
+
+
+                let th1 = document.createElement('th');
+                let th2 = document.createElement('th');
+                let th3 = document.createElement('th');
+                let th4 = document.createElement('th');
+
+                let th1t = document.createTextNode("ID");
+                let th2t = document.createTextNode("NAME");
+                let th3t = document.createTextNode("TYPE");
+                let th4t = document.createTextNode("SPRITE");
+
+
+                let tr1 = document.createElement('tr');
+                let tr2 = document.createElement('tr');
+                let tr3 = document.createElement('tr');
+                let tr4 = document.createElement('tr');
+
+                tr.appendChild( td );
+                tr.appendChild( td );
+                tr.appendChild( td );
+                tr.appendChild( td );
+
+                th1.appendChild(th1t);
+                th1.appendChild(th2t);
+                th1.appendChild(th3t);
+                th1.appendChild(th4t);
+
+                table.appendChild(tr);
+
             }
             else {
                 console.log("ERROR");
