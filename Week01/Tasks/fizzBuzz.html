@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>FIZ BUZZ</title>
+
+        <script type="text/javascript">
+
+            function fizzBuzz() {
+                var end = document.getElementById('endRange').value;
+                for(let i = 1; i <= end; i++){
+                    if(i % 3 == 0 && i % 5 == 0){
+                        document.getElementById("para1").innerHTML += "<br>" + i + ": FIZZ BUZZ";
+                    }
+                    else if (i % 3 == 0) {
+                        document.getElementById("para1").innerHTML += "<br>" + i + ": FIZZ";
+                    }
+                    else if (i % 5 == 0) {
+                        document.getElementById("para1").innerHTML += "<br>" + i + ": BUZZ";
+                    }
+                    else {
+                        document.getElementById("para1").innerHTML += "<br>" + i + ": NEITHER";
+                    }
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <ul style="list-style-type:none">
+            <li><input type="number" id="endRange" value="1" min="1"></li>
+            <li><button onclick="fizzBuzz()">SUBMIT</button></li>
+        </ul>
+        <hr>
+        <p id="para1"></p>
+    </body>
+</html>
