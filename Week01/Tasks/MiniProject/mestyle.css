@@ -4,6 +4,10 @@ body{
     color: white;
 }
 
+table{
+    text-align:left;
+}
+
 nav h1{ /* div needs to be specified for some reason */
     color:rgb(0, 112, 50);
 }
