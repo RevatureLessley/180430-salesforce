@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>FizzBuzz</Title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Bring Bootstrap 3 libraries -->
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src = "fizzbuzz.js"></script>
+    </head>
+    <body>
+        <div class = container-fluid>
+            <div class = "well">
+                <h1>Welcome to Fizzbuzz</h1>
+            </div>
+            <div class = "well">
+                <h3>FizzBuzz</h3>
+                <p id="para1"></p>
+                <ul style = "list-style-type: none">
+                    <li><b>Number Range Min</b></li>
+                    <li><input type="text" id ="numRangeMin"></li>
+                    <li><b>Number Range Max</b></li>
+                    <li><input type="text" id ="numRangeMax"></li>                   
+                    <li><button onclick="fizzBuzz()">SUBMIT</button></li>
+                </ul>
+                <br>
+                
+            </div>
+        </div>
+    </body>
+</html>
