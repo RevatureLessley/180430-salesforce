@@ -1,5 +1,5 @@
 function retrieve(){
-
+    document.getElementById("pokediv").innerHTML = "";
 /* 
     XMLHttpRequest object is the object we use in AJAX in order
     to communicate with server API endpoints in order to send a request,
@@ -23,7 +23,7 @@ function retrieve(){
     var pkid = document.getElementById("pkmnid").value;
 
     var xhr = new XMLHttpRequest();//STATE 0
-    var url = ("https://pokeapi.co/api/v2/pokemon" + pkid + "/"); 
+    var url = ("https://pokeapi.co/api/v2/pokemon/" + pkid + "/"); 
     console.log("XHR created, state: " + xhr.readyState);
 
     xhr.open("GET", url);//STATE 1
@@ -33,10 +33,83 @@ function retrieve(){
         if (xhr.readyState==4 && xhr.status==200){
             //run this code only if we know the request is finished and it was successful
             // Status 200 = OK
+            var response = JSON.parse(xhr.response);
+            
+            let pkid  = document.createTextNode(response.id);
+            let pkname = document.createTextNode(response.name);
+            let types = response.types;
+            let type1,type2;
+            if (types.length>1){
+                type1 = types[0].type.name;
+                type2 = types[1].type.name;
+            }
+            else{
+                type1 = types[0].type.name;
+            }
+            let type = type1;
+            if (type2){
+                type+= ", " + type2;
+            };
+            type = document.createTextNode(type);
+
+            let pksprite = response.sprites.front_default;
+
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let td4 = document.createElement('td');
+            
+            let th1 = document.createElement('th');
+            let th2 = document.createElement('th');
+            let th3 = document.createElement('th');
+            let th4 = document.createElement('th');
+            let th1t = document.createTextNode("ID");
+            let th2t = document.createTextNode("NAME");
+            let th3t = document.createTextNode("TYPE");
+            let th4t = document.createTextNode("SPRITE");
+
+            let img = document.createElement('img');
+            img.setAttribute("src",pksprite);
+
+            let tr1 = document.createElement('tr');
+            let tr2 = document.createElement('tr');
+            let tr3 = document.createElement('tr');
+            let tr4 = document.createElement('tr');
+            let table = document.createElement('table');
+            table.setAttribute("border","2px");
+
+            td1.appendChild(pkid);
+            td2.appendChild(pkname);
+            td3.appendChild(type);
+            td4.appendChild(img);
+
+            th1.appendChild(th1t);
+            th2.appendChild(th2t);
+            th3.appendChild(th3t);
+            th4.appendChild(th4t);
+
+            tr1.appendChild(th1);
+            tr1.appendChild(td1);
+            tr2.appendChild(th2);
+            tr2.appendChild(td2);
+            tr3.appendChild(th3);
+            tr3.appendChild(td3);
+            tr4.appendChild(th4);
+            tr4.appendChild(td4);
+
+            table.appendChild(tr1);
+            table.appendChild(tr2);
+            table.appendChild(tr3);
+            table.appendChild(tr4);
+
+            document.getElementById("pokediv").appendChild(table);
 
         }//if
         else if (xhr.readyState==4 && xhr.status!=200){
-            console.log("Error: Status: " + xhr.status);
+            document.getElementById("pokediv").innerHTML = 
+            '<div class = "alert alert-danger">' + 
+            'No Such Pokemon' + 
+            '</div>'
         }//elseif
     }//function
     
