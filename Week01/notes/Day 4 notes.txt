@@ -1,0 +1,29 @@
+Application Programming Interface (API)
+---------------------------------------
+AJAX - Asynchronous Javascript And Xml
+ - Web browser technology
+ 
+JSON - JavaScript Object Notation
+ - lightweight data interchange format
+ - language-independent
+ - self-describing
+ - Syntax:
+   - Data stored in key-value pairs
+   - Data is separated by commas
+   - Object encapsulated by braces
+   - Square brackets for arrays
+   - JSON.parse converts a string representation to JSON
+   - JSON.stringify converts JS object to string representation
+   
+Remember XMLHttpRequest command - it'll come in handy
+
+HTTP Methods
+------------
+GET - retrieve info. Sends information by storing it in the URL
+POST - add new info (also updates). Stores info in the body of the request. Can't be visibly seen.
+PUT - update info
+DELETE - self-explanatory
+HEAD - retrieve header information (no body)
+OPTIONS - retrieve which HTTP methods are allowed
+TRACE - provide a list of every IP your request hits on its journey to the server and back
+PATCH

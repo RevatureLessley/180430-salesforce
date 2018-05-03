@@ -1,79 +1,79 @@
+<!-- Use these tags to write comments. 
+    The index.html is typically the homepage of any web
+application.  -->
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Forms, love em!</title>
-	</head>
-	<body style="background-color:#333333;color:rgb(245, 148, 22)">
-		<!-- #RRGGBB or rgb(red, green, blue) -->
-		<a href="index.html">BACK</a>
-		<h1>FORMS</h1>
-		<p>Forms are elements that are used to collect user input form the
-			website and send it to a server. Input is typically gathered from
-			the &lt;input&gt; tags. Note in order to use reserved characters
-			such as &lt;, you have to use entity references, which typically
-			reference the specific character between the &amp; and &semi;
-			symbol.
-	</body>
-	<form>
-		<!-- All input tags are grouped together with a form tag. -->
-		<ul style="list-style-type:none">
-			<!-- the 'style' attribute references a block of CSS code. Anything
-				within the quotes is a block of CSS. In the above, I set the
-				list-style-type key to 'none', which will hide the bullet points
-				for my list. -->
-				<li><label for="fname"><b>FIRST NAME</b></li>
-				<!-- The label tag lets users click on whatever the label
-					encapsulates, then forwards focus to the linked input tag.
-					-->
-				<li><input type="text" id="fname" max-length=25 required></li>
-				<li><label for="lname"><b>LAST NAME</b></li>
-				<li><input type="text" id="lname" max-length=25 required></li>
-				<!-- Input tags are determined by their 'type' attribute. -->
-				<li><b>PASSWORD</b></li>
-				<li><input type="password" required></li>
-				<li><b>EMAIL</b></li>
-				<li><input type="email" required></li>
-				<li><b>AGE</b></li>
-				<li><input type="number" required></li>
-				<li><b>BIRTHDAY</b></li>
-				<li><input type="date" required></li>
-				<li><input type="submit" value="Submit"><input type="reset"
-					value="Reset"></li>
-				<!-- In the case of submit and reset, value is the text of the
-					button. -->
-				<hr>
-				<h4>Pick your favorite animals</h4>
-				<li>
-					<input type="checkbox" name="favoriteAnimal" value="dog">Dog
-					<input type="checkbox" name="favoriteAnimal" value="cat">Cat
-					<input type="checkbox" name="favoriteAnimal" value="tBob">
-						T-Bob
-					<input type="checkbox" name="favoriteAnimal" value="install"
-						checked disabled><span style="color:white">Install Bing
-						Toolbar</span>
-				</li>
-				<!-- With checkboxes, you first indicate which text boxes are
-					grouped together. This is done with the 'name' tag. Value
-					indicates which value each text box represents. -->
-				<hr>
-				<li>
-					<input type="radio" name="toolbarReminder"
-						value="hourFromNow">Hour From Now
-					<input type="radio" name="toolbarReminder" value="tomorrow">
-						Tomorrow
-					<input type="radio" name="toolbarReminder" value="everyDay"
-						checked>Every Day
-				</li>
-				<li>
-					<h4>Favorite Ice Cream</h4>
-					<select>
-						<option>Vanilla</option>
-						<option>Chocolate</option>
-						<option>Strawberry</option>
-						<option>Bobbert</option>
-					</select>
-				</li>
-		</ul>
-	</form>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms, love em!</title>
+</head>
+
+<body>
+    <a href="index.html">BACK</a>
+    <hr>
+    <h1>FORMS</h1>
+    <p>Forms are elements that are used to collect user
+        input from the website and send it to a server.
+        Input is typically gathered from the &lt;input&gt;
+        Note in order to use reserved characters such as &lt;, you
+        have to use entity references. Which typically reference
+        the specific character in between a &amp; and &semi; symbol.
+    </p>
+    <form>
+        <!-- All input tags are grouped together with a form tag. -->
+        <ul style="list-style-type:none">
+            <!-- the 'style' attribute references a block of css code 
+            Anything within the quotes, is a block of css. In the above, I set the
+            list-style-type key to 'none', which will hide the bullet points for my list-->
+
+            <li><label for="fname"><b>FIRST NAME</b></label></li>
+            <!-- The label tag lets users click on whatever the label encapsulates and
+                then forwards focus to the linked input tag. -->
+            <li><input type="text" id="fname" required maxlength=25></li>
+            <li><b>LAST NAME</b></li>
+            <li><input type="text" required maxlength=25></li>
+            <!-- Input tags are determined by their 'type' attribute -->
+            <li><b>PASSWORD</b></li>
+            <li><input type="password" required></li>
+            <li><b>EMAIL</b></li>
+            <li><input type="email" required></li>
+            <li><b>AGE</b></li>
+            <li><input type="number" required></li>
+            <li><b>BIRTHDAY</b></li>
+            <li><input type="date" required></li>
+            <li><input type="reset" value="Reset"><input type="submit" value="Submit"><input type="reset" value="Reset"></li>
+            <!-- In the case of submit and reset, value is the text of the button. --> 
+            <hr>
+            <h4>Pick your favorite animals!</h4>
+            <li>
+                <input type="checkbox" name="favoriteAnimal" value="dog">Dog
+                <input type="checkbox" name="favoriteAnimal" value="cat">Cat
+                <input type="checkbox" name="favoriteAnimal" value="tyranosauras bobbert">T-Bob
+                <input type="checkbox" name="favoriteAnimal" value="toolbar" checked disabled>
+                    <span style="color:white">Install Bing Toolbar</span>
+            </li>
+            <!-- With checkboxes, you first indicate which textboxes are grouped together.
+            Thi is done with 'name' tag. Value indicates which value each text box 
+            represents. -->
+            <li>
+                <input type="radio" name="toolbarReminder" value="hourFromNow">Hour From Now
+                <input type="radio" name="toolbarReminder" value="tomorrow">tomorrow
+                <input type="radio" name="toolbarReminder" value="EveryDay" checked>EveryDay
+            </li>
+            <li>
+                <h4>Favorite Ice Cream</h4>
+                <select>
+                    <option>Select Option</option>
+                    <option>Vanilla</option>
+                    <option>Chocolate</option>
+                    <option>Strawberry</option>
+                    <option>Bobbert</option>
+                </select>
+            </li>
+        </ul>
+
+    </form>
+</body>
+
 </html>
