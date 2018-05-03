@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Content delivery network
+        A CDN is simply a URL that your website can hit to bring in specific files remotely. 
+        This would be opposed to downloading the file specifically and referencing it locally. -->
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->(edited)
+
+    <script src = javascript/jQuery.js></script>
+</head>
+
+<body style = "background-color: #333333;color:black">
+        <div class = "container-fluid">
+            <div class = "well">
+                <h1>jQuery</h1>
+            </div>
+            <div class = "well" id = "div1">
+                <h3>Delicious Foods</h3>
+                <p>Steak, Steak, and Steak</p>
+            </div>
+            <div>
+                <button onclick = "hideit()">Hide it</button><br>
+                <button onclick = "showit()">Show it</button>
+            </div>
+            <div class = "well">
+                <h2 id = "hover">Hover Example</h2>
+                <button id = "fading">End it all Temporarily</button>
+                <button id = "generate">Generate</button>
+                <h2>Call Back</h2>
+            </div>
+        </div>
+</body>
+
+</html>

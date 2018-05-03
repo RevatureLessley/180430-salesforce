@@ -6,8 +6,6 @@ function fizzBuzz(){
     var minText = document.createTextNode(numRangeMin);//input1
     var maxText = document.createTextNode(numRangeMax);//input2
 
-    
-
     for (var i=numRangeMin; i <= numRangeMax; i++)
     {
         if (i % 15 == 0)
@@ -21,5 +19,5 @@ function fizzBuzz(){
 
     }//for
 
-}
+}//fizzBuzz
 
