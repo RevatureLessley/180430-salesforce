@@ -85,4 +85,27 @@ function removeRow(x) {
 window.onload = function(){
 	"use strict";
 	document.getElementById("para1").innerHTML="test";
+	
+	var d1 = document.getElementById("d1");
+	var d2 = document.getElementById("d2");
+	var d3 = document.getElementById("d3");
+	
+	d1.addEventListener("click", d1click);
+	d2.addEventListener("click", d2click);
+	d3.addEventListener("click", d3click);
+	
+	function d1click() {
+		window.alert("d1 clicked");
+		event.stopPropagation();
+	}
+	
+	function d2click() {
+		window.alert("d2 clicked");
+		event.stopPropagation();
+	}
+	
+	function d3click() {
+		window.alert("d3 clicked");
+		event.stopPropagation();
+	}
 };
