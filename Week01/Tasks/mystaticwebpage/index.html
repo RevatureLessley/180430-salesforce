@@ -23,17 +23,13 @@
 		<p id="desc">This is the homepage for the first mini project, it contains links to other pages (at the bottom of the page).<br>It also changes color on occasion and displays todays date and time. <br>Thank you.</p>
 		<p id="date">Todays date is displayed below</p>
 		<p id="dateJavascript"></p>
-		<!--<h3>Tables</h3>
-		<table border="3px">
-			<tr>
-				<th>Name</th>
-				<th>State</th>
-			</tr>
-			<tr>
-				<td>JEFF Deely</td>
-				<td>Content</td>
-			</tr>
-		</table>-->
+		<!--links to the other pages in this project-->
+		<h3>Here be links</h3>
+		<ol>
+			<li><a href="hobby.html" style="color:white" id="hobbyLink">hobby</a></li>
+			<li><a href="aboutMe.html" style="color:white" id="aboutMeLink">about me</a></li>
+			<!--<li><a href="forms.html">forms</a></li>-->
+		</ol>
 		<!-- javascript to change the webpages color and update the date time paragraph-->
 		<script>
 			<!--update the webpage, changing color and updating the date time displayed-->
@@ -41,6 +37,8 @@
 				var d=new Date();
 				var color="blue";
 				var antiColor="yellow";
+				var linkColor="white";
+				//use i to pick a random color and a visible text color
 				switch(i){
 					case 0:
 						color="red";
@@ -48,31 +46,33 @@
 						break;
 					case 1:
 						color="green";
-						antiColor="magenta";
+						antiColor="white";
 						break;
 					default:
 						break;
 				}
+				if(Math.floor(Math.random()*Math.floor(2))){
+					linkColor="black";
+					temp=color;
+					color=antiColor;
+					antiColor=temp;
+				}
+				//set the colors of elements in the page
 				document.getElementById("date").style.color=antiColor;
 				document.getElementById("body").style.backgroundColor=color;
 				document.getElementById("body").style.color=antiColor;
 				//document.getElementById("header").style.color=color;
 				document.getElementById("dateJavascript").style.color=antiColor;
 				document.getElementById("desc").style.color=antiColor;
-				var square=String.fromCharCode(1);
-				document.getElementById("dateJavascript").innerHTML="today is "+d+" "+square+"";
+				//update the date
+				document.getElementById("dateJavascript").innerHTML="today is "+d+" ";
+				document.getElementById("hobbyLink").style.color=linkColor;
+				document.getElementById("aboutMeLink").style.color=linkColor;
 				<!--update the webpage every second-->
 				setTimeout(update,1000,Math.floor(Math.random()*Math.floor(3)));
 			}
 			update();
 		</script>
-		<!--links to the other pages in this project-->
-		<h3>Here be links</h3>
-		<ol>
-			<li><a href="hobby.html" style="color:white">hobby</a></li>
-			<li><a href="aboutMe.html" style="color:white">about me</a></li>
-			<!--<li><a href="forms.html">forms</a></li>-->
-		</ol>
 		<!--<ul>
 			<li>cat</li>
 			<li>dog</li>
