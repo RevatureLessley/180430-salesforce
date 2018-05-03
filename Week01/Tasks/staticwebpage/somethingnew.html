@@ -1,0 +1,81 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Something New Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        </script>
+        <script src="javascript/myjavascript.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="well">
+            <h1>Welcome to JavaScript!</h1>
+        </div>
+        <div id="magicWell" onmouseover="changeWell()">
+            <h3>printing to the page....</h3>
+            <p id="para1">This will not be shown</p>
+        </div> 
+        <hr>
+        <button 
+        onclick="appendText()">Click me</button>
+        <h3>Document.write!</h3>
+        <button onclick="writeToPage()">Write to page</button>
+        <br>
+            <ul>
+                <li> Employee Name</li>
+                <li><input type="text" id="empName"></li>
+                <li>Fav Dog</li>
+                <li><input type="text" id="empName"></li>
+                <li><button onclick="addEmp()">Submit</button></li>
+            </ul>
+            <br>
+
+            <table border="2px" id="theTable">
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Fav Dog</th>
+                <tr>
+
+                </tr>
+            </table>
+        
+
+         
+    </div>
+
+    <div class="well">
+        <h1>Bubbling and Capturing</h1>
+        <div style="padding:50px; background-color:red" id="d1">
+                <div style="padding:50px; background-color:blue" id="d2">
+                        <div style="padding:50px; background-color:yellow" id="d3">
+                             <h3>click me</h3>
+                        </div>
+                </div>
+        </div>
+    </div>
+
+
+    <script>
+        setTimeout(function(){
+            document.getElementById("para1").innerHTML="I used javascript to write this!";
+        }, 2500);
+      
+    </script>
+</body>
+</html>
