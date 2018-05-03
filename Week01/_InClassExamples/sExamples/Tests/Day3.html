@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!--<!-- Bring Bootstrap 3 libraries -->-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+    <script  src="Javascript/my.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="well">
+    <h1>Welcome to JavaScript</h1>
+        </div>
+
+        <div class="well">
+            <!--<h3>Printing to Page.....</h3>-->
+            <p id="para1">No one is gonna see this</p>
+            <hr />
+        </div>
+            <button onclick="appendText()">Click ME!</button>
+            <button onclick="logit()">Click me next</button>
+            <button onclick="writeToPage()">Write!</button>
+            <button onclick="window.alert(window.prompt('check me out!'))">Prompt and Alert!</button>
+            <button onclick="window.prompt('check me out!');")>Alert!</button>
+            <form>
+            <input type="button" value="clickMSG" onclick="msg()"/> 
+            <input type="button" value="clickText" onclick="appendText()"/>  
+        </form>
+   </div>"
+
+</body>
+</html>
