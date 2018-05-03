@@ -11,7 +11,7 @@ function retrieve(){
 			var response=JSON.parse(xhr.response);
 			let pkid=document.createTextNode(response.id);
 			let pkname=document.createTextNode(response.name);
-			let pksprite=document.createTextNode(response.sprites.front_default);
+			let pksprite = response.sprites.front_default;
 			let td1=document.createElement('td');
 			let td2=document.createElement('td');
 			let td3=document.createElement('td');
@@ -28,6 +28,7 @@ function retrieve(){
 			td3.appendChild(img);
 			tr.appendChild(td1);
 			tr.appendChild(td2);
+			tr.appendChild(img);
 			table.appendChild(tr);
 			console.log(pksprite);
 			document.getElementById("pkminDiv").append(table);
