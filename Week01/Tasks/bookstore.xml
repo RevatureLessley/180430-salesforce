@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+    <book category="fiction">
+        <title language="en">Harry Potter &amp; The Chamber of Secrets</title>
+        <author>JK Rowling</author>
+        <year>2002</year>
+        <price>20.00</price>
+    </book>
+    <book category="SciFi">
+        <title language="en">Some Book</title>
+        <author>Me</author>
+        <year>2018</year>
+        <price>1000000.00</price>
+    </book>
+    <book category="Fiktion">
+        <title language="de">Die Verwandlung</title>
+        <author>Franz Kafka</author>
+        <year>1915</year>
+        <price>13.00</price>
+    </book>
+</bookstore>
