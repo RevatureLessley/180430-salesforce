@@ -1,61 +1,83 @@
 Day 3
 
 JS Topics
-  - datatypes
-  - arrays
-  - array methods
-  - functions
-  - control statements
-  - truthy falsy
-  - type coercion
-  - scopes
-  - variable hoisting
-  - let, car, const
+- datatypes
+- arrays
+- array methods
+- functions
+- control statements
+- truthy falsy
+- type coercion
+- scopes
+- variable hoisting
+- let, car, const
 
 Closure:
-  - encapsulating data in a function by returning a function and accessing the
-  scope of the original function and calling the second function.
-  - effectively creating private variables for functions
+- encapsulating data in a function by returning a function and accessing the
+scope of the original function and calling the second function.
+- effectively creating private variables for functions
 
-  add = function(x,y) {
-	 if(!(y===undefined) {
-      return  x + y;
-   }
-      return function(z) {
-        return x + z;
-      }
-  }
+add = function(x,y) {
+if(!(y===undefined) {
+return  x + y;
+}
+return function(z) {
+return x + z;
+}
+}
 
 Auto Invoking functions (not called this)
-  - Immediately invoked functions
+- Immediately invoked functions
 
 
 Abstracting:
-  - hiding code complexity
+- hiding code complexity
 
 Encapsulation:
-  - Data hiding
-  - Access restriction of data
-  - fridge analogy
-    - food for you
-    - food for guests
-    - food for your roommates
-    - food for strangers?
-  - Grouping data together and keeping
+- Data hiding
+- Access restriction of data
+- fridge analogy
+- food for you
+- food for guests
+- food for your roommates
+- food for strangers?
+- Grouping data together and keeping
 
 Prototyping
 
 Synchronous
-  - Sequiential
-    *ex: I walked to the store, I picked up items, I go to checkout, I place 1 item on belt, item is checked out. etc...
+- Sequiential
+*ex: I walked to the store, I picked up items, I go to checkout, I place 1 item on belt, item is checked out. etc...
 
 Asynchronous
-  - you do something, don't wait for the results. do something else while that is working.
+- you do something, don't wait for the results. do something else while that is working.
 
 Callback functions
-  - a function takes a function definition as input
-  - (A) function preforms an action that takes a variable amount of time to
-    complete. 1 second to 30 years.
-  - user system is not locked waiting on something to complete
-  - once A completes task, A invokes the b definition.
-    - control is brough back to A in order to receive B's output.
+- a function takes a function definition as input
+- (A) function preforms an action that takes a variable amount of time to
+complete. 1 second to 30 years.
+- user system is not locked waiting on something to complete
+- once A completes task, A invokes the b definition.
+- control is brough back to A in order to receive B's output.
+
+Bubbling and Capturing
+- bubble first capture last
+
+d1.addEventListener("click", d1click);
+d2.addEventListener("click", d2click);
+d3.addEventListener("click", d3click);
+
+function d1click(event) {
+window.alert("d1 clicked");
+event.stopPropagation();
+}
+function d2click(event) {
+window.alert("d2 clicked");
+event.stopPropagation();
+}
+function d3click(event) {
+window.alert("d3 clicked");
+event.stopPropagation();
+}
+
+}

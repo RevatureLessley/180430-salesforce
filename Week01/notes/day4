@@ -1,0 +1,37 @@
+Day 3
+
+API
+ - Application Programming Interface
+
+ ajax
+  - get and post hitting an api and getting response background
+  - Asynchronous Javascript and XML
+  - web browser technology
+    * not all browsers can use ajax
+
+  JSON - Javascript Object Notation
+    - keys and values baby
+    - Lightweight, data interchange format
+    - Language independent
+    - Self descripting
+    Syntax
+    - data stored in key value pairs
+    - data is separated by commas
+    - object encapsulation by curly braces
+    - square brackets for arrays
+    - JSON.parse converts string representation of JS object to JSON
+    - JSON.stringify converts JS object into string representation
+
+  HTTP Methods
+    - get - get info
+    - post - send info also updates
+    - put  - update info
+    - Delete - self explanatory
+    - head  - retrieve header information
+    - options - retrieve which http methods are allowed
+    - trace - provide a list of every ip your request hits
+
+    - patch
+
+    - GET - sends information by storing it in the UR
+    - POST - sends information by storying it in the body of the request 

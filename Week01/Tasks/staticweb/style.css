@@ -1,15 +1,13 @@
 body {
   background-color: #484C54;
-
 }
 
-
-#title {
+/* #title {
     text-align: center;
     font-size: 64px;
-}
+} */
 
-.bodyContainer {
+/* .bodyContainer {
   margin: 50px 50px 50px 50px;
   color: #484C54;
   padding: 10px 10px 10px 10px;
@@ -26,5 +24,40 @@ body {
   border-style: outset;
   border-radius: 1px;
   border-width: thin;
-
+} */
+.card {
+  background-color: #F8F9FA;
 }
+nav {
+    width: 100%;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    width: 16.6667%; /* fallback for non-calc() browsers */
+    width: calc(100% / 6);
+    box-sizing: border-box;
+}
+
+nav ul li:first-child {
+    border-left: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #616161;
+    padding: 10px 0;}

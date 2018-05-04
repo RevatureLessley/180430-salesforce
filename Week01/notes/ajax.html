@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- This is the DOCTYPE declaration. It tells the browsers
+what version of html they are interpreting. If you just use html,
+it will default to html 5. -->
+<html>
+<!-- The root tag for any html file will be <html> -->
+
+<head>
+    <!-- The <head> tag is used to store metadata about the page
+            such as, page title, or charset encodings. -->
+    <meta charset="UTF-8">
+    <title>My Fantastic Website :D</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body> <!-- #RRGGBB -->
+  <div class="container-fluid">
+  <div class="well">
+    <h3> The Pokeymans</h3>
+    <ul style="list-style-type:none;">
+    <li> Input a Pokeyman id number </li>
+    <br>
+    <li> <input type="number" id="pkmnid" placeholder="Pokemans"></li>
+    <br>
+    <li><button onclick="retrieve()"> Submit</button>
+ </li>
+  </ul>
+  <div id="poketable">
+  </div>
+
+      </div>
+  </div>
+</body>
+
+</html>

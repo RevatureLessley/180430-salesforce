@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Javascript Central</title>
+  <link rel="stylesheet" type="text/css"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bring Bootstrap 3 libraries -->
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="fuzzer.js"></script>
+
+</head>
+<body style="background-color:#484C54;">
+  <div class="container jumbotron">
+    <!-- <form> -->
+    <div class="well">
+      <h1> Welcome to Javascript Bizz Fuzzer</h1>
+      <p>Enter the Lower and Upper Number range to Fizz Buzz</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <input type="number" class="form-control" id="lower" placeholder="Enter Lower Bound Number">
+          <br>
+          <input type="number" class="form-control" id="upper" placeholder="Enter Upper Bound Number">
+          <br>
+            <button type="button" onclick="fizzBuzz()"  class="btn btn-primary"> Submit</button>
+            &nbsp;
+            <button type="button" onclick="clear()"  class="btn btn-info"> Clear </button>
+        </div>
+        <br>
+        <div class="well">
+          <p> Your Advertisement HERE! </p>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <!-- </form> -->
+
+        <div id="fizz-container" class="well">
+          <p id="fizzbuzz"> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

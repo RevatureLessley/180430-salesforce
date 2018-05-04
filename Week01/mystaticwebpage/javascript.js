@@ -11,23 +11,23 @@ function writeToPage() {
   document.write("<h1> Document Write")
 }
 
-// function fizzBuzz() {
-//   for ( let i = 1; i < 100; i++)
-//   {
-//     let num = "";
-//     if( (i % 3) == 0) {
-//       num += "Fizz";
-//     }
-//     if( (i % 5) == 0) {
-//       num += "Buzz";
-//     }
-//     if(num === "") {
-//       document.getElementById("fizzbuzz").innerHTML += i + "<hr>";
-//     } else {
-//       document.getElementById("fizzbuzz").innerHTML += num + "<hr>";
-//     }
-//   }
-// }
+function fizzBuzz() {
+  for ( let i = 1; i < 100; i++)
+  {
+    let num = "";
+    if( (i % 3) == 0) {
+      num += "Fizz";
+    }
+    if( (i % 5) == 0) {
+      num += "Buzz";
+    }
+    if(num === "") {
+      document.getElementById("fizzbuzz").innerHTML += i + "<hr>";
+    } else {
+      document.getElementById("fizzbuzz").innerHTML += num + "<hr>";
+    }
+  }
+}
 function changeWell(){
   var el = document.getElementById("magic-well");
   var random = Math.floor((Math.random()*4));
