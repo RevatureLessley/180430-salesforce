@@ -29,7 +29,7 @@ function hideIt(){
 
 function showIt(){
     $("#div1").show(1500);
-}
+};
 
 $(function(){
     //change to red on mouse over, change to black on mouse off
@@ -38,24 +38,24 @@ $(function(){
     //adding an event listener
     $("#fading").click(genericFadeout);
 
-    $("#generate").click(generate);
-})
+    $("#gen").click(generate);
+});
 
 function changeToRed(){
     //"this" refers to whatever calls the function. .css accesses the style of "this".
     $(this).css("color", "#FF0000");
-}
+};
 
 function changeToBlack(){
     $(this).css("color", "#000000");
-}
+};
 
 //command chains - you can call methods on methods on methods on methods...
 function genericFadeout(){
     //after 2500 milliseconds (2.5 seconds), become translucent/transparent
     //remember, the * wildcard will apply to everything
     $("*").fadeTo(2500, 0).fadeTo(2500,1); 
-}
+};
 
 function generate(){
     var text1 = "<p>text1</p>"; //this is one way to create elements
@@ -68,9 +68,9 @@ function generate(){
     var text3 = $("<p></p>").text("text3");
 
     //append places things inside the tag, at the end
-    $("div1").append(text1, text2, text3);
+    $("#div1").append(text1,text2,text3); //REMEMBER TO PUT "#" BEFORE ID REFERENCES
 
     //prepend() puts things at the beginning, inside the tags
     //after() puts things AFTER the tag, in its sibling
     //before() puts things BEHIND the tags, in its sibling
-}
+};
