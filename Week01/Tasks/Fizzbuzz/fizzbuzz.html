@@ -1,0 +1,51 @@
+<!--Fizzbuzz-->
+
+<!DOCTYPE=html>
+<html>
+
+<head>
+    <meta charset="UTF-8" lang="en">
+    <title>Fizzbuzz</title>
+
+    <script src="fizzbuzz.js"></script>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .well{
+            display:block;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="well">
+            <h1>Let's Play Fizzbuzz!</h1>
+        </div>
+        <div class="well">
+                <ul style="list-style-type:none; padding:0; margin:10px">
+                    <li> <h3>Select a number range:</h3> </li>
+                    <li> <input type="number" id="start" placeholder="start value"> </li>
+                    <br>
+                    <li> <input type="number" id="end" placeholder="end value"> </li>
+                    <br>
+                    <li> <button onmousedown="change()"  onmouseup="reset()" 
+                            onclick="play();" id="btn">PLAY</button> </li>
+                </ul>
+            <p id="results"></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
