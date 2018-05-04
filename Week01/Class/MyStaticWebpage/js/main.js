@@ -13,10 +13,10 @@ function logIt() {
 	console.log("fuck " + times + " times");
 }
 
-function writeIt() {
-	"use strict";
-	document.write("<h1>Hello!</h1>");
-}
+//function writeIt() {
+//	"use strict";
+//	document.write("<h1>Hello!</h1>");
+//}
 
 function changeWell() {
 	"use strict";
