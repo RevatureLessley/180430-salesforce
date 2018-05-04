@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX</title>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="javaScript/ajax.js"></script> <!--get JavaScript from different place-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="well">
+            <h3> the Pokeymans</h3>
+            <ul style="list-style-type:none">
+                <li>Imput a Pokeyman id Number</li>
+                <li><input type="number" id="pkmnid" placeholder="Pokeyman ID" /></li>
+                <li><button onclick="retrieve()">SUBMIT</button></li>
+            </ul>
+            <hr>
+        <div id="pokediv">
+           
+        </div>
+            <hr />
+            <div>
+                <p id="json">display</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

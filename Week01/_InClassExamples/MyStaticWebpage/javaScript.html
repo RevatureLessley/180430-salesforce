@@ -12,7 +12,7 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <script src="javaScript/my.js"></script>
+    <script src="javaScript/my.js"></script> <!--get JavaScript from different place-->
 
 </head>
 
@@ -25,12 +25,13 @@
         <div class="well">
 
             <h3>Printing to the page...</h3>
-            <p id="para1">No one is gonna see this!!!</p> <!-- to Test-->
+            <p id="para1">No one is gonna see this!!!</p> <!-- if id "para1" to use in JS-->
             <hr>
-            <button onclick="appendText()">Click Me!</button>
+            <!-- appendText(): get from my.js  -->
+            <button onclick="appendText()">Click Me!</button> <!-- "onclick" it is JS Event -->
             <hr>
             <p>Printing to the console!</p>
-            <button onclick="logit()">
+            <button onclick="logit()"> <!-- this function is in javaScript/my.js [console.log("Text")] -->
                 Log It!
             </button>
             <hr>
@@ -38,6 +39,7 @@
             <button onclick="writeToPage()">WRITE!</button>
 
             <hr />
+            <!-- This will invoke and filed that use can put input-->
             <button onclick="window.alert(window.prompt('Type something!'))" )>ALTERT!</button>
         </div>
 
@@ -48,14 +50,17 @@
 
         <div class="well">
             <h3>Dynamic Table</h3>
-            <ul style="list-style-type:none">
+            <ul style="list-style-type:none"> 
+                <!-- user can insert name, dog. add Button to Submit-->
                 <li><b>EMPLOYEE NAME</b></li>
                 <li><input type="text" id=empName></li>
                 <li><b>FAVORIT DOG</b></li>
                 <li><input type="text" id=favDog></li>
+                <!-- call in "addEmp" from js -->
                 <li><button onclick="addEmp()">SUBMIT</button></li>
             </ul>
             <br />
+            <!--Create Table for store users input and display-->
             <table border="2px" id="theTable">
                 <tr>
                     <th>E_ID</th>
@@ -75,12 +80,14 @@
                 </div>
             </div>
         </div>
-       
+      
+         <!--
          <script>
             setTimeout(function () {
                 document.getElementById("para1").innerHTML = "<b>I used javascript to write this!</b>";
             }, 2500);
         </script>
+           -->
 
     </div>
 </body>
