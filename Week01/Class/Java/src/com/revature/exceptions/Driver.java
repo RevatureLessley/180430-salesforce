@@ -9,6 +9,9 @@ public class Driver {
         //d.divisionByZeroException();
         d.handledException();
         d.checked1();
+        d.finallyBlocks();
+
+        System.out.println(d.trickyBusiness());
     }
 
     public void handledException() {
@@ -38,6 +41,26 @@ public class Driver {
 
     public void divisionByZeroException(){
         //System.out.println(1 / 0);
+    }
+
+    public void finallyBlocks() {
+        try {
+            System.out.println(1 / 0);
+        } catch (Exception e) {
+            System.out.println("Catchally");
+        } finally {
+            System.out.println("Finally");
+        }
+    }
+
+    public String trickyBusiness() {
+        try {
+            throw new IOException();
+        } catch (Exception e) {
+            return "Catch";
+        } finally {
+            return "finally";
+        }
     }
 
 }
