@@ -1,7 +1,5 @@
 package com.revature.scopes;
 
-import javax.sound.midi.SysexMessage;
-
 public class Driver {
 
     public static void main (String[] args) {

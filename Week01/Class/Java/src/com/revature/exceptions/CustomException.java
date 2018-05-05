@@ -6,5 +6,5 @@ public class CustomException extends Exception {
         return "This is fucking overridden";
     }
 
-    
+
 }

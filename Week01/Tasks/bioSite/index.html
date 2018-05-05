@@ -30,19 +30,24 @@
 		</div>
 	</nav>
 	
-	<div class="container-fluid mt-5">
-		<div class="mainText text-center p-5">
-			<h1>"Gotta Catch 'em all" Dexter's Assistant; Insert Pokémon #</h1>
-			<p>This is a website to showcase my life; I like Pokémon, so feel free to enjoy the following</p>
+	<div class="container-fluid mt-3 p-5 row">
+		<div class="col-12 mt-5 text-center">
+			<h2>This is a website to showcase my life! I like Pokémon; feel free to enjoy my Pokédex</h2>
+		</div>
+		
+		<div class="mainText col-6 mt-5">
+			<h3>Dexter's Assistant; Insert Pokémon #</h3>
 			
-			<h3></h3>
 			<input type="number" id="pokemonID" placeholder="Pokemon ID" class="form-control">
 			<button id="submitID" class="btn btn-primary mt-2" onClick="retrieve()">Submit</button>
-			
-			<div id="pokeDiv">
-				
+		</div>
+		
+		<div class="col-6 mt-5">
+			<div id="pokeDiv row">
+				<div class="col-12 text-center" id="pokeText"></div>
+				<div class="col-12 text-center" id="pokePic"></div>
 			</div>
-		</div>	
+		</div>
 	</div>
 	
 </body>
