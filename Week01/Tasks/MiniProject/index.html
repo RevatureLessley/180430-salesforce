@@ -1,63 +1,167 @@
 <!DOCTYPE html>
 
 <html>
-	
-	<head>
 
-		<link rel="stylesheet" href="style.css">
-	
+<head>
+
+	<!-- Bring Bootstrap 3 libraries -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous">
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<script src="javascript/index.js"></script>
+
 	<style>
-	
-		h1{color: blue;}
-		h3{color: green;}
-	
+		h1 {
+			color: blue !important;
+		}
+
+		h3 {
+			color: green !important;
+		}
 	</style>
-	
-		<meta charset="UTF-8">
-		
-		<title>Weebsite</title>
-	
-	</head>
-	
-	<body>
-	
-		<h1>Roses are <span style="color:crimson">red</span></h1>
-		
-		<p>What is this webpage?</p>
-		<p>Well, it's supposed to be about me, but as you can see, it's just a bunch of memes. Please
-		click on a <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a> to get the heck out of here.</p>
-		
-		<hr>
-		
-		<table border="7px" align="center">
-			
-			<tr>
-				<th><span style="color:violet">Violets</span></th>
-				<th>are <span style="color:aqua">blue//</span></th>
-			</tr>
-			<tr>
-				<td>Omae wa</td>
-				<td>mou</td>
-			</tr>			
-			
-		</table>
-		
-		<p><em><span style="color:maroon;font-size:50px">shindeiru</span></em></p>
-		
-		
-		<hr>
-		
-		<img src="Assets/Nani.jpg">
-		
-		
-		<h3><b><i><u>GET ME OUT OF HERE</u></i></b></h3>
-		<ul style="list-style-type:none">
-			<li><a href="me.html">About Me</a></li>
-			<li><a href="hobby.html">Hobbies</a></li>
-			<li><a href="http://www.neopets.com">Check out this cool website!</a></li>
-		</ul>
-	
-	</body>
-	
-	
+
+	<meta charset="UTF-8">
+
+	<title>Weebsite</title>
+
+</head>
+
+<body>
+
+	<!-- here's my title, of sorts. background is translucent. -->
+	<div class="container-fluid">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="well" style="background-color:rgba(255, 0, 0, 0.247);border:none;">
+				<h1>Roses are
+					<span style="color:crimson">red</span>
+				</h1>
+
+				<p>What is this webpage?</p>
+				<p>Well, it's supposed to be about me, but as you can see, it's just a bunch of memes. Please click on a
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">link</a> to get the heck out of here.</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- this holds a random table -->
+	<div class="container-fluid">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="well" style="background:none;border:none">
+				<table width="250px" height="75px" border="10px" align="center">
+
+					<tr>
+						<th style="color:violet;">
+							Violets
+						</th>
+						<th>are
+							<span style="color:aqua;">blue//</span>
+						</th>
+					</tr>
+					<tr>
+						<td>Omae wa</td>
+						<td>mou</td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- just wanted to keep this separate from the table -->
+	<div class="container-fluid">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="well" id="shindeiru">
+				<p>
+					<em>
+						<span style="color:darkred;font-size:50px;">
+							<br>
+							<br>shindeiru</span>
+					</em>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="well" style="background:none;border:none;">
+		<img src="CSS/Assets/Nani.jpg">
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+
+	<div class="container-fluid">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="well" id="getout">
+				<h3>
+					<b>
+						<i>
+							<u>GET ME OUT OF HERE</u>
+						</i>
+					</b>
+				</h3>
+				<ul style="list-style-type:none">
+					<li>
+						<a href="me.html">About Me</a>
+					</li>
+					<li>
+						<a href="hobby.html">Hobbies</a>
+					</li>
+					<li>
+						<a href="http://www.billwurtz.com/">Check out this cool website!</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container-fluid">
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="well" style="border:none;background:none;">
+				<!-- background:none == background:transparent -->
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="well" id="buttons">
+				<h2 id="boop">Click A Thing!</h2>
+
+				<button id="b1" onclick="changeURL(b1ID)">Weeb</button>
+				<button id="b2" onclick="changeURL(b2ID)">Wednesday</button>
+				<button id="b3" onclick="changeURL(b3ID)">sMASH</button>
+				<button id="b4" onclick="changeURL(b4ID)">'Za</button>
+				<button id="b5" onclick="changeURL(b5ID)">Kirb</button>
+				<button id="b6" onclick="changeURL(b6ID)">Nice</button>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- video playback was initially very jittery. frameborder was the culprit. -->
+	<iframe id="vidya" width="854" height="480" align="center" frameborder="0" src="https://www.youtube.com/embed/3WAOxKOmR90"></iframe>
+
+	<br>
+	<br>
+	<!--gives some space between the embedded video and the bottom of the page-->
+
+</body>
+
+
 </html>

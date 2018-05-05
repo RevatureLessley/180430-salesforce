@@ -1,0 +1,32 @@
+body{
+    background:url("Assets/tenor.gif");
+    text-align:center;
+}
+
+p{
+    color: gold;
+}
+
+table{
+    color:gold;
+}
+
+th, td{
+    text-align:center;
+    font-size:18px;
+}
+
+/* # is for 'id' . is for 'class' REMEMBER THAT */
+#shindeiru{
+    background-image:url("Assets/Ken.jpg");
+    background-size:contain;
+    height:250px;
+}
+
+#getout{
+    background:floralwhite;
+}
+
+#buttons{
+    background:rgba(112,128,144,0.3);
+}
