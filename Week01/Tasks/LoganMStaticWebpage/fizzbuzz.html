@@ -4,26 +4,70 @@
 <head>
     <meta charset="utf-8" />
     <title>Fizz Buzz</title>
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/maintemplate.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+        crossorigin="anonymous">
+    <!--Font Awsome libraries for icons-->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fb_style.css" />
+
+
+
+
     <script src="javascript/fizzbuzz.js"></script>
 </head>
 
 <body>
-    <div class=container-fluid>
-        <div class="well">
-            Input range of numbers here:
-            <br>
-            <input type="number" id="nMin" style="width: 50px">
-            -
-            <input type="number" id="nMax" style="width: 50px">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html" style="font-size: 20px">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="hobbies.html">Hobbies</a>
+                </li>
+                <li class="active">
+                    <a href="#fizzbuzz">FizzBuzz</a>
+                </li>
+            </ul>
         </div>
-        <hr>
-        <button onclick="genFB()">FizzBuzz</button>
-        <div>
-            Number list generated here:
-            <p id="numList"></p>
+    </nav>
+    <div class=container-fluid>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well">
+                    Input range of numbers here:
+                    <br>
+                    <input type="number" id="nMin" style="width: 100px"> -
+                    <input type="number" id="nMax" style="width: 100px">
+                    <br>
+                    <button onclick="genFB()" style="margin-top: 5px">FizzBuzz</button>
+                </div>
+                <hr>
+                <div class="well">
+                    Number list generated here:
+                    <p id="numList"></p>
+                </div>
+            </div>
         </div>
 </body>
 

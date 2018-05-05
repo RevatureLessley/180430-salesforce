@@ -6,35 +6,100 @@
     <title>It's Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/maintemplate.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+        crossorigin="anonymous">
+    <!--Font Awsome libraries for icons-->
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/aboutme_style.css" />
-    <!-- <script src="main.js"></script> -->
+
 
 </head>
 
 <body>
-    <ul class= navBar>
-        <li>
-            <a class="link" href="index.html">Home</a>
-        </li>
-        <li>
-            <a class="current link" href="#aboutme">About Me</a>
-        </li>
-        <li>
-            <a class="link" href="hobbies.html">Hobbies</a>
-        </li>
-    </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html" style="font-size: 20px">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="hobbies.html">Hobbies</a>
+                </li>
+                <li>
+                    <a href="fizzbuzz.html">FizzBuzz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="well">
+                    <table>
+                        <tr>
+                            <th>Name: </th>
+                            <td>Logan McManus</td>
+                        </tr>
+                        <tr>
+                            <th>Born: </th>
+                            <td>September 3, 1993</td>
+                        </tr>
+                        <tr>
+                            <th>From: </th>
+                            <td>Jacksonville, Florida</td>
+                        </tr>
+                        <tr>
+                            <th>University: </th>
+                            <td>University of North Florida</td>
+                        </tr>
+                        <tr>
+                            <th>Degree: </th>
+                            <td> <b>Bacholors of Science</b> in Computing & Information Sciences
+                                <br><i>with a concentration in <b>Computer Science</b></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- <h1>
+                        <b>Logan D. McManus</b>
+                    </h1>
+                    <h4>Born Sept. 3, 1993 in Jacksonville, Florida</h4>
+                    <h3>Bacholors of Science in Computing and Information Sciences</h3>
+                    <h4>
+                        <i>concentration in Computer Science</i>
+                    </h4> -->
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="imgs/Headshot-CF.jpg" border="2px" width="320" height="321">
+            </div>
+        </div>
 
-    <h1>
-        <b>Logan D. McManus</b>
-    </h1>
-    <h4>Born Sept. 3, 1993 in Jacksonville, Florida</h4>
-    <img src="imgs/Headshot-CF.jpg" border="2px" width="320" height="321">
 
-    <h3>Bacholors of Science in Computing and Information Sciences</h3>
-    <h4>
-        <i>concentration in Computer Science</i>
-    </h4>
+
+    </div>
+
+
+
+
+
+
 </body>
 
 </html>

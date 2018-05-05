@@ -4,35 +4,66 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>What I like</title>
+    <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/maintemplate.css">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+        crossorigin="anonymous">
+    <!--Font Awsome libraries for icons-->
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/hobbies_style.css" />
-    <!-- <script src="main.js"></script> -->
 
 </head>
 
 <body>
 
-    <ul class= navBar>
-        <li>
-            <a class="link" href="index.html">Home</a>
-        </li>
-        <li>
-            <a class="link" href="aboutme.html">About Me</a>
-        </li>
-        <li>
-            <a class="current link" href="#hobbies">Hobbies</a>
-        </li>
-    </ul>
-    
-    <p>My Hobbies are:</p>
-    <ul style="background-color: white">
-        <li>Video Games</li>
-        <li>Bicycling</li>
-        <li>Cooking</li>
-    </ul>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html" style="font-size: 20px">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li class="active">
+                    <a href="#hobbies">Hobbies</a>
+                </li>
+                <li>
+                    <a href="fizzbuzz.html">FizzBuzz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="well">
+
+                    <p>My Hobbies are:</p>
+                    <ul>
+                        <li>Video Games</li>
+                        <li>Bicycling</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
