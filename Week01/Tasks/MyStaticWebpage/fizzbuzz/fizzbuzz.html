@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Fizz Buzz</title>
+    <link rel="stylesheet" type="text/css"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Bring Bootstrap 3 libraries -->
+        
+        <script
+                      src="http://code.jquery.com/jquery-3.3.1.min.js"
+                      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                      crossorigin="anonymous"></script>
+        
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Bring in supplemental javascript for bootstrap -->
+        <script src="C:\javaScript\fizzbuzz.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="well" id = "div1">
+            <ul style = "list-style-type: none">
+                <li><b>Enter the minimum number</b></li>
+                <li><input type="number" id = "min" required></li>
+                <li><b>Enter the maximun number</b></li>
+                <li><input type="number" id = "max" required></li>
+                <li><button onclick="fizzbuzz()">Generate</button></li>
+                <li><button onclick="reset()">RESET</button></li>
+            </ul>
+            <p id = "p"></p>
+        </div>
+    </div>
+</body>
+</html>
