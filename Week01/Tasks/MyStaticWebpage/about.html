@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Site</title>
+    <title>About Me</title>
 
     <!-- Bootstrap Libraries and Scripts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,19 +13,25 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <style>
+        .nav-light {
+            background-color: #FAFEFF;
+        }
+    </style>
 </head>
 
-<body>                                 
-    <nav class="navbar navbar-inverse" style="border-radius: 0px;"> <!--In-line CSS-->
+<body>
+    <nav class="navbar navbar-inverse nav-light" style="border-radius: 0px;">
+        <!-- In-line CSS -->
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Matt Kostich</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                     <a href="index.html">Home</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="about.html">About Me</a>
                 </li>
                 <li>
@@ -34,13 +40,18 @@
             </ul>
         </div>
     </nav>
-
     <div class="container">
         <div class="well">
-            <h1>Welcome to my home page! Click any link in the navbar to explore!</h1>
+            <div class="jumbotron ">
+                <h2>About me!</h2>
+            </div>
+            <div>
+                <p>
+                    A little bit about myself! I'm a 25 year old graduate in music from Southern Connecticut State University
+                </p>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>

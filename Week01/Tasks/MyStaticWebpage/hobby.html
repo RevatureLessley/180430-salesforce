@@ -3,44 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Site</title>
-
+    <title>My Hobby</title>
     <!-- Bootstrap Libraries and Scripts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
 
+    <script src="scripts/scripts.js"></script>
 </head>
 
-<body>                                 
-    <nav class="navbar navbar-inverse" style="border-radius: 0px;"> <!--In-line CSS-->
+<body>
+    <nav class="navbar navbar-inverse" style="border-radius: 0px;"> <!-- In-line CSS -->
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Matt Kostich</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About Me</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="hobby.html">My Hobby</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="well">
+        <h1>A bit on hiking</h1>
+        <p>Hiking is one of my favorite hobbies.</p>
 
-    <div class="container">
-        <div class="well">
-            <h1>Welcome to my home page! Click any link in the navbar to explore!</h1>
+        <ul class="nav nav-justified">
+            <li id="lafayette" onclick="mtDetails('lafayette')">
+                <a href="#">Mt. Lafayette</a>
+            </li>
+            <li id="bear" onclick="mtDetails('bear')">
+                <a href="#">Bear Mountain</a>
+            </li>
+            <li id="greylock" onclick="mtDetails('greylock')">
+                <a href="#">Mt. Greylock</a>
+            </li>
+        </ul>
+        <div id="mtdetails">
+            <div id="mtsum" class="well col-sm-6">
+
+            </div>
+            <div id="mtimg" class="well col-sm-6">
+                
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
