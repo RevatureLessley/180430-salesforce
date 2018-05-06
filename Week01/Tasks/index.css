@@ -1,11 +1,23 @@
 /*
     This is the CSS file for index.html. Both of these are for the mini-project/assignment due Monday May 7.
+    All of the following are examples of external CSS
 */
 
-h1 {text-align:center;}
+h1 {text-align:center;} /*Align all h1 to center*/
 
-img {
+img { /*Displays the image as a block element. It starts on a new line, 
+    and takes up the whole width with equal sized margins, resulting in
+    a centered image*/
     display: block;
     margin-left: auto;
     margin-right: auto;
 } 
+
+/*
+    The following CSS block uses a selector that Selects every <a> element 
+    whose href attribute value begins with "https".
+*/
+a[href^="https"]{
+    color:blue;
+
+}

@@ -5,35 +5,37 @@
         <meta charset = "UTF-8">
         <title >Hobbies</title>
         <style> 
-            p {text-align:left;
+            li > p {text-align:left; /*internal css to left align and red the <p> elements
+                                        that have an <li> parent. Uses the '>' selector*/
                 color:red;
             }
-            p1 {text-align:left;
+            ul p1 {text-align:left; /*internal css to left align and color red the <p1> elements
+                                        inside a <ul> . Uses the ' ' selector*/
                 color:red;
                 font-size: 18pt;
             }
         </style>
-        <link rel="stylesheet" text = "text/css" href="hobbies.css">
+        <link rel="stylesheet" text = "text/css" href="hobbies.css"> <!-- Import the CSS-->
     </head>
-    <body style = "background-color: black">
-        <h1 style = "color:red">Hobbies and Interests</h1>
+    <body>
+        <h1 style = "color:red">Hobbies and Interests</h1> <!-- Inline CSS-->
         <ul>
             <li><p1>My dog Samantha aka Sammie </p1></li>
-            <li><image src="Sammie.jpg" alt="samdog" style="width:256px;height:192px;">
+            <li><image src="Sammie.jpg" alt="samdog" style="width:256px;height:192px;"> <!-- Import the image-->
                 <p>My number 1 interest is my dog, Samantha. She is an 8 year old black lab.</p>
                 <p>Her birthday is April 1st. I have had her since she was 8 weeks old.</p>
                 <p>Her two favorite things are playing with the tennis ball and eating food.</p>
                 <p>My dog is more adorable than your dog.</p></li>
             <hr>
             <li><p1>My favorite hobby: Lifting</p1></li>
-            <li><image src="Flex.jpg" alt="flex" style="width:256px;height:192px;">
+            <li><image src="Flex.jpg" alt="flex" style="width:256px;height:192px;"><!-- Import the image-->
                 <p>My favorite hobby is lifting, specifically hypertrophy training.</p>
                 <p>I currently run a 3-day routine twice per week. It's called PPL for Pull, Push, Legs.</p>
                 <p>Day 1: Pull day. Day 2: Push day. Day 3: Leg Day.</p>
                 <p>My current PRs are:</p>
                 <p>Deadlift - 425lbs</p>
                 <p>Standing Overhead Press - 175lbs x5</p>
-                <p><a href="https://www.youtube.com/watch?v=pN3DCYbPG4s">Bench Press</a> - 315lbs</p>
+                <p><a href="https://www.youtube.com/watch?v=pN3DCYbPG4s">Bench Press</a> - 315lbs</p><!--Links-->
                 <p><a href="https://www.youtube.com/watch?v=MNGcUcX-9e8">Squat</a> - 335lbs</p>
             </li>   
             
