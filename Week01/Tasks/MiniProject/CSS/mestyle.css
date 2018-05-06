@@ -24,6 +24,9 @@ div p{
     color:silver;
 }
 
+div p>a{
+    color:inherit;
+}
 /*
     this will apply to all headers in a row.
 */

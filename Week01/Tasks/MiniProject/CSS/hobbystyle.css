@@ -13,5 +13,30 @@ h3{
 }
 
 p{
-    color:gray;
+    color:chartreuse;
+}
+
+ol{
+    margin-left:280px;
+}
+
+li{
+    text-align:left;
+}
+
+.well{
+    background:forestgreen;
+    border-color:indigo;
+    border-width:2px;
+    text-align:center;
+}
+
+#img1, #img2{
+    background-color:rgb(0, 0, 0);
+    border-color:chartreuse;
+}
+
+#please{
+    background-color:chartreuse;
+    border-color:#333333;
 }

@@ -46,42 +46,42 @@ $(document).ready(function () {
         if (clickCounter >= 12) {
             $("*").unbind("click"); //turn off all click events. user can still click the links on the page, just not the buttons or this text
             clearInterval(blah); //stop the animatinons
-            $("body").css("background","url('CSS/Assets/y.jpg')"); //remember to double check filepaths!!! CSS/Assets/file.jpg
-            $("body").css("background-size","contain"); //this is the  best fit. it gets the image into the smallest size possible for both width and height to fit within the screen
+            $("body").css("background", "url('CSS/Assets/y.jpg')"); //remember to double check filepaths!!! CSS/Assets/file.jpg
+            $("body").css("background-size", "contain"); //this is the  best fit. it gets the image into the smallest size possible for both width and height to fit within the screen
             $(".well").hide(); //hide everything
             $("#buttons").show(); //except the well with the buttons
             //trying to ensure that the text does change. if the user clicks fast enough, they can bypass this.
-            setTimeout(function(){
+            setTimeout(function () {
                 $("#boop").text("I'm Done");
             }, 1000);
             $("*").css("color", "maroon"); //change all text (except "Roses are")to crimson
-            
+
             changeURL(hidden); //apply the hidden video id
             changeID(); //insert the video URL
             //let the video play, then refresh the page automatically
             setTimeout(function () {
                 location.reload();
             }, 7500);
-        }else if (clickCounter % 4 == 0 && clickCounter < 12) {
+        } else if (clickCounter % 4 == 0 && clickCounter < 12) {
             $("#boop").text("Not Me!");
             clickCounter++; //increment the counter
             // reset the text
             setTimeout(function () {
                 $("#boop").text("Click A Thing!");
             }, 1000);
-        }else if (clickCounter % 4 == 1 && clickCounter < 12) {
+        } else if (clickCounter % 4 == 1 && clickCounter < 12) {
             $("#boop").text("Stop It!");
             clickCounter++;
             setTimeout(function () {
                 $("#boop").text("Click A Thing!");
             }, 1000);
-        }else if (clickCounter % 4 == 2 && clickCounter < 12) {
+        } else if (clickCounter % 4 == 2 && clickCounter < 12) {
             $("#boop").text("How Rude!");
             clickCounter++;
             setTimeout(function () {
                 $("#boop").text("Click A Thing!");
             }, 1000);
-        }else if (clickCounter % 4 == 3 && clickCounter < 12) {
+        } else if (clickCounter % 4 == 3 && clickCounter < 12) {
             $("#boop").text("Come On!");
             clickCounter++;
             setTimeout(function () {

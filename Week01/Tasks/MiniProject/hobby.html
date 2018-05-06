@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 
 <html>
-	
-	<head>
 
-		<link rel="stylesheet" href="CSS/hobbystyle.css">
-	
-		<meta charset="UTF-8">
-		
-		<title>Hobbits?</title>
-	
-	</head>
-	
-	<body>
-	
-		<h1>A page dedicated to <font size=1 color="green">Shrek</font>my hobbies</h1>
-		
-		<h3>I've got two, in no particular order:</h3>
-		<ol>
-			<li>Gaming</li>
-			<li>Baking</li>
-		</ol>
-		
-		<img src="Assets/n64.jpg">
-		<img src="Assets/Wheat Bread Man.png">
-		
-		<br>
-		
-		<p><font size=2.5%><a href="index.html">Now please go away</a></font></p>
-	
-	</body>
-	
-	
+<head>
+
+	<!-- Bring Bootstrap 3 libraries -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous">
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="CSS/hobbystyle.css">
+
+	<meta charset="UTF-8">
+
+	<script src="javascript/hobby.js"></script>
+
+	<title>Hobbits?</title>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html" style="color:chartreuse;">TAKE ME BACK</a>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="col-sm-12">
+			<div class="well">
+				<!-- placing this on the same line will remove unwanted spaces-->
+				<h1>A page dedicated to<font size=1><a href="https://www.youtube.com/watch?v=93K4QXEttWg" style="color:forestgreen">shrek</a></font>my hobbies</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- this container holds my list of hobbies -->
+	<div class="container-fluid">
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="well">
+				<h3>I've got two, in no particular order:</h3>
+				<ol>
+					<li>Gaming</li>
+					<li>Baking</li>
+				</ol>
+				<p>Look at some low-res images that I found</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- this container will hold the images I am using for my hobbies -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="well" id="img1">
+					<img id="i1" src="CSS/Assets/n64.jpg">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="well" id="img2">
+					<img id="i2" src="CSS/Assets/Wheat Bread Man.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- container for my return link. to the homepage! -->
+	<div class="container-fluid">
+		<div class="col-sm-2 col-sm-offset-5">
+			<div class="well" id="please">
+				<p>
+					<font size=2.5%>
+						<a href="index.html" style="color:blanchedalmond;">Now please go away</a>
+					</font>
+				</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
 </html>

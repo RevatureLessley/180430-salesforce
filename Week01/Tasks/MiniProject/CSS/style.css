@@ -7,6 +7,10 @@ p{
     color: gold;
 }
 
+a{
+    color:inherit;
+}
+
 table{
     color:gold;
 }
@@ -14,6 +18,11 @@ table{
 th, td{
     text-align:center;
     font-size:18px;
+}
+
+/* kind of hacky way to get the list centered within the well. probably a better way to do this, but this works just fine. */
+ul{
+    margin-left:-40px;
 }
 
 /* # is for 'id' . is for 'class' REMEMBER THAT */
