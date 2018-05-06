@@ -1,0 +1,11 @@
+.nav.navbar-nav li.active a{
+    background-color:rgb(0, 100, 255);
+}
+
+.nav.navbar-nav{
+    font-size: 24px;
+}
+
+body div {
+     font-size: 16px;
+ }
