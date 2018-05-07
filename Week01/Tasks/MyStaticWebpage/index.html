@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>file:///C:/Users/ryanm/Desktop/180430-gitexample/Week01/_InClassExamples/MyStaticWebpage/index.html</title><link rel="stylesheet" type="text/css" href="index_files/viewsource.css"></head><body id="viewsource" class="highlight" style="-moz-tab-size: 4" contextmenu="actions"><pre id="line1"><span></span><span class="comment">&lt;!-- Use these tags to write comments. 
-<span id="line2"></span>    The index.html is typically the homepage of any web
-<span id="line3"></span>application.  --&gt;</span><span>
-<span id="line4"></span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
-<span id="line5"></span></span><span class="comment">&lt;!-- This is the DOCTYPE declaration. It tells the browsers
-<span id="line6"></span>what version of html they are interpreting. If you just use html,
-<span id="line7"></span>it will default to html 5. --&gt;</span><span>
-<span id="line8"></span></span><span>&lt;<span class="start-tag">html</span>&gt;</span><span>
-<span id="line9"></span></span><span class="comment">&lt;!-- The root tag for any html file will be &lt;html&gt; --&gt;</span><span>
-<span id="line10"></span>    </span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
-<span id="line11"></span>        </span><span class="comment">&lt;!-- The &lt;head&gt; tag is used to store metadata about the page
-<span id="line12"></span>            such as, page title, or charset encodings. --&gt;</span><span>
-<span id="line13"></span>        </span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">UTF-8</a>"&gt;</span><span>
-<span id="line14"></span>        </span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>My Fantastic Website :D</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
-<span id="line15"></span>        </span><span class="comment">&lt;!-- The title tag is simply that. It will display on the top of pages, and tabs. --&gt;</span><span>
-<span id="line16"></span>    </span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
-<span id="line17"></span>    </span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
-<span id="line18"></span>        </span><span class="comment">&lt;!-- The &lt;body&gt; tag is what is actually displayed to the user
-<span id="line19"></span>            on the browser. --&gt;</span><span>
-<span id="line20"></span>        </span><span>&lt;<span class="start-tag">h1</span>&gt;</span><span>WELCOME TO MY WEBSITE</span><span>&lt;/<span class="end-tag">h1</span>&gt;</span><span>
-<span id="line21"></span>        </span><span class="comment">&lt;!-- Header1 tag --&gt;</span><span>
-<span id="line22"></span>        </span><span>&lt;<span class="start-tag">p</span>&gt;</span><span>Please stay a while, and listen.</span><span>&lt;/<span class="end-tag">p</span>&gt;</span><span>
-<span id="line23"></span>        </span><span class="comment">&lt;!-- paragraph tag --&gt;</span><span>
-<span id="line24"></span>    </span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
-<span id="line25"></span></span><span class="error" title="End of file seen when looking for tag name. Ignoring tag.">&lt;/<span class="end-tag">html</span></span></pre><menu type="context" id="actions"><menuitem id="goToLine" label="Go to Line…" accesskey="L"></menuitem><menuitem id="wrapLongLines" label="Wrap Long Lines" type="checkbox"></menuitem><menuitem id="highlightSyntax" label="Syntax Highlighting" type="checkbox" checked="true"></menuitem></menu></body></html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Project 0</title>
+        <style>
+            li > p{
+                background-color: gray;
+                color: white;
+            }
+        </style>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+        <!-- Bring Bootstrap 3 libraries -->
+    
+    <script
+                  src="http://code.jquery.com/jquery-3.3.1.min.js"
+                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                  crossorigin="anonymous"></script>
+    
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+    </head>
+    <body>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Tetsuya Tanaka</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">
+                                <p class="navlink">Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aboutme.html">
+                                <p class="navlink">About Me</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hobby.html">
+                                <p class="navlink">Hobbies</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="well">
+                <h1 style="background-color:blue; color:white">Welcome to my page</h1>
+                <p>This is a page about me, Tetsuya Tanaka, and my interests.</p>
+                <br>
+                <br>
+                <ul style="list-style: none">
+                    <li>
+                        <p>The below link gives detailed information about myself.</p>
+                    </li>
+                    <li>
+                        <a id="aboutme" href="aboutme.html">About Me</a>
+                    </li>
+                    <li>
+                        <p>This other link describes my hobbies and interests.</p>
+                    </li>
+                    <li>
+                        <a id="hobby" href="hobby.html">Hobbies and Interests</a>
+                    </li>
+                </ul>
+            </div>
+        
+        
+        </body>
+</html>
