@@ -30,9 +30,27 @@
 			<li><a href="aboutMe.html" style="color:white" id="aboutMeLink">about me</a></li>
 			<!--<li><a href="forms.html">forms</a></li>-->
 		</ol>
+		<table border style="border:green; width:10%">
+			<tr>
+				<th>PUT STUFF HERE</th>
+				<th>Output</th>
+			</tr>
+			<tr>
+				<td><input id="inputBox" type="text" onkeypress="return inputToDataBox(event)"></td>
+				<td id="dataGoHere"></td>
+			</tr>
+		</table>
 		<!-- javascript to change the webpages color and update the date time paragraph-->
 		<script>
 			<!--update the webpage, changing color and updating the date time displayed-->
+			function inputToDataBox(e){
+				if(e.keyCode==13){
+					var input=document.getElementById("inputBox").value;
+					document.getElementById("dataGoHere").innerHTML="<p>"+input+"</p>";
+					document.getElementById("inputBox").value="";
+				}
+			}
+			
 			function update(i){
 				var d=new Date();
 				var color="blue";
@@ -73,10 +91,5 @@
 			}
 			update();
 		</script>
-		<!--<ul>
-			<li>cat</li>
-			<li>dog</li>
-			<li>chimp</li>
-		</ul>-->
 	</body>
 </html>
