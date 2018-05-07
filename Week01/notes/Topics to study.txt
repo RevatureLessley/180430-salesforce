@@ -1,0 +1,39 @@
+HTML 5
+HTML Froms
+CSS
+CSS selectors
+- inline, external, internal sheets
+Bootstrap
+- Grid
+Javascript
+- let, var, const
+Closures
+- prototypical inheritance
+Data types
+- constructors
+ECMA script 6
+Type coercion
+variable scopes
+variable hoisting
+events
+- event listeners
+- bubbling and capturing
+- cancelling events (event.stoppropagation())
+callback functions
+JSON
+AJAX
+GET vs. POST
+XMLHttpRequest
+DOM selection & manipulation
+XML
+- XML namespace
+DTD and XSD
+- well-formed vs. valid
+====================================
+Also covered, weighted more lightly:
+
+access modifiers
+scopes of variables
+class/object
+checked/unchecked exceptions
+custom exceptions
