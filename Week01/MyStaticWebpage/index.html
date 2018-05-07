@@ -1,0 +1,103 @@
+<!-- The index.html is typically the homepage of any web application. -->
+<!-- Use these tags to write comments. -->
+<!DOCTYPE html>
+<!-- This is the DOCTYPE declaration. It tells the browsers what version of html they are interpreting. 
+If you just use html, it will default to HTML 5.-->
+
+<html>
+<!-- The root tag for any html file will be <html>-->
+    <head>
+        <!--The <head> tag is used to store metadata about the page such as, page title, or charset encodings. -->
+            <meta charset="UTF-8">
+            <title> My Fantastic Website :D</title>
+            <!--The title tag is simply that. It will display on the top of pages, and tabs.-->
+            
+            <!-- Internal Stylesheets -->
+            <style>
+                div {
+                    background-color: blueviolet;
+                    color: greenyellow;
+                }
+
+            </style>
+            <!-- External Stylesheets-->
+            <link rel="stylesheet" type="text/css" href="css/maintemplate.css">
+    </head>
+    <!--Inline CSS-->
+    <body style="background-color: #333333; color: RGB(245,148,22)"> <!--#RRGGBB-->
+        <div>
+            <!--The <body> tag is what is actually displayed to the user on the browser.-->
+            <h1>Welcome to my website</h1>
+            <!--Header1 tag-->
+            <img src="https://i.pinimg.com/originals/de/31/93/de319328eecb113a2801a98300f759b3.jpg"
+                width="240px" height="200px">
+            <!--Auto-closeable tags are tags that do not require an ending forward slash or end end tag.-->
+         </div>
+         <div>
+        <p>Please stay a while, and listen.</p>
+        </div>
+        <!--Paragraph Tag-->
+        <hr>
+        <!-- Horizontal Rule -->
+        <h3>Tables!</h3>
+        <table border=2px>
+            <!--Tag sets a spot for the actual table -->
+            <tr> <!--Table Row-->
+                <th>Name</th> <!--Table header-->
+                <th>State Born</th>
+            </tr>
+            <tr>
+                <td class="name">Mario Green</td> <!--Same as th, minus the formatting changes of th-->
+                <td>Texas</td>
+            </tr>
+            <tr>
+                <td class="name">Mario Blue</td> <!--Same as th, minus the formatting changes of th-->
+                <td id="ohio">Ohio</td>
+            </tr>
+            <tr>
+                <td class="name">Mario Purple</td> <!--Same as th, minus the formatting changes of th-->
+                <td>Virginia</td>
+            </tr>
+        </table>
+        <hr>
+        <h3>Anchor Tags!</h3>
+        <p>Anchor tags are used to setup hyperlinks that can reroute users to different pages!</p>
+        <a href="https://www.google.com">Yahoo.com</a>
+        <br> <!--Represents a line break-->
+        <a href="http://www.reddit.com/r/aww/">Reddit</a>
+        <br>
+        <a href="forms.html">forms</a>
+        <a href="betterindex.html">Better Index</a>
+
+        <ul>
+            <li>Dog</li>
+            <li>Cat</li>
+            <li>Gingerbread Man</li>
+        </ul>
+
+        <hr>
+        <h3>Formatting</h3>
+        <p>There exists various formats you can apply to text using Tags</p>
+        <ul>
+            <li><b>bold text</b></li>
+            <li><i>italicised text</i></li>
+            <li><u>underline text</u></li>
+            <li><s>strike through</s></li>
+            <li><em>Emphasized</em></li>
+            <li><q>quotes</q></li>
+            <li><mark>Marked</mark></li>
+        </ul>
+
+        <div>
+            <ul>
+                <div>
+                    <li>
+                        <p>
+                            TEST
+                        </p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </body>
+</html>

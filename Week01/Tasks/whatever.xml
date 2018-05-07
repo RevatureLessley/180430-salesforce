@@ -1,0 +1,44 @@
+<bookstore>
+    <book category="fantasy">
+        <title language="en">
+            harry potter
+        </title>
+        <author>
+            jk rowling
+        </author>
+        <year>
+            2000
+        </year>
+        <price>
+            $10
+        </price>
+    </book>
+    <book category="childrens">
+        <title language="en">
+            hungry hungry caterpillar
+        </title>
+        <author>
+            eric carl
+        </author>
+        <year>
+            1992
+        </year>
+        <price>
+            $8
+        </price>
+    </book>
+    <book category="animals">
+        <title language="en">
+            butterfly
+        </title>
+        <author>
+            eric carl
+        </author>
+        <year>
+            1993
+        </year>
+        <price>
+            $7
+        </price>
+    </book>
+</bookstore>

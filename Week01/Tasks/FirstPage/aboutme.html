@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mario's Website</title>
+        <!--Uses the Bootstrap 3.3.7 CDN -->
+        <link 
+            rel="stylesheet" 
+            type="text/css" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            p:hover{
+                color: purple;
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="mario.css">
+    </head>
+    <body>
+
+        <!--This section uses bootstrap v3.3.7 to produce a navbar that will link to my favorite website 
+            as well as another .html file.
+        -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Mario's Page<span> <i class="glyphicon glyphicon-leaf"></i> </span></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="https://www.bingtoolbar.com/">Favorite Website</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="container" style="padding-top: 50px">
+                <div  class="well">
+                    <h3>Welcome to Mario's Website</h3> 
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="well" style="background-color: aqua">
+                            <h1>BIO</h1>
+                            <p>
+                                Hello, welcome to my page! My name is Mario Green, I graduated with a B.S. in
+                                Electrical Engineering with a focus in Software Engineering. 
+                            </p>
+                            <h5 style="background-color: red">My Academic Interests Include</h5>
+                            <ol>
+                                <li>Web Development</li>
+                                <li>Embedded System Development</li>
+                                <li>Physiology & Genetics</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="well" style="background-color: rgb(15, 226, 142)">
+                            <h1>Myself & My City</h1>
+                            <p>
+                                I was born in Austin, Texas on January 17th, 1992.
+                                Growing up in Austin, Texas is a priviledge because there is something for everyone.
+                                I was lucky enough to attend the University of Texas and so I've had the opportunity
+                                to meet many people from out-of-town and show them the city I love.
+                            </p>
+                            <h5>Austin Activities & Places</h5>
+                            <ul>
+                                <li>Go hiking along the Greenbelt</li>
+                                <li>Going out on 6th Street</li>
+                                <li>Eating at fancy restaurants</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="well" style="background-color: rgb(207, 18, 182)">
+                            <p><b>I have some really cool hobbies! Click </b><span><a href="hobbies.html">HERE</a></span> <b>to check them out!</b></p>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
