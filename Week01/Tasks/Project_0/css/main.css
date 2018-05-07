@@ -1,0 +1,46 @@
+body{
+    background-color:#2b2828;
+    font-family: Georgia;
+}
+div>h2, .well{
+    display: block;
+    text-align: center;
+
+}
+.well, .footer{
+    background-color: #DBD8DF;
+}
+
+li p {
+    padding: 15px;
+}
+
+img{
+    border: 10px solid #A5B574;
+    padding: 10px;
+    margin:10px;
+}
+
+h2, a {
+    color: #563f74;
+}
+
+#email{
+    text-decoration: underline;
+}
+#dogTable .landscape{
+    width:400px;
+    height:300px;
+}
+#dogTable .portrait{
+    width:300px;
+    height:400px;
+}
+
+.rotate{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+}
+
+
