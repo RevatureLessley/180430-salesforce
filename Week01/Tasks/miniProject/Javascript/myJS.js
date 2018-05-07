@@ -1,16 +1,15 @@
 ﻿function myTable() {
     //Javascript function to run and make a table and hide the list system while deleting the table every time the link is clicked. 
     var list = document.getElementById("hobbyList");
-   // list.parentNode.removeChild(list);
     if (list.style.display === "none") {
         list.style.display = "block";
         var delTable = document.getElementById("myTable");
         delTable.parentNode.removeChild(delTable);
 
-    } else {
+    } else  {
         list.style.display = "none";
         var xTable = document.createElement("TABLE");
-        xTable.setAttribute("id", "myTable");
+        xTable.setAttribute("id", "myTable"); 
         document.body.appendChild(xTable);
 
         var tRow = document.createElement("TR");
@@ -32,16 +31,23 @@
         var img1 = document.createElement("TD");
         var img2 = document.createElement("TD");
         var img3 = document.createElement("TD");
-        var imgHardware = document.getElementById("comHardware");
-        var imgChess = document.getElementById("chess");
-        var imgPiano = document.getElementById("piano");
+
+        var imgHardWare = document.createElement("IMG");
+        imgHardWare.setAttribute("src", "Images/computerHardware.jpg");
+        imgHardWare.setAttribute("alt", "Computer HardWare");
+        var imgChess = document.createElement("img");
+        imgChess.setAttribute("src", "Images/chess.jpeg");
+        imgChess.setAttribute("alt", "Chess");
+        var imgPiano = document.createElement("img");
+        imgPiano.setAttribute("src", "Images/Piano.jpg");
+        imgPiano.setAttribute("alt", "Piano");
         hobtd1.appendChild(hobb1);
         document.getElementById("myTr").appendChild(hobtd1);
         hobtd2.appendChild(hobb2);
         document.getElementById("myTr2").appendChild(hobtd2);
         hobtd3.appendChild(hobb3);
         document.getElementById("myTr3").appendChild(hobtd3);
-        img1.appendChild(imgHardware);
+        img1.appendChild(imgHardWare);
         document.getElementById("myTr").appendChild(img1);
         img2.appendChild(imgChess);
         document.getElementById("myTr2").appendChild(img2);
@@ -50,14 +56,5 @@
         var divTable = document.getElementById("hobbyDiv");
         divTable.appendChild(xTable);
     }
-    
-    
-
-        
-
-        
-
-
-  
 
 }
