@@ -1,0 +1,40 @@
+/*
+    CSS Comments
+*/
+
+
+th{
+    background-color: black;
+    color: hotpink;
+}
+
+p{
+    font-family: fantasy;
+}
+
+.names{
+    color:violet;
+    font-size: 49px;
+}
+
+#ohio{
+    font-size:4px;
+}
+
+
+/* more advances css selector
+*{  every element
+    stuff
+}
+
+el1,el2{
+} selects all el1and el2
+
+el1 el2{
+
+} selects ANY el2 that has is within the tags of el1(any parent level)
+
+el1>el2{
+} elects only el2 that are direct children of el1
+*/
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FizzBuzz</title>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+    
+    <script
+                  src="http://code.jquery.com/jquery-3.3.1.min.js"
+                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                  crossorigin="anonymous"></script>
+    
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="FizzBuzz.js"></script>
+
+</head>
+<body>
+    <div class = "container-fluid">
+        <h1>FIZZBUZZ</h1>
+    </div>
+    <div class = "container-fluid">
+        <ul style = "list-style-type: none" id = "list">
+            <li> <b>Lower Number</b></li>
+            <li>
+                <input type ="number" id = lowerNum> 
+            </li>
+            <li><b> Upper Number </b></li>
+            <li>
+                <input type="number" id = upperNum>
+            </li>
+            <li>
+                <button onclick="doStuff()">Generate</button>
+            </li>
+            <li><br></li>
+
+            
+        </ul>
+    </div>
+    <div id = "placeHere">
+        
+    </div>
+    
+</body>
+</html>

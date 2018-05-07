@@ -1,0 +1,26 @@
+#hobbies li{
+    color: black;
+    font-family: Palatino; 
+    text-align: center;
+
+   
+
+}
+
+#hobList > p{
+    background:#FAE935;
+
+}
+
+#hobbies{
+    background:#FAE935;
+
+}
+
+#manuDevil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 350px;
+}

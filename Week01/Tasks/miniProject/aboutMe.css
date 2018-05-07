@@ -1,0 +1,39 @@
+.coolTable{
+    border: 1px black;
+
+}
+
+tr>th{
+    background:#004c54;
+    color:white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr>td{
+    padding:15px;
+    text-align: center;
+    border:1px solid black;
+}
+
+td:nth-last-child(1){
+    background:#ACC0C6;
+}
+
+td:nth-child(1){
+    background: #ACC0C6;
+    color:white;
+}
+
+.sports{
+    height: 200px;
+    width: 200px;
+
+}
+
+.shows{
+    height: 200px;
+    width: 200px;
+
+}

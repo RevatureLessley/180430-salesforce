@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javscipt Stuff</title>
+        <script src = "first.js"></script>
+    </head>
+        <body>
+            <div>
+                <p id = "para1"></p>
+                <button onclick="appendText()"> Click me </button>
+            </div>
+            <script>
+                setTimeout(function(){
+                    document.getElementById("para1").innerHTML = "<b> i use javascript for this</b>"
+                },2500);
+            </script>
+
+            <div class "well" = >
+
+
+            </div>
+
+            <div>
+                <h3></h3>
+                <ul style="list-style-type:none">
+                    <li><b>EMPLOYEE NAME</b></li>
+                    <li><input type = "text" id = "emp_name"></li>
+                    <li><b>favorite dog</b></li>
+                    <li><input type = "text" id = "favDog"></li>
+                    <li><button onClick="addEmp">Submit</button></li>
+                </ul>
+                <br>
+                <table border=2px id="theTable">
+                    <tr>
+                        <th>E_ID</th>
+                        <th>Employee name</th>
+                        <th>favorite dog</th>
+                    </tr>
+                </table>
+            </div>
+            <div class = "well">
+                <h1>Bublingand capturing</h1>
+                <div style="padding: 50px; background-color: red" id = 1>
+                        <div style="padding: 50px; background-color: blue" id =2 >
+                                <div style="padding: 50px; background-color:green" id = 3>
+                                    <h3>Click me</h3>
+                                </div>
+                        </div>
+                </div>
+
+            </div>
+        </body>
+</html>
