@@ -73,3 +73,5 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+/Week01/Tasks/java/JavaExample1/nbproject/private/
+/Week01/Tasks/java/JavaExample1/build/
