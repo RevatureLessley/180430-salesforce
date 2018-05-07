@@ -1,0 +1,68 @@
+/*
+    CSS Comments!
+    Note:
+    With CSS, for competing css, the LAST css to apply, trumps
+    all other CSS. 
+    The more specific the css selector, the more precedence.
+    So body will effect everything, but a div tag will take css
+    precedence over a body tag, since div tags will always be
+    children of the body tag.
+*/
+th{
+    background-color: #00000000;
+    color:lime;
+}
+body{
+    background-color: #00000000;
+    color:red
+	
+	;
+}
+/* The navigation bar */
+.navbar {
+    position: /*sticky; /**/fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the bottom of the page */
+   width: 100%; /* Full width */
+	z-index=99999;
+	
+} 
+#Hob1{
+	border-style:none;
+	    background-color: black;
+    color:lime;
+}
+#Hob2{
+	    border-style:none;
+		background-color: black;
+		color:orange;
+}
+
+/* Main content */
+#main {
+    margin-top: 80px; /* Add a  margin to avoid content overlay */
+	background-color:black;
+	
+}
+.well{
+	
+	background-color:black;
+}
+
+p{
+    font-family: sans-seriff;
+	background-color:black;
+	color:lime;
+}
+
+
+h1,h2, h3{
+	border-style:none;
+	
+	
+}
+.container-fluid{
+	
+	border-style:none;
+	
+}
+

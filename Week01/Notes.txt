@@ -1,0 +1,233 @@
+Golden Scales: 12x10 = 120 - 12 = 108           7
+Golden Shells: 7 x 6 = 42    `			        17
+Golden Tailshell: 4x6 = 24						0
+Golden SpiralHorn:6x4 = 24-6 = 18				2
+Golden Nugget: 4x18= 72-18 = 54 				64
+
+
+Day 2
+*CSS
+    *Bootstrap
+*XML
+    *Namespaces
+    *DTD, XSD
+*Javascript
+    *Scopes
+    *ECMA 6+
+
+
+CSS
+- Cascading Style Sheets
+- html describes content
+- css forms content
+- css selectors
+  * how css identifies given elements to format
+
+Document Object Model: DOM
+
+css DOM syntax:
+  html body div div p {
+    color: red;
+  }
+
+COMMENT YOUR CODE
+CSS:
+  Class:
+    <p class="bobbert">
+    * Typically used for many elements
+    * Selected by the . character EX: .bobbert { }
+  ID:
+    <p id="bobbert">
+    * Typically used to identify one unique elements
+    * Selected by the #bobbert { }
+    *** # is called an octothorp
+
+  Inline:
+    - Style is placed in the tage
+      * <div style="background-color: blue;">
+
+  Internal Style Sheet:
+    - Uses the "style" tag to create a css block inside of the html page
+      * <style> background-color: blue; </style>
+
+
+  External Style Sheet:
+    - All of the styles are placed inside of an external file with any extension
+      using the <link> tag.
+        * <link rel="stylesheet" type="text/css" href="---location of file---">
+
+  Absolute Path vs Relative Path:
+    - absolute:
+    * C:/f1/f2/f3/file.txt
+
+    - relative: assumes that root is the current directory
+    - f3/file.txt
+
+  BOOTSTRAP:
+    - Collection of css and js files for design fluid mobile friendly websites
+    - utilizes a grid system for horizontally formatting css.
+
+    container > row > col-size-width
+    width is on a 12 point scale.
+    col-sm-3
+
+  XML: eXtensible markup language
+    - Often used for distributing information over the internet
+    - Designed to store and transport data between computers
+    - Self Descriptive
+    - Doesn't do anything
+    - XML carries data, HTML displays data
+    XML Syntax:
+      - follows the same structure as html (markdown)
+        * tags elements attributes etc
+      - must have one root tag
+      - optionally have a "prolog"
+        - must be the first line
+        - <?xml version="1.0" encoding="UTF-8"?>
+        - all elements must have closing tags
+        - tags must match case
+        - attributes must be quoted
+        - reserved symbols require entity references
+        - Note: white space preserved
+        - no overlapping tags
+        *** follow all of these rules properly then you will have well formed XML
+
+    XML EXAMPLE:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <bookstore>
+    <book category="drama">
+    <title>
+    Book about dramma
+    </title language="english">
+    <author>
+    dramatic guy
+    </author>
+    <year>
+    2018
+    </year>
+    <price>
+    5 bucks
+    </price>
+    </book>
+    <book category="action">
+    <title>
+    crime fighting mongoose
+    </title language="english">
+    <author>
+    the mongoose himself
+    </author>
+    <year>
+    1824
+    </year>
+    <price>
+    $5000.00
+    </price>
+    </book>
+    <book category="sci-fi">
+    <title>
+    special beans from outerspace
+    </title language="english">
+    <author>
+    Alberto Einstein
+    </author>
+    <year>
+    2020
+    </year>
+    <price>
+    4 cents
+    </price>
+    </book>
+    </bookstore>
+
+  Namespaces and prefixes XML:
+    - to avoid clashing words that are used for other reasons we can use prefixes
+      with Namespaces
+      URI: universal resource identifier
+      ex. <root xmlns:prefix = "some arbitrary uri">
+            <prefix:table>
+              <prefix:tr>
+              </tr>
+            </table>
+          </root>
+
+  DTD Document type definition
+    - external or Internal file that xml can use to enforce specific naming conventions
+      and structure
+
+    EX:
+      - root tag must be 'A'
+      - A must have B, C, D, optionally E
+      - C must have F
+
+      <A>
+        <B></B>
+        <C><F></F></C>
+        <D></D>
+        <E></E>
+      </A>
+
+    XML Schema definition (XSD)- Same use as DTD
+    - It is stronger that DTD
+      - more complex rules sets,
+      - data type enforcement
+      - written in XML
+
+    - If the XML is well formed (follows proper syntax)
+      and conforms to an XSD or DTD, then you have VALID XML.
+
+      - WELL formed follows XML Syntax
+      - VALID is well formed and follows a XSD or DTD
+
+  Javascript
+    - interpreted run time language (scripting)
+    - supported by most browser by default
+    - NOT java
+    - originally called mocha, then livescript, shipped with netscape, as javascript
+    - Created in 10 days. as a result it is weakly typed
+
+  Where to insert javascript
+    - javascript can internally be used within <script> tags
+    - Script tag can be used to import external javascript files
+
+
+  JAVASCRIPT:
+  sort number array
+  array.sort(function<x,y){return x-y)};
+
+  type coercion
+  compare 2 value of different types.
+
+  Scopes:
+    - Global Scopes
+      * accessible from anywhere
+    - Function Scopes
+      * accessible only within a function it is created in
+    - Lexical Scope
+      * only accessible in the block it is created in
+
+  ECMA 6+       ECMA script 6
+    - EX6
+    - ECMA script is what javascript is build on
+    - ES6 brought us
+      - let and const variable declarators
+      - arrow notation
+      - private datatypes
+      - classes
+
+    Scopes ex:
+      var x = 5;
+      function fun() {
+        y = 8;
+        for (let i = -; i < 10; i++)
+        {
+          do stuff
+        }
+      }
+
+  in javascript
+  "vars" are initiated to "untitled" when a function is called
+  don't use vars before values are assigned to them (duh)
+    - will not throw an error
+
+
