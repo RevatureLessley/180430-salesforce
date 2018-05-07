@@ -6,20 +6,32 @@ body {
 h1 {
     text-align: center;
     font-size: 36px;
+    height: 46px;
 }
 
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+div p {
+    text-align: center;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 25%;
     background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
+    position:absolute;
+    height: 103%;
     overflow: auto;
-    top: 64px;
+    top: 94px;
     left: 0px;
 }
+
 
 li a {
     display: block;
@@ -29,11 +41,6 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
 }
-
-    li a.active {
-        background-color: #4CAF50;
-        color: white;
-    }
 
     li a:hover:not(.active) {
         background-color: #555;

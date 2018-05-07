@@ -3,33 +3,71 @@
 <head>
 <title>Index Page</title>
 <link rel="stylesheet" type="text/css" href="externalStyleSheet.css" />
+<script src="Javascript/myJS.js"></script>
+<style>
+    img {
+        width: 400px;
+        height: 300px;
+    }
+    li {
+        font-weight:bold;
+        font-size:18px;
+    }
+    p {
+        font-weight:100;
+
+    }
+    table, td {
+    border: 2px solid black;
+    font: 16px;
+}
+</style>
 </head>
-<body style="background-color:lightgray">
+<body style="background-color:#f1f1f1">
     <!--Top Header Title-->
-    <div style="border-bottom-style:solid; background-color:lightseagreen" >
+        <!--Title -->
         <h1>Welcome to my Hobbies</h1>
-    </div>
-    <!--Left head side-->
+     <!--Left head side-->
 <div>
-<ul>
-  <li><a class="active" href="index.html">Home</a></li>
+<ul style="border-top-style:solid">
+  <li><a href="index.html">Home</a></li>
   <li><a href="aboutMe.html">About Me</a></li>
   <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="#" onclick="myTable()">Click me to change this list</a></li>
 </ul>
 </div>
-    <!--Right hand column side-->
-<div style="margin-left:25%;padding:1px 16px;height:1000px;border-left-style:solid;">
-  <h2>Fixed Full-height Side Nav</h2>
-  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
+ <!--Right hand column side-->
+<div style="margin-left:25%;padding:1px 16px;height:1059px; border-left-style:solid; position:relative; border-top-style:solid; background-color:lightgray; top: 0px; left: 0px;"; >
+  <h2>Hobbies</h2>
+    <!-- OL list made of hobbies -->
+  <div id="hobbyDiv">
+      <ol id = "hobbyList">
+          <li  style="padding-bottom:10em">Computer Hardware:
+            <img  id="comHardware" src="Images/computerHardware.jpg"  style="float:right" alt="Computer Hardware Hobby" />
+              <p style="text-align:left">&nbsp; &nbsp; I started this little interest of mine in college, while i was going for my degree. I figure since i was learning
+                  the software side of these things on my spare time i would also look into the hardware that went into computers. It was more like a mini project for me where
+                  I learned all about the ins and outs of a computer. This is more like something i do on my spare time for fun, rather than make it out into a professional but
+                  being knowledgeable about these stuff has been helpful for me.
+              </p>
+         </li>
+          <li style="padding-bottom:10em">Chess:
+             <img  id="chess" src="Images/chess.jpeg" style="float:right" alt="Chess Hobby"/>
+              <p  style="text-align:left">&nbsp; &nbsp;I started playing Chess within my early teen years, I got really into the game of outwitting someone, chess was really
+                  something that made you think about your actions, and every move had a consquences that can be felt. It was really interesting to play and watch
+                  a chain reaction happened from moving your pieces around on the board. One flawed move could mean diaster for your entire field. It was really something
+                  that got the brain flowing and going for me, and i felt calm and relax playing it.<p>
+          </li>
+          <li >Piano:
+              <img id="piano" src="Images/Piano.jpg" style="float:right" alt="Piano Hobby" />
+              <p  style="text-align:left">&nbsp; &nbsp; I started self teaching myself piano at the age of 16, at first i was restricted to using the
+                  digital online small piano's i could find surfing though the web. Eventually though i was able to obtain a full piano
+                  for my use, I prefer a electric piano to a grand piano. Piano is just something fun i like to do on my spare time, playing the tunes to my favorite songs and
+                  get your hand really working playing faster pace tempo songs. It's something that i still hope to do in the future
+                  with my spare time, as i enjoy listening and playing to music.
+              </p>
+          </li>
+      </ol>
+  </div>
 </div>
 
 </body>
