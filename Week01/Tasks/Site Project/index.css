@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+ul li {
+    font-weight: bold;
+}
+
+div > div > div > p {
+    font-family: cursive;
+}

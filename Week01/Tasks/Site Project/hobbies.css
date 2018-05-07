@@ -1,0 +1,12 @@
+.well {
+    background-color: antiquewhite;
+}
+
+th {
+    text-shadow: 5px;
+    font-style: oblique;
+}
+
+table li {
+    font-style: italic;
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Bring Bootstrap 3 libraries -->
+    
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <style>
+        nav > div {
+            background-color:rgb(32, 32, 32);
+        }
+        #panelhead {
+            color: darkseagreen;
+            font-weight: 900;
+            font-size: 150%;
+        }
+    </style>
+
+    <meta charset="utf-8" />
+    <title>Iain Henderson</title>
+</head>
+<body>
+    <h1>Iain Henderson</h1>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">About Me
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutme.html">Bio</a></li>
+                            <li><a href="hobbies.html">Hobbies</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+    <hr />
+    <div class="container-fluid">
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="background-color: darkslategray">
+                <p id="panelhead">
+                    Introduction:
+                </p>
+            </div>
+                <div class="panel-body">
+                    <div class="well">
+                        <p>This is a webpage made by me, <em><strong>Iain Henderson</strong></em>.
+                    </div>
+                    <img src="me.png" title="This is me" style="width: 200px; height: 300px; object-fit: cover">
+                    &lt;- That's me!
+                </div>
+            </p>
+        </div>
+        <p>
+            Welcome to my site!
+        </p>
+    </div>
+</body>
+</html>
