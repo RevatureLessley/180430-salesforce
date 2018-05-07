@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Forms</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="javascript/jsforms.js"></script>
+</head>
+
+<body>
+    <div class="containter-fluid">
+        <div class="well">
+            <h3>Register</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well">
+                    <h3>Register</h3>
+                    <!-- action attribute determines whiche server to send the request to. -->
+                    <form action="#" id=register onsubmit="return validateRegistration()">
+                        <div class="form-group" id="username">
+                            <label for="username">USERNAME:</label>
+                            <input type="text" class="form-control" name="username" required>
+                        </div>
+                        <div class="form-group" id="password2">
+                            <label for="password1">Password:</label>
+                            <input type="password" class="form-control" name="password1" required>
+                        </div>
+                        <div class="form-group" id="password2">
+                            <label for="password2">Confirm Password:</label>
+                            <input type="password" class="form-control" name="password2" required>
+                        </div>
+                        <div class="form-group" id="email">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <input type="submit" value="REGISTER">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

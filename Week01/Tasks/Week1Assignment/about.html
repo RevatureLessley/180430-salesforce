@@ -2,15 +2,81 @@
 
 <html>
 
-    <head>
+<head>
+    <title>David's Site</title>
 
-    </head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <body>
-        <h1>TEMPLATE PAGE</h1>
-        <p>
-            Currently in development!
-        </p>
-    </body>
+    <script src="assets/javascript/about.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">David's Domain</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="active">
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="hobby.html">HOBBY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container dav-container" style="margin-top:75px">
+        <h1 id="page_title">About me</h1>
+        <div class="well dav-about-well">
+            <p>
+                My name's David, and I am from Los Angeles, California. I have a passion for gaming and game design. You can check out my
+                <a href="hobby.html">hobbies</a> to find out my favorite type of game to play.
+            </p>
+            <p>
+                As for game design I really enjoy learining about how to write game/render engines. I have the most experience writing voxel
+                engines since I've gone through many failed attempts at making them. I have provided an example of one of
+                the first voxel engines I every wrote. It is absolute garbanzo beans but its small enought that is was relatively
+                easy to include into this project.
+            </p>
+            <p>
+                You can interact with the Mario below by clicking and dragging on the black box.
+            </p>
+        </div>
+        <div class="well dav-canvas" style="overflow: hidden">
+            <canvas id="webgl" class="center-block" width="400" height="400">
+                Please use a browser that supports "canvas"
+            </canvas>
+        </div>
+    </div>
+
+    <script src="assets/voxel_render_stuff/lib/webgl-utils.js"></script>
+    <script src="assets/voxel_render_stuff/lib/webgl-debug.js"></script>
+    <script src="assets/voxel_render_stuff/lib/cuon-utils.js"></script>
+    <script src="assets/voxel_render_stuff/lib/gl-matrix.js"></script>
+    <script src="assets/voxel_render_stuff/src/R_Shaders.js"></script>
+    <script src="assets/voxel_render_stuff/src/VoxelModel.js"></script>
+    <script src="assets/voxel_render_stuff/src/mario.js"></script>
+    <script src="assets/voxel_render_stuff/src/R_Main.js"></script>
+    </div>
+
+</body>
 
 </html>

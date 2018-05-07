@@ -1,0 +1,33 @@
+img {
+    margin : 10px;
+    margin-right: 30px;
+}
+
+body {
+    background-color : darkred;
+}
+
+.dav-container
+{
+    max-width: 900px;
+}
+
+#page_title {
+    color : white;
+}
+
+.dav-row, .dav-jumbo {
+    text-align: center;
+    padding : 0px;
+}
+
+.dav-narrow
+{
+    width : 90%;
+    margin : auto;
+}
+
+#dav-cropped-img
+{
+    clip: rect(0px,60px,200px,0px);
+}

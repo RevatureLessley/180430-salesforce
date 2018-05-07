@@ -2,15 +2,132 @@
 
 <html>
 
-    <head>
+<head>
+    <title>David's Site</title>
 
-    </head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <body>
-        <h1>TEMPLATE PAGE</h1>
-        <p>
-            Currently in development!
-        </p>
-    </body>
+    <script src="assets/javascript/index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+
+    <style>
+        td.dav-square {
+            box-sizing: border-box;
+            padding: 0px;
+            width: 15vw;
+            height: 15vw;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">David's Domain</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="hobby.html">HOBBY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container dav-container" style="margin-top:75px">
+        <div class="well">
+            <h1>Welcome to my webstite!</h1>
+            <p>
+                Use the navbar above to go through the different pages to learn more about me!
+            </p>
+            <p>
+                This website is the first assignment for Revature's training program. In this site, and in this site's source ) you can find
+                examples of:
+            </p>
+            <ul>
+                <li>
+                    3 types of using css:
+                    <ul>
+                        <li>inline</li>
+                        <li>internal</li>
+                        <li>external</li>
+                    </ul>
+                </li>
+                <li>
+                    Multiple pages and hyperlinks to each of them
+                </li>
+                <li>
+                    <a href="http://getbootstrap.com/docs/3.3/">Bootstrap</a>
+                </li>
+                <li>At least
+                    <b>THREE</b> different css selctor types</li>
+            </ul>
+
+            Leave a comment below to let me know what you think (syke it isn't hooked up to a server so I wont be able to see it. Gotta
+            flex those form muscles though 😎)
+            <hr>
+            <p>
+                Fun fact: It took me 22 tries to fill up all of the comment boxes.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="dav-comments" class="well">
+            <form class="form-horizontal" action="#">
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="commentInput" placeholder="comment">
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-default pull-right" onclick="submitComment()">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <h3>Comments Table:</h3>
+            <table class="table table-bordered dav-table">
+                <tr>
+                    <td id="tab0" class="dav-square"></td>
+                    <td id="tab1" class="dav-square"></td>
+                    <td id="tab2" class="dav-square"></td>
+                </tr>
+                <tr>
+                    <td id="tab3" class="dav-square"></td>
+                    <td id="tab4" class="dav-square"></td>
+                    <td id="tab5" class="dav-square"></td>
+                </tr>
+                <tr>
+                    <td id="tab6" class="dav-square"></td>
+                    <td id="tab7" class="dav-square"></td>
+                    <td id="tab8" class="dav-square"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
 
 </html>

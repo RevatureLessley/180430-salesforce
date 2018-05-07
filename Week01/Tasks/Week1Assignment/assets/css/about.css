@@ -1,0 +1,24 @@
+.dav-about-well {
+    background-color : #a8edec;
+}
+
+.dav-container
+{
+    max-width:900px;
+}
+
+.dav-canvas {
+    margin : 15px auto;
+    max-width: 500px;
+}
+
+#page_title {
+    color : white;
+}
+
+body {
+    background-color : #394063;
+}
+/*
+#dav-about-
+*/
