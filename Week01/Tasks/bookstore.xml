@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<bookstore>
-	<Book catagory="MnM">
-		<title language="bad">what</title>
-		<author>who</author>
-		<year>slim shady</year>
-		<price>2.99</price>
-	</Book>
-</bookstore>
