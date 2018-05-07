@@ -4,9 +4,6 @@ public class Driver {
 	Accessor a = new Accessor();
 	public static void main(String[] args) {
 		
-		
-		
-
 	}//main
 	public void writeStuff(){
 		//System.out.println(priv);
