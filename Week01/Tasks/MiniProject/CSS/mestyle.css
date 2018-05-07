@@ -8,27 +8,32 @@ table{
     text-align:left;
 }
 
-nav h1{ /* div needs to be specified for some reason */
+/* all h1s within a nav */
+nav h1{ /* nav needs to be specified for some reason */
     color:rgb(0, 112, 50);
 }
 
+/* all h2s within a div */
 div h2{
     color:rgb(0, 189, 132);
 }
 
+/* all h3s within a div */
 div h3{
     color:rgb(0, 189, 132);
 }
 
+/* all paragraphs within a div  */
 div p{
     color:silver;
 }
 
+/* anchors within a paragraph will inherit from the paragraph if it is a parent */
 div p>a{
     color:inherit;
 }
 /*
-    this will apply to all headers in a row.
+    this will apply to all headers whose parent is a row.
 */
 div tr>th{
     text-align:center;
@@ -41,6 +46,7 @@ div tr>th{
     if another table is made that has a header
     row, rather than headers in the first column,
     then this will not apply to data of that table.
+    this will apply to too data immediately following a header
 */
 div th~td{
     color:forestgreen;
@@ -59,6 +65,7 @@ div h2~p{
     color:#1a1a1a;
 }
 
+/* this will change the text color of this element on hover */
 div h2~p:hover{
     color:deeppink;
 }

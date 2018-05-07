@@ -4,7 +4,8 @@
 
 <head>
 
-	<link rel="stylesheet" href="CSS/mestyle.css"> <!-- I think moving this below the bootstrap import code will give my css settings precedence over bootstrap's defaults -->
+	<link rel="stylesheet" href="CSS/mestyle.css">
+	<!-- I think moving this below the bootstrap import code will give my css settings precedence over bootstrap's defaults -->
 
 	<meta charset="UTF-8">
 
@@ -37,42 +38,44 @@
 	</nav>
 
 	<div class="container-fluid">
-		<h3>My stats</h3>
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="well" style="background:transparent;border:none;">
+				<h3 style="margin-left:20px">My stats</h3>
+
+				<table border="1" style="margin-left:20px">
+
+					<tr>
+						<th>Name</th>
+						<td>Kyle Chiu</td>
+					</tr>
+					<tr>
+						<th>Age</th>
+						<td>23</td>
+					</tr>
+					<tr>
+						<th>Degree</th>
+						<td>Computer Science</td>
+					</tr>
+					<tr>
+						<th>Born in</th>
+						<td>Washington State</td>
+					</tr>
+					<tr>
+						<th>Music </th>
+						<td>Soft Rock + whatever is pleasant to my ears</td>
+					</tr>
+
+				</table>
+
+				<p style="text-align:center;margin-left:-60px">I enjoy eating, playing games,
+					<s>long walks on the beach</s>, and RomComs.</p>
+				<p style="text-align:center;margin-left:-60px">Make a
+					<a href="https://www.youtube.com/watch?v=LcDpJ_7q6Zc">Spongebob</a> reference. I'll probably understand it.</p>
+			</div>
+		</div>
 	</div>
 
 	<div class="container-fluid">
-		<table border="1">
-
-			<tr>
-				<th>Name</th>
-				<td>Kyle Chiu</td>
-			</tr>
-			<tr>
-				<th>Age</th>
-				<td>23</td>
-			</tr>
-			<tr>
-				<th>Degree</th>
-				<td>Computer Science</td>
-			</tr>
-			<tr>
-				<th>Born in</th>
-				<td>Washington State</td>
-			</tr>
-			<tr>
-				<th>Music </th>
-				<td>Soft Rock + whatever is pleasant to my ears</td>
-			</tr>
-
-		</table>
-	</div>
-
-	<div class="container-fluid">
-		<p>I enjoy eating, playing games,
-			<s>long walks on the beach</s>, and RomComs.</p>
-		<p>Make a
-			<a href="https://www.youtube.com/watch?v=LcDpJ_7q6Zc">Spongebob</a> reference. I'll probably understand it.</p>
-
 		<div class="col-sm-4 col-sm-offset-4">
 			<div class="well" id="leave">
 
@@ -91,7 +94,7 @@
 
 	<div class="container-fluid">
 		<div class="col-sm-6 col-sm-offset-3">
-			<div class="well" id="joke">
+			<div class="well" id="joke" style="margin-left:-50px">
 				<h2>I really like dad jokes. Here's a good one:
 
 					<!-- 
