@@ -1,0 +1,10 @@
+body, html{
+    padding-top: 50px;
+    background-color: black;
+}
+#leet{
+    color: green;
+}
+.well{
+    background-color: lightgrey;
+}
