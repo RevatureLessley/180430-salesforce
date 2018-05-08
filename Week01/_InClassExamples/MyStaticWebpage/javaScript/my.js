@@ -60,7 +60,7 @@ function addEmp() {
     //insert in between the line?
   
     td1.appendChild(empId);//<td>empID</td> Value that save the beginning of function
-    td2.appendChild(nameText);//<td>empName</td>
+    td2.appendChild(nameText);//<td>empName</td> td2.appendChild("Daniel");
     td3.appendChild(favText);//<td>favDog</td>
     td4.appendChild(delBut);//<td><button onclick="removeRow(empCounter) style="color:red">X</button></td>
 
@@ -100,22 +100,22 @@ window.onload = function () {
 
     d1.addEventListener("click", d1click, true);
     d2.addEventListener("click", d2click, true);
-    d3.addEventListener("click", d3click, true);
+    d3.addEventListener("click", d3click,true);
     //addEventListener passes 3 arguments
     //the event the callback use Capture <- this is set to false by default
     //we can use event propogation to prevent bubbling/capturing in it entirety.
 
     function d1click(event) {
         window.alert("d1 clicked");
-      //  event.stopPropagation();
+        event.stopPropagation();
     }
     function d2click(event) {
         window.alert("d2 clicked");
-       // event.stopPropagation();
+        event.stopPropagation();
     }
     function d3click(event) {
         window.alert("d3 clicked");
-      //  event.stopPropagation();
+        event.stopPropagation();
     }
 }
 

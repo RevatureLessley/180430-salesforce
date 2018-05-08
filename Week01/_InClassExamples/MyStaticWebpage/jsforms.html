@@ -1,0 +1,64 @@
+<!--
+    Daniel Bayless
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Form</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <script src="javaScript/forms.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="well">
+            <h1>JAVASCRPIT</h1>
+            </div>
+
+        <div class=row>
+            <div class="col-md-6">
+                <div class="well">
+                    <!-- action attribute determines witch server to send the request to-->
+                    <form action="#" id=register onsubmit="return validateRegistration()">
+                        <h3>REGISTER</h3>
+
+                        <!-- user name field-->
+                        <div class="form-group" id=username>
+                            <label for="username">USERNAME</label>
+                            <input type="text" class="form-group" name="username" required />
+                        </div>
+
+                        <!-- passowrd field-->
+                        <div class="form-group" id=password1>
+                            <label for="password1">PASSWORD:</label>
+                            <input type="password" class="form-control" name="password1" required>
+                        </div>
+
+                        <!-- passowrd confrom through *** Throw error pass1 and pass2 not match-->
+                        <div class="form-group" id=password2>
+                            <label for="password2">CONFIRM PASSWORD:</label>
+                            <input type="password" class="form-control" name="password2" required>
+                        </div>
+
+                        <div class="form-group" id=email>
+                            <label for="email">EMAIL</label>
+                            <input type="email" class="form-group" name="email" required />
+                        </div>
+                        <input type="submit" value="REGISTER">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

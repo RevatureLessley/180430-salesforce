@@ -6,31 +6,39 @@ application.  -->
     version of html they are interperting. If you just use html,
     it will default to html 5.-->
 <html>
-    <!-- The root tag for any html file will be <html> -->
+<!-- The root tag for any html file will be <html> -->
 <head>
-<!-- The <head> tag is used to store metadata about the page
-        such as, page title, or charset encodings. -->
-<meta charset="UTF-8">
-<title>My Fantastic Website :D</title>
-<!-- The title tag is simply that. It will display on the top of pages, and tabs. -->
-
+    <!-- The <head> tag is used to store metadata about the page
+            such as, page title, or charset encodings. -->
+    <meta charset="UTF-8">
+    <title>My Fantastic Website :D</title>
+    <!-- The title tag is simply that. It will display on the top of pages, and tabs. -->
     <!-- Internal Stylesheets @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <style>
-        div{
-            background-color:purple;
-                color:yellow;
+        div {
+            background-color: black;
+            color: green;
         }
-        body{
-            background-color:greenyellow;
+
+        body {
+            background-color: deeppink;
         }
-        </style>
+       //this overwrite top one
+         div {
+            background-color: white;
+            color: red;
+        }
+
+    </style>
 
     <!-- External Style sheet@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-    <link rel="stylesheet" type="text/css" href="css/maintemp.css">
+    <link rel="stylesheet" type="text/css" href="css/maintemp.css"> 
 </head>
 
-<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@In line Css-->
-<body style="background-color:#333333; color:#ff6a00"> <!-- #RR GG BB -->
+<!-- ################# In line CSS ################# -->
+<!-- -->
+<body style="background-color:#333333; color:#ff6a00">
+    <!-- #RR GG BB -->
     <div>
         <!-- The <body> tag is what is actually displayed to the user
            on the browser.-->
@@ -68,7 +76,7 @@ application.  -->
             <td id="ohio">Ohio</td>
         </tr>
     </table>
-    
+
     <hr>
     <h3>Anchor Tags~</h3>
     <p>Anchor tags are used to setup hyperlinks that can reroute users to different pages!</p>
@@ -90,13 +98,13 @@ application.  -->
     </ol>
     <hr>
     <ul>
-        <li>
+        <li id="li1">
             Dog
         </li>
-        <li>
+        <li id="li2">
             Cat
         </li>
-        <li>
+        <li id="li3">
             Gingerbread man
         </li>
     </ul>
