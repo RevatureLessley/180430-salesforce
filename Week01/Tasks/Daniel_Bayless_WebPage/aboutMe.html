@@ -1,0 +1,147 @@
+﻿<!-- aboutMe.html
+     05/07/2018
+     Daniel Bayless
+     * This page include my Bio, link to hobby.html.
+       use un-order list display my Name, age, Language... etc
+       Also, this page include table and image.
+
+     + Boostrap
+     + External Stylesheets
+     + Inline Stylesheets
+     + <table>
+     + ....
+    -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="CSS/AboutMeCSS.css">
+</head>
+
+<body>
+
+    <div id="div0">
+        <!--Navigation bar by Using Bootstrap-->     <!-- Inline Stylesheets -->
+        <nav class="navbar navbar-default" style="background-color: deeppink">
+            <div class="container-flid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="background-color: deeppink"> MENU</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li> <a href="index.html"> Home</a> </li>
+                    <li> <a href="aboutMe.html"> About Me</a> </li>
+                    <li> <a href="hobby.html"> Hobby</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- This Menu bar is sams as index.html menu bar-->
+
+        <div id="div1">
+            <h1> Introduction</h1>
+        </div>
+
+        <div id="div2">
+            <h1> BIOGRAPHY</h1>
+            <ul id="bio">
+                <!-- Use Un-sorted List to display my name, age, ... etc-->
+                <li> <b> Name:</b> Daniel Park Bayless</li>
+                <li> <b> Age: </b> 25</li>
+                <li> <b> Ethnicity:</b> Korean</li>
+                <li> <b> Date of Birth: </b> February 2, 1993</li>
+                <li> <b> Favorite Color: </b> Black, Gray</li>
+                <li> <b> Language: </b> Korean, English</li>
+                <li> <b> From: </b> Seattle</li>
+                <li> <b> Fun Facts </b> </li>
+                <ol>
+                    <li> I have very American last name, which is "BAYLESS". </li>
+                    <li> I know how to drive manual car.</li>
+                    <li> I am the first in my family to graduate from University. </li>
+                </ol>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div id="div3">
+            <h2> Education</h2>
+            <!--Use table to display my Education -->
+            <table border=5px>
+                <!-- Table row-->
+                <tr>
+                    <!-- Table header set header as school name, year, degree, image-->
+                    <th> School Name</th>
+                    <th> &nbsp; Year &nbsp; </th> <!--&nbsp extra space-->
+                    <th> &nbsp; Degree &nbsp;</th> <!--&nbsp extra space-->
+                    <th> Image</th>
+                </tr>
+
+                <tr>
+                    <!-- Table Data -->
+                    <td> <b> University of Washington</b> </td>
+                    <td> &nbsp;2017&nbsp;</td>
+                    <td> &nbsp;&nbsp;Bachelor of Science in Computer Science and Systems</td>
+                    <td>
+                        <img src="http://sportspressnw.com/wp-content/uploads/2011/11/Washington_Huskies-e1321810480747.jpg"
+                             width="90px" height="90px">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Table Data -->
+                    <td> <b> South Puget Sound Community College</b> </td>
+                    <td> &nbsp;2014&nbsp;</td>
+                    <td> &nbsp;&nbsp;Associate of Arts in Science-Electronic Systems</td>
+                    <td>
+                        <img src="http://thurstonchamber.com/wp-content/uploads/2017/10/SPSCC.jpg"
+                             width="90px" height="90px">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- Table Data -->
+                    <td> <b> North Thurston High School</b> </td>
+                    <td> &nbsp;2012&nbsp;</td>
+                    <td> &nbsp;&nbsp;High School Diploma</td>
+                    <td>
+                        <img src="https://static.hudl.com/users/temp/42310_f5637c2ac2e94c088e3af2693864c555.jpg"
+                             width="90px" height="90px">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <hr>
+
+        <div id="div4">
+            <h3> <a href="hobby.html"> Hobby</a> </h3> <!--Link to hobby page.-->
+            <p> GO TO HOBBY PAGE</p>
+            <ol>
+                <!-- use Order List to Display my Hobbies-->
+                <li> MAA & Kick-Boxing</li>
+                <img src="https://i.imgur.com/MgvwdLt.jpg"
+                     width="240px" height="200px">
+                <li> Car</li>
+                <img src="https://i.pinimg.com/originals/1c/72/77/1c727795f3b3e24174e86b8e7bf62a0f.jpg"
+                     width="240px" height="200px">
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

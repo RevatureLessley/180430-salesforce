@@ -1,0 +1,93 @@
+﻿<!-- hobby.html
+    05/07/2017
+    Daniel Bayless
+    * More description about my hobbies also linked to cool websites
+      Website1: compare two food health attributes
+      Website2: deeper detail on Hip-hop Music and cultureal background behind.
+
+     + Boostrap
+     + External Stylesheets
+     + Internal Stylesheets
+     + Use CSS to handle events
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hobby</title>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Internal Stylesheets -->
+    <style>
+        ul {
+            background-color: lightslategray;
+        }
+
+        #navColor {
+            background-color: dimgray;
+        }
+
+        p {
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="CSS/HobbyCSS.css">
+</head>
+<body>
+    <!--Navigation bar by Using Bootstrap-->
+    <nav class="navbar navbar-default">
+        <div class="container-flid">
+            <div class="navbar-header">
+                <a class="navbar-brand">MENU</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" style="background-color:black">Home</a></li>
+                <li><a href="aboutMe.html" id="navColor">About Me</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- This Menu bar is sams as index.html menu bar-->
+
+    <div>
+        <h1>HOBBY</h1>
+        <p>
+            MAA & Kick-Boxing <br />
+            I have been training Kick-boxing since, I moved to America.
+            After training for awhile, I started to good at it and became my hobby.
+        </p>
+        <p>
+            Car <br />
+            As a person who scares a roller coaster, it is very odd that I like fast cars. I enjoy driving and modified a car.
+        </p>
+    </div>
+
+    <div>
+        <!-- use target to for DOM manipulation-->
+        <h1>Some Cool Websites</h1>
+        <ul>
+            <li><a href="http://www.twofoods.com/" target="_blank">Website1</a></li>
+            <p> Directly compare two food health attributes on different levels. Perfect for when you just can’t choose what to eat.</p>
+
+            <li><a href="https://genius.com/" target="_top">Website2</a></li>
+            <p>
+                If you wnat to know more about your favorite rap music. This website provides pop-up annotations that
+                <br>displayed which provide additional details and context for the section in lyrics.
+            </p>
+        </ul>
+
+    </div>
+</body>
+</html>

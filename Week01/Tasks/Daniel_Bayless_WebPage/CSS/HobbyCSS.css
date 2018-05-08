@@ -1,0 +1,30 @@
+div h1 {
+    color: saddlebrown;
+    font-family: 'Times, serif';
+}
+div > p {
+    color:darkred;
+    font-family: "Lucida Console"
+}
+h1~p{
+    background-color:green;
+
+}
+h1 ~ ul {
+    background-color: yellow;
+}
+a[target] {
+    background-color: Red;
+    color: yellow;
+    font-size: 80px;
+}
+a:hover {
+    background-color: yellow;
+    color: Red;
+}
+
+a:active {
+    background-color: Red;
+    color: yellow;
+    font-size: 80px;
+}

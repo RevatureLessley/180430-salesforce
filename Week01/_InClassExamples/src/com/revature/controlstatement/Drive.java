@@ -33,6 +33,21 @@ public class Drive {
 			System.out.println("K value: "+k++);
 		}
 
+		System.out.println("************************************8");
+		int w = 0;
+		do {
+			System.out.println(w + " Do while"); // execute this Line 
+			w++;
+		}while(w == 5); //and check for it
+		// where as while loop check first and the execute
+		w=0;
+		while(w == 5) { // cuz this is false
+			System.out.println(w + " While");  // this line not execute
+			w++;
+		}
+		System.out.println("************************************8");
+		
+		
 		System.out.println("========== DO WHILE =========");
 		/*
 		 * a do while loop will execute ONCE before checking the condition 

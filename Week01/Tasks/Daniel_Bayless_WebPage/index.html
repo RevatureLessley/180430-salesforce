@@ -1,0 +1,108 @@
+﻿<!-- index.html
+     05/07/2018
+     Daniel Bayless
+     * This page describe what the hompage is about (one of the requirement)
+        Little paragraph about webpage, follow by Image.
+        Lastly, links to different page.
+
+     + Boostrap
+     + External Stylesheets
+     + Inline Stylesheets
+     + <p> 
+     + <ol>
+     + <a>                              -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Daniel Bayless Website </title>
+
+    <!-- Bring Bootstrap 3 libraries -->
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="CSS/indexCSS.css">
+</head>
+
+<!-- Inline CSS -->
+<body style="background-color:black; color:yellow">
+
+    <!--Navigation bar by Using Bootstrap-->
+    <nav class="navbar navbar-default" style="background-color:black">
+        <!-- Container for Bootstrap-->
+        <div class="container-flid">
+            <div class="navbar-header">
+                <a class="navbar-brand">MENU</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <!-- Items fro Menu Bar-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <!-- Apply CSS. text place in middle of page-->
+        <h1 id="center">
+            This webpage is about
+            <!--Each Letter change color/ Inline CSS-->
+            <span style='color: red'>D</span> <!-- letter 'D' to Red color -->
+            <span style='color: orange'>a</span>  <!-- letter 'a' to Orange color -->
+            <span style='color: yellow'>n</span>  <!-- letter 'n' to Yellow color -->
+            <span style='color: green'>i</span>  <!-- letter 'i' to green color -->
+            <span style='color: blue'>e</span>  <!-- letter 'e' to blue color -->
+            <span style='color: navy'>l</span>  <!-- letter 'l' to navy color -->
+            <span> </span>
+            <span style='color: red'>B</span>  <!-- letter 'D' to Red color -->
+            <span style='color: orange'>a</span>  <!-- letter 'D' to orange color -->
+            <span style='color: yellow'>y</span>  <!-- letter 'D' to yellow color -->
+            <span style='color: green'>l</span>  <!-- letter 'D' to green color -->
+            <span style='color: blue'>e</span>  <!-- letter 'D' to blue color -->
+            <span style='color: navy'>s</span>  <!-- letter 'D' to navy color -->
+            <span style='color: purple'>s</span>  <!-- letter 'D' to purple color -->
+        </h1>
+
+        <hr />
+        <!-- Apply CSS. text place in middle of page-->
+        <p id="center">
+            This is Index page. You can naviage to "About Me Page" and "Hooby Page"<br />
+            In "About Me" page: I am going to talk about my history, education, Hobbies, etc... <br />
+            In "Hobby" page: You can learn more about my Hobies, and interesting websites.
+        </p>
+        <hr />
+
+        <!-- Image -->
+        <div>
+            <img src="https://media1.tenor.com/images/41a0802c644036ad7f9e6830fbc8cafa/tenor.gif?itemid=4256034" />
+        </div>
+
+        <hr />
+
+        <!-- Apply CSS. text place in middle of page-->
+        <h3 id="center">let go to different page</h3>
+        <!-- Order-List -->
+        <ol>
+            <li>
+                <!-- Anchor to aboutMe.html page-->
+                <a href="aboutMe.html">About Me</a>
+                <p>Move to About Me page</p>
+            </li>
+            <li>
+                <!-- Anchor to hobby.html page-->
+                <a href="hobby.html">Hobby</a>
+                <p>Skip to Hobby Page</p>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
