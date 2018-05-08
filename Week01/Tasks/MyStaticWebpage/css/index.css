@@ -3,7 +3,14 @@
     font-size: 0.75cm;
 }
 
-#w1,#w2{
+#w2,#w4{
     background-color : rgb(00, 162, 223);
     text-align: center;
+    font-size: 0.75cm;
+}
+
+#w1,#w3{
+    background-color : rgb(00, 162, 223);
+    text-align: center;
+    font-weight: bold
 }

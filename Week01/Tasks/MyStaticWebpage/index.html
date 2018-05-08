@@ -2,35 +2,44 @@
 <html>
     <head>
         <title>My Webpage</title>
-        <link rel="stylesheet" type="text/css"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bring Bootstrap 3 libraries -->
+
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Bring Bootstrap 3 libraries -->
     
-    <script
-                  src="http://code.jquery.com/jquery-3.3.1.min.js"
-                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                  crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     
-    <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bring in supplemental javascript for bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Bring in supplemental javascript for bootstrap -->
 
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="javaScript/fristindex.js"></script>
         <style>
         body{
              background-image: url("images/Cool-Blue-Wallpaper.jpg");
         }
         </style>
+
     </head>
    <body style = " padding-top: 2cm; color:antiquewhite; align-items: center">
        <div class = "container" style = " background-color :transparent ;text-align:center; font-family: Curlz MT">
-           <div class = "well" style = "background-color : rgb(00, 162, 223)">
+           
+            <div class="well" id="w3">
+            <h1 style="font-size: 2.5cm"><b>WELCOME</b></h1>
+        </div>
+        <div class="well" id="w4" >
+            <p>Please Enter your Name</p><br>
+            <input type="text" id="name" style="color: black">
+            <button onClick = "names()" style="background-color: rgb(00, 162, 223)">Submit</button>
+        </div>
+        
+
+        <div class = "well" id="w1">
        <h3><b style="font-size: 1.5cm">Hello and Welcome to my Webpage</b></h3>
        
            </div>
-           <div class="well" style = "background-color : rgb(00, 162, 223); text-align: center">
-                <img scr = "">
-                <p><b style="font-size: 0.75cm"> So, you are here to learn more about me. <br>
+           <div class="well" id="w2">
+                <p><b style="font-size: 0.75cm"><p id="p"></p> So, you are here to learn more about me. <br>
                  I am a boring weird person, I can't imagin why a person would want to know more about me.<br>
                  Anyway click on the links below to view other pages <br>
                  <ul style="list-style-type:none">

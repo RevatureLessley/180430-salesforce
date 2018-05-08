@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 //a shorter version of this is:
 $(function(){
-
+	$("#div1").hide(2500);
 });
 
 function hideit(){
