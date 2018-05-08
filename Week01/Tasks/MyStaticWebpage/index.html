@@ -1,67 +1,115 @@
 <!DOCTYPE html>
-<!-- Doug's Homepage -->
 <html lang="en-us">
-    <head>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- Set metadata about webpage -->
-        <meta charset="utf-8">
-        <title>Doug's Homepage</title>
-        <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="#">WebSiteName</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#">Page 1</a></li>
-                      <li><a href="#">Page 2</a></li> 
-                      <li><a href="#">Page 3</a></li> 
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        <!-- Internal stylesheet for image and page title -->
-        <style>
-            #headerImg {
-                width: 400px;
-                height: 600px;
-                position: relative;
-                display: inline-block;
-                overflow: hidden;
-                margin: 25px;
-            }
-            div > img {
-                display: block;
-                position: absolute;
-                top: 60%;
-                left: 50%;
-                min-height: 100%;
-                min-width:  100%;
-                transform: translate(-50%, -50%);
-                float: left;
-            }
-        </style>
-        <script src="myjs.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Doug Houser Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="myCSS.css" rel="stylesheet" type="text/css">
+    <style>
         
-    </head>
-    <body id="body" style="font: arial serif bold 20px">
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
 
-    </body>
+        body>nav {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+
+        body {
+            font: 20px "Montserrat", sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p~img {
+            margin-bottom: 45px;
+        }
+
+        h3.margin {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function comingSoon(){
+            window.alert("This feature is a work in progress and will be coming soon!");
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" style="max-height: 20%">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a>Doug Houser</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="aboutMe.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="comingSoon()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gran-turismo.com/us/" target="_blank">Interests</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-1">
+        <h3 style="text-align: center; color: green; font-size: 24px">Who Am I?</h3>
+        <ul>
+            <li>The first PC I touched was a TRS-80 Radio Shack computer. My high school bought two in my junior year in preparation
+                for teaching different subjects. I reverse engineered a simple Pac-Man type game and learned about program
+                logic in the Basic language using methods such as if conditions and for-next loops.
+            </li>
+            <li>During my Navy career, I created a database for spare parts inventory to make it easier to find and re-order
+                parts. My real discovery of my attraction to coding was at my last place of employement.
+                <br> After the company decided to move to a cheaper application to handle their 3M system, I was given the opportunity
+                to develop an Access database in keeping with the accepted standards of the desired functionability of the
+                previous 3M system.
+            </li>
+            <li>Getting my degree was the best decision I have ever made and now I am using my degree to become a software developer
+                at Revature.
+            </li>
+        </ul>
+        <h3 class="margin">I'm an old man with a mission!</h3>
+    </div>
+    <div class="footer">
+        <footer class="container-fluid bg-4 text-center" style="max-height: 20%">
+            <p>Webpage Created by Doug</p>
+        </footer>
+    </div>
+</body>
+
 </html>

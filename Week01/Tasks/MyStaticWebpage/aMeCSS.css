@@ -1,0 +1,21 @@
+table {
+    margin: 10% 15%;
+    border-spacing: 3px;
+}
+
+th {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+td {
+    font-size: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    background-color: darksalmon;
+}
