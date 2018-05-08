@@ -1,0 +1,72 @@
+
+table {
+        	   border:1px solid lightslategray;
+        	   border-collapse:collapse;
+	      }
+table,tr,td {
+	           border:1cm solid lightslategray;
+			   border-collapse:collapse;
+        	   text-align:center;
+        	   padding-left:2px;
+        	   padding-right:200px;
+        	   margin:auto;
+	        }
+ sup {
+	   font-style:italic;
+	 }
+ td{
+	   font-size:large;
+	 }
+   tr{
+	   background-color:#f5eff5;
+	 }
+div, h1 {
+	      text-align:center;
+	      }
+  footer {
+    	     display:block;
+    		 position:relative;
+    		 width:100%;
+             bottom:0px;
+		     color:black;
+             text-align: center;
+	     }
+         /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #4CAF50;
+    overflow: hidden;
+}
+.topic {
+    background-color: #4CAF50;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float:left;    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:rgb(221, 221, 221);
+    color:black;
+}
+
+/* Add a color to the active/current link */
+.topnav a {
+    background-color: #4CAF50;
+    color: white;
+}
+#subtitle {
+color: indigo;
+}
+#cap {
+color: indigo;
+font-size: 36px;
+}
+		 
+	

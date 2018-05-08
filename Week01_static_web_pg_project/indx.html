@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Revature first project</title>
+    <link rel="stylesheet" href="index.css"> <!--importing external css file-->
+  </head> <!--end head-->
+  <body>
+     <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="C:/Users/abate/Desktop/Week01/htmlform.html">Hobby</a>
+        <a href="C:\Users\abate\Desktop\week01\aboutme.html">About</a>
+    </div>
+              
+   <div class ="topic"><h1 id ="subtitle"> My HTML Calandar </h1> </div>
+     <table>
+     <caption id="cap"> This is the table caption text</caption>
+     <tbody>    <!-- the body of the table-->
+       <tr>     <!--creating table rows and the datas int it-->
+            <td class="row"> <strong> Monday </strong> </td>
+            <td> <sup>10:00 - 10:45 AM </sup> <br> <sub> CSCI3123 - KH 320</sub> </td>
+            <td> <sup>1:00 - 2:00 PM </sup> <br> <sub> Meeting ShepherdLabs 587 </sub> </td>
+            <td> <sup>3:00 - 4:00 PM </sup> <br> <sub> Bowling : <a href="https://campusmaps.umn.edu/coffman-memorial-union">
+            Coffman </a> </sub> </td>
+       </tr>
+    <tr class="row"> 
+            <td class="row"> <strong> Tuesday </strong> </td>
+            <td> <sup> 8:00 - 8:45 AM </sup> <br> <sub> CSCI2034 - KH 322 </sub> </td>
+            <td> <sup> 11:00 - 11:45 AM </sup> <br> <sub> CSCI4131 - KH 321</sub> </td>
+            <td> - </td>
+     </tr>
+     <tr> 
+            <td class="row"> <strong>Wednsday </strong> </td>
+            <td> <sup> 10:00 - 10:45 AM</sup> <br> <sub>CSCI3123 - KH 320 </sub> </td>
+            <td> <sup> 2:00 - 3:00 PM</sup> <br> <sub>Group Meeting - Walter </sub> </td>
+            <td><sup>  4:00 - 5:00 PM </sup> <br> <sub> Office hours - KH 410 </sub> </td>
+     </tr>
+  <tr class="row"> 
+            <td class="row"><strong>Thursday</strong> </td>
+            <td> <sup>8:00 - 8:45 AM </sup><br> <sub> CSCI2034 - KH 322 </sub></td>
+            <td> <sup> 11:00 - 11:45 AM </sup> <br> <sub> CSCI4131 - KH 321 </sub> </td>
+            <td>  - </td>
+    </tr>
+    <tr> 
+            <td class="row"> <strong>Friday </strong> </td>
+            <td> <sup> 10:00 - 10:45 AM </sup> <br> <sub> CSCI3123 - KH 320 </sub> </td>
+            <td> <sup> 3:00 - 4:00 AM </sup> <br> <sub> Swimming - <a href="http://recwell.umn.edu/" target="_blank">Rec Center</a> </sub> </td>
+            <td> <sup> 5:00 - 6:00 PM </sup> <br> <sub> Office hours - KH 410 </sub> </td>
+     </tr>
+  </tbody>   <!-- ending the body of the table-->
+ </table>   <!-- end the table-->
+
+   <hr>
+ <div><h2>The View of Minneapolis, Minnesota From University of Minnesota Twin Cities campus.</h2></div>
+ <div> 
+     <a href="https://twin-cities.umn.edu/about-us" target="_blank">
+     <img src="C:\Users\abate\Desktop/mainphoto-index.jpg" alt="ops unabe to load the image">
+    </a>
+</div>
+     <footer> <p> This page has been tested in Chrrome, Firefox and Internet Explorer.</p> </footer>
+   <hr>
+ <h1> Embeding Google Map using google API key</h1>
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+  <script>
+  function myMap() {
+  var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2n9b10bMBd_Fyp2_xEImDnFZKPwv9iCs&callback=myMap"></script>
+
+</body>  
+</html>
