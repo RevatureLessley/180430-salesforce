@@ -7,21 +7,23 @@
 
     <!-- Bootstrap Libraries and Scripts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+        </script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
-        .nav-light {
-            background-color: #FAFEFF;
+        p {
+            padding: 10px;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse nav-light" style="border-radius: 0px;">
+    <nav class="navbar navbar-inverse top-nav" style="border-radius: 0px;">
         <!-- In-line CSS -->
         <div class="container-fluid">
             <div class="navbar-header">
@@ -40,17 +42,50 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="well">
-            <div class="jumbotron ">
-                <h2>About me!</h2>
-            </div>
-            <div>
-                <p>
-                    A little bit about myself! I'm a 25 year old graduate in music from Southern Connecticut State University
-                </p>
-            </div>
-        </div>
+    <div class="jumbotron">
+        <h2 class="text-center display3">A little bit about me!</h2>
+    </div>
+    <div class="container" id="main-content">
+
+        <p>My name is Matt Kostich, I was born July 21st 1992, I'm 25 years old, and a graduate of Southern Connecticut State University with a BA in Music. Along with my passion for music, I have a passion for programming and technology and I'm working hard to make a career
+        as a developer!</p>
+        <p>My interest in music started when I was young, in the 5th grade. I attended a music workshop for kids and wound up with a trumpet in my hands and I've been playing ever since.  My interest in programming started much later, in college. I was first exposed to it through an introduction to programming course (which was in VB).  From then on my desire to learn more grew and two years after I was doing web development for University's Office of Residence Life.</p>
+        
+        <p>For my cool link, I would like to share a resource that I've used numerous times over the years: <a href="http://imslp.org/">IMSLP</a>.  This site is an online library of scores, parts, and recordings for classicaly oriented musicians. </p>
+        
+        <p>In the interest of sharing some more about myself (and my passion for the music of dead white guys), below are some of my favorite composers and a little info about them!</p>
+
+        
+
+        <h3>My Favorite Composers</h3>
+        <table class="table">
+            <tr>
+                <th class="col">Composer Name</th>
+                <th class="col">Birthdate</th>
+                <th class="col">Image</th>
+            </tr>
+            <tr>
+                <td>Gustav Mahler</td>
+                <td>July 7th, 1860</td>
+                <td>
+                    <img src="media/mahler.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td>Jean Sibelius</td>
+                <td>December 8th, 1865</td>
+                <td>
+                    <img src="media/sibelius.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td>Aaron Copland</td>
+                <td>November 14th, 1900</td>
+                <td>
+                    <img src="media/copland.jpg">
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 

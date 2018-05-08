@@ -6,7 +6,7 @@
     <title>My Hobby</title>
     <!-- Bootstrap Libraries and Scripts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link rel="stylesheet" type="text/css" href="styles/hobby.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -15,10 +15,17 @@
     <!-- Bring in supplemental javascript for bootstrap -->
 
     <script src="scripts/scripts.js"></script>
+
+    <style>
+        p {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse" style="border-radius: 0px;">
+    <nav class="navbar navbar-inverse top-nav" style="border-radius: 0px;">
         <!-- In-line CSS -->
         <div class="container-fluid">
             <div class="navbar-header">
@@ -37,29 +44,42 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="well">
-            <h1>A bit on hiking</h1>
-            <p>Hiking is one of my favorite hobbies.</p>
+    <div class="jumbotron">
 
-            <ul class="nav nav-justified">
+        <h3 class="text-center display-4">Hiking The Northeast</h1>
+            <p class="text-center lead">Adventures in the mountains of New England</p>
+    </div>
+    <div class="container" id="main-content">
+        <div>
+            <!--For future? Potentially a header to add another hobby into here.
+            <div class="page-header">
+                <h1>Hiking!</h1>
+            </div>
+            -->
+
+            <div>
+                <p>
+                    Hiking is one of my greatest personal hobbies and nowhere do I enjoy wandering more than the mountains of New England. On
+                    this page I'd like to share a few images and brief summaries of my two most recent mountain hikes!
+                </p>
+                <h3 class="text-center">Click a tab below to see more!</h3>
+            </div>
+
+            <ul class="nav nav-justified" style="border-top: solid #BBBBBB 1px;">
                 <li id="lafayette" onclick="mtDetails('lafayette')">
                     <a href="#">Mt. Lafayette</a>
                 </li>
                 <li id="bear" onclick="mtDetails('bear')">
                     <a href="#">Bear Mountain</a>
                 </li>
-                <li id="greylock" onclick="mtDetails('greylock')">
-                    <a href="#">Mt. Greylock</a>
-                </li>
             </ul>
         </div>
         <div id="mtdetails">
-            <div id="mtsum" class="well col-sm-6">
+            <div id="mtsum" class="col-sm-6">
 
             </div>
-            <div id="mtimg" class="well col-sm-6">
-                
+            <div id="mtimg" class="col-sm-6">
+
             </div>
         </div>
     </div>

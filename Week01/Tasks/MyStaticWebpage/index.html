@@ -7,16 +7,23 @@
 
     <!-- Bootstrap Libraries and Scripts -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <style>
+        p {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
-<body>                                 
-    <nav class="navbar navbar-inverse" style="border-radius: 0px;"> <!--In-line CSS-->
+<body>
+    <nav class="navbar navbar-inverse top-nav" style="border-radius: 0px;">
+        <!-- In-line CSS -->
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">Matt Kostich</a>
@@ -34,13 +41,19 @@
             </ul>
         </div>
     </nav>
+    <div class="jumbotron">
+        <h3 class="text-center display4">Welcome to my home page!</h1>
+            <p class="text-center lead">Click any of the above links to check out my other pages</p>
+            <hr>
+            <h4 class="text-center">Todo-list</h4>
+            <ol class="text-center">
+                <li>Add JS summary function on composer table.</li>
+                <li>Clean up color scheme and formatting of paragraphs.</li>
+                <li>Do something about all them rounded edges.</li>
+                <li>Clean up and further differentiate the CSS pages.</li>
+            </ol>
 
-    <div class="container">
-        <div class="well">
-            <h1>Welcome to my home page! Click any link in the navbar to explore!</h1>
-        </div>
     </div>
-
 </body>
 
 </html>
