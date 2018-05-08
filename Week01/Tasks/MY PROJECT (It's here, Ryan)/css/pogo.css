@@ -1,0 +1,74 @@
+table td.normal{
+    background-color: rgb(153, 153, 153);
+}
+
+table td.fighting{
+    background-color: rgb(190, 38, 0);
+}
+
+table td.flying{
+    background-color: rgb(105, 94, 255);
+}
+
+table td.poison{
+    background-color: rgb(104, 0, 107);
+}
+
+table td.ground{
+    background-color: rgb(214, 169, 111);
+}
+
+table td.rock{
+    background-color: rgb(158, 121, 41);
+}
+
+table td.bug{
+    background-color: rgb(101, 156, 29);
+}
+
+table td.ghost{
+    background-color:#b300b3;
+}
+
+table td.steel{
+    background-color:rgb(164, 174, 196);
+}
+
+table td.fire{
+    background-color: rgb(255, 115, 0);
+}
+
+table td.water{
+    background-color: blue;
+}
+
+table td.grass{
+    background-color: green;
+}
+
+table td.electric{
+    background-color: gold;
+}
+
+table td.psychic{
+    background-color:#da0588;
+}
+
+table td.ice{
+    background-color:rgb(88, 218, 218);
+}
+
+table td.dragon{
+    background-color: #877bf8;
+}
+
+table td.dark{
+    background-color: rgb(124, 111, 90);
+}
+
+table td.fairy{
+    background-color: rgb(240, 158, 172);
+}
+
+
+

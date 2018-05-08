@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FizzBuzz</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <script src="Javascript/fizzbuzz.js"></script>
+</head>
+
+<body style="padding-top:70px;padding-bottom:70px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Jared's Website</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="pokemongo.html">Pokémon Go</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li class="active">
+                    <a href="fizzbuzz.html">FizzBuzz</a>
+                </li>
+                <li>
+                    <a href="jspractice.html">Bonus</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="well">
+                    <h3>Fizz Buzz</h3>
+                    <p>This FizzBuzz calculator will list a range of numbers speficied by YOU (Maximum 1000) and print "Fizz"
+                        if the number is divisible by 3, "Buzz" if divisible by 5, and FizzBuzz if divisible by both.</p>
+                    <ul style="list-style-type:none">
+                        <li>Enter the lower bound</li>
+                        <li>
+                            <input type="number" id="lowBound" required>
+                        </li>
+                        <li>Enter the upper bound</li>
+                        <li>
+                            <input type="number" id="upBound" required>
+                        </li>
+                        <li>
+                            <button onclick="beginFb()">Submit</button>
+                            <button onclick="clearFb()">Clear</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="well">
+                    <h3>Results</h3>
+                    <h3 id="fbHeader"></h3>
+                    <p id="fbResults"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

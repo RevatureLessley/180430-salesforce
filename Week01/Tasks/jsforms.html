@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Forms</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bring Bootstrap 3 libraries -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bring in supplemental javascript for bootstrap -->
+
+    <script src="Javascript/ajax.js"></script>
+
+    <script src="Javascript/forms.js"></script>
+</head>
+
+<body>
+    <div class="well">
+        <h1>JAVASCRIPT FORMS</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="well">
+                <h3>Register</h3>
+                <form action="#" id=register onsubmit="return validateRegistration()">
+                    <div class="form-group" id="username">
+                        <label for "username">USERNAME:</label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                    <div class="form-group" id="password1">
+                        <label for "password1">PASSWORD:</label>
+                        <input type="password" class="form-control" name="password1" required>
+                    </div>
+                    <div class="form-group" id="password2">
+                        <label for "password2">CONFIRM PASSWORD:</label>
+                        <input type="password" class="form-control" name="password2" required>
+                    </div>
+                    <div class="form-group" id="email">
+                        <label for "email">EMAIL:</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <input type="submit" value="REGISTER">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- action attribute determines which server to send the request to.-->
+
+    </div>
+</body>
+
+</html>
