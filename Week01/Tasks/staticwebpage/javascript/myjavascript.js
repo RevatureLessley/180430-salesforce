@@ -80,22 +80,22 @@ function removeRow(X){
 }
 
 
-windows.onload = function(){
+window.onload = function(){
 
-    
 
     var d1 = document.getElementById("d1");
     var d2 = document.getElementById("d2");
     var d3 = document.getElementById("d3");
 
-
-    d1.addEventListener("click", d1click, true);
-    d2.addEventListener("click", d2click, true);
-    d3.addEventListener("click", d3click, true);
-
+    
+  //  d1.addEventListener("click", d1click);
+  //  d2.addEventListener("click", d2click);
+  //  d3.addEventListener("click", d3click);
+  
     function d1click(event){
+       
         window.alert("d1 clicked");
-        event.stopPropagation();
+       event.stopPropagation();
     }
     function d2click(event){
         window.alert("d2 clicked");
@@ -103,7 +103,7 @@ windows.onload = function(){
     }
     function d3click(event){
         window.alert("d3 clicked");
-        event.stopPropagation();
+       event.stopPropagation();
     }
 
 }

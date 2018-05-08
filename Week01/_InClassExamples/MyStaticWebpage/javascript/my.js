@@ -102,8 +102,8 @@ window.onload = function(){
     var d3 = document.getElementById("d3");
 
     d1.addEventListener("click", d1click);
-    d2.addEventListener("click", d2click, true);
-    d3.addEventListener("click", d3click, true);
+    d2.addEventListener("click", d2click);
+    d3.addEventListener("click", d3click);
     //addEventListener passes 3 arguments
     //the event, the callback, useCapture <- this is set to false by default
     //We can use event propogation to prevent bubbling/capturing in it entirety.

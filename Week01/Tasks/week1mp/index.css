@@ -1,0 +1,21 @@
+:root{
+    --highlightcolor: orange;
+    --paragraphSize: 14px;
+}
+.navbar-nav {
+    margin-left:200px;
+}
+.navbar-nav a  {
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+body{
+    align-content: center;
+}
+#centerItems{
+    text-align: center;
+
+}
+container p :nth-child(2){
+    color: sandybrown;
+}
