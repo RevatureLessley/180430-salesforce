@@ -12,6 +12,7 @@ function retrieve() {
   //   - we just created out XMLHttpRequest objects
   // 1 - Request has been properly configured
   //   - we have called the .open() jmethod on our object
+  // 2 - header received send has been called and response 
   // 3 - request is received and being processed
   //   - communication with the serve has been established.
   //   - yet we have not recieved a response yet

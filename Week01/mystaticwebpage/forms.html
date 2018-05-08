@@ -4,32 +4,55 @@
 <head> <!-- the head tag is used to store meta data about the page; title, charset, lang -->
   <title> Austin's Site </title>
   <meta charset="UTF-8">
-  <style>
-  th {
+  <link rel="stylesheet" type="text/css"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Bring Bootstrap 3 libraries -->
+  <script src="forms.js"></script>
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 
-  }
-  p {
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-  }
-  .name {
-      color: violet;
-      font-size: 49px;
-  }
-  #ohio {
-    font-size: 5px;
-  }
-  </style>
 </head>
 <body>
-  <h1> This is the Forms page </h1>
+<div class="container-fluid">
+  <div class="well">
+    <h1> Javascript Forms </h1>
+  </div>
+  <div class="row">
+  <div class="well col-md-6">
+  <form action="#" id="register"
+    onsubmit="return validateRegistration()">
+    <div class="form-group" id="username">
+      <label for="username"> USERNAME: </label>
+      <input type="text" class="form-control" name="username" required>
+    </div>
+    <div class="form-group" id="password1">
+      <label for="password1"> PASSWORD:</label>
+      <input type="password" class="form-control" name="password1" required>
+    </div>
+    <div class="form-group" id="password2">
+      <label for="password2"> CONFRIM PASSWORD:</label>
+      <input type="password" class="form-control" name="password2" required>
+    </div>
+    <div class="btn btn-primary" id="">
+      <button type="submit"> Submit </button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+  <!-- <h1> This is the Forms page </h1>
   <p> Forms are used to collct user input from the website and send it to a server
     Input is typically gathers from the &lt;input&gt; tags. <br>
     <b>NOTE:</b> in order to user reserve characters you have to use entity references
     in between an &amp; and &semi; symbol. </p>
 
     <form>
-      <!-- All input tags are group together with a form tag -->
+      All input tags are group together with a form tag
       <ul style="list-style-type: none">
         <li><label for="fname"><b>FIRST NAME</b></label></li>
         <li><input id="fname" type="text" required> </li>
@@ -71,7 +94,9 @@
         </li>
 
       </ul>
-    </form>
+    </form> -->
+
+
 
   </body>
   </html>

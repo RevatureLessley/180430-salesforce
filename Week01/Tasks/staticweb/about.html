@@ -2,87 +2,90 @@
 <!-- The index.html is typically the homepage of any web page -->
 <html> <!-- root tag for any html file -->
 <head> <!-- the head tag is used to store meta data about the page; title, charset, lang -->
-  <title> Austin's Site </title>
-  <link  rel="stylesheet" type="text/css" href="style.css">
+  <title> Austin's About Me </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
   integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <link  rel="stylesheet" type="text/css" href="style.css">
-  <!-- <link rel="stylesheet" type="text/css"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <!-- Bring Bootstrap 3 libraries -->
-
-  <!-- <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script> -->
-
-  <!-- <script
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-  <!-- Bring in supplemental javascript for bootstrap -->
+  <link  rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
-<body style="background-color:#484C54;">
+<body class="bg">
 
-  <div class="container jumbotron" style="padding-top:20px;background-color:#484C54;">
-    <!-- <div class="container" style="padding-top:20px;"> -->
-    <!-- <nav class="navbar navbar-light bg-light container">
-      <span class="navbar-brand mb-0 h1">Austin</span>
-  <a class="navbar-brand left" href="index.html">Home</a>
-  <a class="navbar-brand left" href="hobby.html">Hobbies</a>
-  <a class="navbar-brand left" href="aboutme.html">About</a>
-</nav> -->
+  <div class="container jumbotron main" style="padding-top:20px;">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
-  <a class="navbar-brand" href="index.html">Austin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
-      <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
+    <a class="navbar-brand" href="index.html">Austin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
+        <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
+      </div>
     </div>
-  </div>
-</nav>
-<br>
-    <div class="container jumbotron">
-      <div class="row">
-        <div class="col-md-5" >
-          <img onclick="changeImg()" id="profile-pic"
-          src="https://avatars2.githubusercontent.com/u/9090132?s=400&u=3fa68427e789136aecc9e13fb69c1236c47ca4c6&v=4"
-          class="img-responsive-16by9 rounded-circle border-0" alt="Responsive image"
-          style="padding-bottom:20px;">
-          <!-- style="padding-bottom:20px; width:384px; height:384px"> -->
+  </nav>
+  <br>
+  <div class="container jumbotron ">
+    <div class="row">
+      <div class="col-lg-5" >
+        <img onclick="changeImg()" id="profile-pic"
+        src="https://avatars2.githubusercontent.com/u/9090132?s=400&u=3fa68427e789136aecc9e13fb69c1236c47ca4c6&v=4"
+        class="img-responsive-16by9 shadow-lg rounded-circle border-0" alt="Responsive image">
+        <!-- style="padding-bottom:20px;"> -->
 
-        </div>
-        <div class="col-md-7">
-          <h1> Austin Smitherman </h1>
-          <p> Born 1994, Sacramento California. I found my love of
+        <!-- style="padding-bottom:20px; width:384px; height:384px"> -->
+
+      </div>
+      <div class="col-lg-7">
+        <h1> Austin Smitherman </h1>
+        <p> Born 1994, Sacramento California. I found my love of
           computers around age 10 when took apart my neighbors coputer
           and failed to reasemble it in working condion</p>
           <p>Attended Chico State in 2012</p>
           <p>Graduated Chico State in December 2017 with BS in Computer Information
-          Systems. Minored in Computer Science, Business, and Information Technology.</p>
+            Systems. Minored in Computer Science, Business, and Information Technology.</p>
 
-            </div>
+        <br>
+        <br>
+      <div class="row"  >
+        <div class="col-md-6">
+        <table width="100%">
+          <tr>
+            <th><i class="fas fa-heart"></i> Age</th>
+            <td>23</td>
+          </tr>
+          <tr>
+            <th><i class="fas fa-hand-paper"></i> Strength</th>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-hand-lizard"></i> Dexterity</th>
+            <td>101</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-book"></i> Intelegence</th>
+            <td>22</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-bolt"></i> Wisdom</th>
+            <td>78</td>
+          </tr>
+          <tr>
+            <th><i class="fa fa-users"></i> Charisma</th>
+            <td>43</td>
+          </tr>
+         </table>
+       </div>
+       </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<script>
-  // function changeImg(){
-  //   let profile = document.getElementById("profile-pic");
-    // let sauce = "https://78.media.tumblr.com/f209b66d8ef6b4739dff1ef8bf83ec7d/tumblr_p84qj7fX0L1tuqdpgo1_500.jpg";
-  //   let sauce = "file:///Users/Austin/Desktop/gitexample/Week01/Tasks/staticweb/austin.jpeg";
-  //   let professional = "https://avatars2.githubusercontent.com/u/9090132?s=400&u=3fa68427e789136aecc9e13fb69c1236c47ca4c6&v=4";
-  //   if(profile.src == sauce) {
-  //       profile.setAttribute("src",professional);
-  //   } else {
-  //     profile.setAttribute("src",sauce);
-  //   }
-  // }
+  </body>
+  <script>
 </script>
 </html>

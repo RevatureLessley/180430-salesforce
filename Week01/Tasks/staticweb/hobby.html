@@ -2,77 +2,194 @@
 <!-- The index.html is typically the homepage of any web page -->
 <html> <!-- root tag for any html file -->
 <head> <!-- the head tag is used to store meta data about the page; title, charset, lang -->
-  <title> Austin's Site </title>
-  <link  rel="stylesheet" type="text/css" href="style.css">
+  <title> Austin's Hobies </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
   integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link  rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="js/hobby.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/hobby.css">
+
+<style>
+body {
+  font-family: "Courier New";
+}
+ol {
+  list-style-position: outside;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+</style>
+
 </head>
-<body style="background-color:#484C54;">
+<body  class="bg" >
+  <!-- <body style="background-color:#484C54;" class="bg-image" > -->
+  <!-- <div class="bg"> -->
+  <!-- <div class="container jumbotron" style="padding-top:20px;"> -->
+  <div class="container jumbotron main" style="padding-top:20px;">
+    <!-- <div class="card jumbotron"> -->
 
-  <div class="container jumbotron" style="padding-top:20px;background-color:#484C54;">
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
-  <a class="navbar-brand" href="index.html">Austin</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="about.html">About</a>
-      <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
-      <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
+      <a class="navbar-brand" href="index.html">Austin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
+          <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container jumbotron" >
+      <h1> NCL Competition </h1>
+      <br>
+      <div class="row">
+        <div class="col-lg-7">
+          <img src="assets/ncl.png" class="shadow " style="position: relative;max-height:100%;max-width:100%">
+        </div>
+        <div class="col-md-5">
+          <h3>2017 Fall Season </h3>
+          <p>Regular Season (Individual): 74th Overall (74/2423)</p>
+          <p>Post Season (Team): 8th Overall  (8/179)</p>
+          <h3>2018 Spring Season </h3>
+          <p>Regular Season (Individual) 130th Overall (130/2453)</p>
+          <p>Post Season (Team) 8th Overall (8/263)</p>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-<br>
-<div class="container jumbotron">
-  <h1> NCL Competition </h1>
-  <p> 8th place 2017 Winter </p>
-  <p> 9th place 2018 Spring </p>
-</div>
-<div class="container jumbotron">
-  <h1> Enumeration and Exploitation</h1>
-  <p> reverse engineering </p>
-</div>
-<div class="container jumbotron">
-  <h1>Password Cracking</h1>
-  <p> Hashes and hashcat</p>
-  <!-- <div class="card border-dark mb-3"> -->
-    <!-- <div class="card muted">
-  <div class="card-body text-dark"> -->
-      <h4>MD5 password hash example</h4>
-    <code class="col-md-6">
-      5dbc98dcc983a70728bd082d1a47546e &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;S</code>
+    <div class="container jumbotron">
+      <h1> Cryptography </h1>
       <br>
-    <code class="col-md-6">
-      03c7c0ace395d80182db07ae2c30f034 &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;s</code>
-      <br>
-    <code class="col-md-6">
-      9fcd4ec4762c798796414fb1d516468c &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;Revature</code>
-      <br>
-    <code class="col-md-6">
-      9fbbfdac5257cbe30077253ff3f0806f &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$up3rSeCr3T!!PaS$123</code>
-      <br>
+      <blockquote class="blockquote text-center card jumbotron shadow"
+      style="background-color:#E9ECEF">
+      <p class="mb-0">The science of secret communication.</p>
+      <footer class="blockquote-footer"> <cite title="Source Title">Wikipedia</cite></footer>
+    </blockquote>
+    <br>
+    <p> Cryptography is used to obfuscate messages so that anyone other than the intended
+      target will not be able to understand it.</p>
+      <p>Encryption is the action of making a message unreadable. Hence "en = to" and
+        "crypt = make unreadable"</p>
+        <br>
+        <h3> Ceasar Cipher Shift</h3>
+        <br>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Phrase to Encrypt"
+          id="caesarInput"></textarea>
+          <br>
+          <input type="number" class="float-left form-control" id="shift"
+          placeholder="Number to shift" style="width:15%" >
+          <button type="button" onclick="caesarInput()"
+          class="btn btn-primary  float-right"
+          style="width:83%"> Shift</button>
+          <br>
+        </div>
+        <br>
+        <p id="caesarOutput"></p>
+      </div>
+      <div class="container jumbotron">
+        <h1>Password Cracking</h1>
+        <p> Good hashing algorithms are ones that will not have a single collision for any
+          possible combinations of letters, numbers, or characters.</p>
+          <p> Since hashes are "impossible" to reverse, the technique for cracking a hash is
+            to hash a possible password and compare the 2 hashes until there is a match. This process
+            can be repeated using dictionaries (wordlists) or Bruteforcing combinations.</p>
 
-  <!-- </div>
-</div> -->
-</div>
-<div class="container jumbotron">
-  <h1>Network Traffic Analysis</h1>
-  <p> Data Exfiltration </p>
-  <p> Http vs Https</p>
-  <p> Network "Sniffing"</p>
-</div>
-<div class="container jumbotron">
-  <h1>Twitter</h1>
-  <p> Security Experts</p>
-  <p> Newest CVE's </p>
-  <p> Red team, Blue team Expterts and strategy</p>
-</div>
-  </div>
-</body>
-</html>
+            <h4>MD5 password hash examples</h4>
+            <code class="col-md-6">
+              5dbc98dcc983a70728bd082d1a47546e &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;S</code>
+              <br>
+              <code class="col-md-6">
+                03c7c0ace395d80182db07ae2c30f034 &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;s</code>
+                <br>
+                <code class="col-md-6">
+                  9fcd4ec4762c798796414fb1d516468c &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;Revature</code>
+                  <br>
+                  <code class="col-md-6">
+                    9fbbfdac5257cbe30077253ff3f0806f &nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;$up3rSeCr3T!!PaS$123</code>
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-5 float-left">
+                        <h3> Tools</h3>
+                        <ol>
+                          <li> Hashcat </li>
+                          <li> John the Ripper </li>
+                          <li> Cain and Able </li>
+                        </ol>
+                      </div>
+                      <div class="col-md-5 float-right">
+                        <h3>Wordlists</h3>
+                        <ul>
+                          <li> rockyou.txt (32 Million) </li>
+                          <li> <a href="https://haveibeenpwned.com/Passwords"> Have I Been Pwned</a></li>
+                          <li> Custom wordlists</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container jumbotron">
+                    <h1>Web Application Exploitation</h1>
+                    <p> Bruteforcing user logins with enumeration or SQL Injection</p>
+                    <code> " or ""="</code>
+                    <br><br>
+                    <p> Gaining access to confidential user information</p>
+                    <p> Changing user information</p>
+                    <p> Damage website functionality or take it down completely</p>
+                  </div>
+
+                  <div class="container jumbotron">
+                    <h1>Other Topics in Security</h1>
+                    <h3>Log Analysis </h3>
+                    <h3>Scanning</h3>
+                    <h3>Enumeration and Exploitation</h3>
+                    <h3>Wireless Access Exploitation</h3>
+                    <h3>Network Traffic Analysis</h3>
+                  </div>
+
+                  <div class="container jumbotron">
+                    <h1>Twitter <i class="fab fa-twitter"></i></h1>
+                    <a href="https://twitter.com/"> https://twitter.com/ </a>
+                      <br><br>
+                    <p> Security Experts</p>
+                    <p> Newest CVE's </p>
+                    <p> Red team, Blue team Expterts and strategy</p>
+                    <!-- <div class="card rounded twitter-post" > -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <blockquote class="twitter-tweet"  data-lang="en" ><p lang="en"
+                          dir="ltr">Microsoft is expected to patch a dozen remote code execution vulnerabilities next week (Patch Tuesday), 10 of which are critical. And, of course, there will be a Flash update.
+                        </p>&mdash; briankrebs (@briankrebs) <a href="https://twitter.com/briankrebs/status/982241301918728193?ref_src=twsrc%5Etfw">April 6, 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Computer Alarm that Triggers When Lid Is Opened <a href="https://t.co/chbLFL7LhD">https://t.co/chbLFL7LhD</a></p>&mdash; Schneier Blog (@schneierblog) <a href="https://twitter.com/schneierblog/status/988742213877186561?ref_src=twsrc%5Etfw">April 24, 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hacktivists, Tech Giants Protest Georgia&#39;s &#39;Hack-Back&#39; Bill <a href="https://t.co/riIbdTsoSv">https://t.co/riIbdTsoSv</a></p>&mdash; Graham Cluley (@gcluley) <a href="https://twitter.com/gcluley/status/992532079777808384?ref_src=twsrc%5Etfw">May 4, 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                      </div>
+                      <div class="col-md-6 float-right">
+                        <blockquote class="twitter-tweet"  data-lang="en"><p lang="en" dir="ltr">BrickerBot, the permanent denial-of-service botnet, is back with a vengeance <a href="https://t.co/N3CCaKzbR4">https://t.co/N3CCaKzbR4</a></p>&mdash; Dan Goodin (@dangoodin001) <a href="https://twitter.com/dangoodin001/status/856613138803720192?ref_src=twsrc%5Etfw">April 24, 2017</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Do you ever consider that users of social media are disproportionately the unhappy and unfulfilled opting-in to have their feelings reinforced because being right about the world is a great excuse for not venturing into it.</p>&mdash; SwiftOnSecurity (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/993267844551991296?ref_src=twsrc%5Etfw">May 6, 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Passwords aren&#39;t hard, you just have to do them right! (and yes, I regenerated this one!) <a href="https://t.co/vawLjFNAFc">pic.twitter.com/vawLjFNAFc</a></p>&mdash; Troy Hunt (@troyhunt) <a href="https://twitter.com/troyhunt/status/992662348094627840?ref_src=twsrc%5Etfw">May 5, 2018</a></blockquote>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                      </div>
+                    </div>
+                    <!-- j -->
+                    <!-- <p>this is test twitter card </p> -->
+                    <!-- </div> -->
+                  </div>
+                </div>
+                <!-- </div> -->
+              </body>
+              </html>

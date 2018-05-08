@@ -62,7 +62,7 @@ function addEmp(){
     td3.appendChild(favText);
     //<td>FavDog</td
     td4.appendChild(delBut);
-    //<td>X</td>
+    //<td><button onclick="removeRow(empCounter) style="color:red">X</button></td>
 
     //Finally we create our NEW row
     var row = document.createElement("tr"); //<tr></tr>
@@ -75,7 +75,7 @@ function addEmp(){
             <td>empID</td>
             <td>empName</td>
             <td>FavDog</td
-            <td>X</td>
+            <td><button onclick="removeRow(empCounter) style="color:red">X</button></td>
         </tr>
     */
 
@@ -96,11 +96,16 @@ function removeRow(x){
 */
 window.onload = function(){
     document.getElementById("para1").innerHTML="TEST";
+<<<<<<< HEAD
+=======
+
+>>>>>>> b004e23dad36992ee18e43dced17661c759bc588
     var d1 = document.getElementById("d1");
     var d2 = document.getElementById("d2");
     var d3 = document.getElementById("d3");
 
     d1.addEventListener("click", d1click);
+<<<<<<< HEAD
     d2.addEventListener("click", d2click);
     d3.addEventListener("click", d3click);
 
@@ -117,4 +122,24 @@ window.onload = function(){
       event.stopPropagation();
     }
 
+=======
+    d2.addEventListener("click", d2click, true);
+    d3.addEventListener("click", d3click, true);
+    //addEventListener passes 3 arguments
+    //the event, the callback, useCapture <- this is set to false by default
+    //We can use event propogation to prevent bubbling/capturing in it entirety.
+
+    function d1click(event){
+        window.alert("d1 clicked!");
+        //event.stopPropagation();
+    }
+    function d2click(event){
+        window.alert("d2 clicked!");
+        //event.stopPropagation();
+    }
+    function d3click(event){
+        window.alert("d3 clicked!");
+        //event.stopPropagation();
+    }
+>>>>>>> b004e23dad36992ee18e43dced17661c759bc588
 }

@@ -15,81 +15,105 @@
   integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <link  rel="stylesheet" type="text/css" href="css/fuzzer.css">
 
 
   <!-- <script
   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-  <script type="text/javascript" src="fuzzer.js"></script>
+  <script type="text/javascript" src="js/fuzzer.js"></script>
 
 </head>
-<body style="background-color:#484C54;">
-<div class="container-fluid">
-  <header class="col-md-12">
-  <div class="my-2 col-lg-2 mx-auto float-right form-inline">
-  <img onclick="changeImg()" id="profile-pic"
-src="https://avatars2.githubusercontent.com/u/9090132?s=400&u=3fa68427e789136aecc9e13fb69c1236c47ca4c6&v=4"
-class=" img-responsive-16by9 rounded-circle border-0" alt="Responsive image"
-style="padding-top:20px;position: relative;max-height:100%;max-width:100%">
-</div>
-</header>
+<body style="background-color:#484C54;" class="bg">
+  <div class="container-fluid">
+    <!-- <header class="col-md-12">
+    <div class="col-md-10">
+  </div>
+  <div class="my-2 col-lg-2 float-right  card" > -->
+  <!-- <img onclick="changeImg()" id="profile-pic"
+  src="https://avatars2.githubusercontent.com/u/9090132?s=400&u=3fa68427e789136aecc9e13fb69c1236c47ca4c6&v=4"
+  class=" img-responsive-16by9 rounded-circle border-0" alt="Responsive image"
+  style="padding-top:20px;position: relative;max-height:100%;max-width:100%"> -->
+  <!-- </div>
+</header> -->
 
-  <div class="container jumbotron" style="background-color:#484C54;padding-top:20px">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
-      <a class="navbar-brand" href="index.html">Austin</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="about.html">About</a>
-          <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
-          <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
-        </div>
+<div class="container jumbotron main" style="padding-top:20px">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border rounded">
+    <a class="navbar-brand" href="index.html">Austin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="hobby.html">Hobbies</a>
+        <a class="nav-item nav-link" href="fuzzer.html">Fizz Buzz</a>
       </div>
-          <!-- <div class="form-inline pull-right"> -->
-        <!-- </div> -->
-    </nav>
-    <br>
+    </div>
+    <!-- <div class="form-inline pull-right"> -->
+    <!-- </div> -->
+  </nav>
+  <br>
 
-    <!-- <form> -->
-    <div class="jumbotron">
-      <div class="" >
-        <h1> Welcome to Austin's Javascript Bizz Fuzzer</h1>
-        <p>Enter the Lower and Upper Number range to Fizz Buzz</p>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="form-group">
-            <input type="number" class="form-control" id="lower" placeholder="Enter Lower Bound Number">
-            <br>
-            <input type="number" class="form-control" id="upper" placeholder="Enter Upper Bound Number">
-            <br>
-            <button type="button" onclick="fizzBuzz()"  class="btn btn-primary"
-            style="width:48%"> Submit</button>
-            &nbsp;
-            <button type="button" id="clear"  class="btn btn-secondary"
-            style="width:48%"> Clear </button>
-          </div>
+  <!-- <form> -->
+  <div class="jumbotron">
+    <div class="" >
+      <h1> Welcome to Austin's Javascript Bizz Fuzzer</h1>
+      <p>Enter the Lower and Upper Number range to Fizz Buzz</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <input type="number" class="form-control" id="lower" placeholder="Enter Lower Bound Number">
           <br>
+          <input type="number" class="form-control" id="upper" placeholder="Enter Upper Bound Number">
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <button type="button" onclick="fizzBuzz()"  class="btn btn-block btn-primary"> Submit</button>
+            </div>
+            <div class="col-md-6 float-right">
+              <button type="button" id="clear"  class="btn btn-block btn-secondary"> Clear </button>
+            </div>
+          </div>
+          <!-- <br> -->
+          <div class="jumbotron row">
+            <div class="col-md-12">
+              <h4>Fizz Buzz Counter</h4>
+            </div>
+            <div class="col-md-5">
+              <br>
+              <p>Fizz: </p>
+              <p>Buzz: </p>
+              <p>FizzBuzz: </p>
+            </div>
+            <div class="col-md-7">
+              <br>
+              <p id="fizzCount"></p>
+              <p id="buzzCount"></p>
+              <p id="fizzbuzzCount"></p>
+            </div>
+
+          </div>
           <div class="card jumbotron">
-            <p class="text-center"> Paid Advertisement HERE! </p>
+            <p class="text-center"> Paid Advertisement HERE!  </p>
           </div>
           <div class="card jumbotron">
             <p class="text-center"> 20% off Advertisement HERE! </p>
           </div>
         </div>
-        <div class="col-sm-8">
-          <!-- </form> -->
+      </div>
+      <div class="col-sm-8">
+        <!-- </form> -->
 
-          <div id="fizz-container" class="">
-            <p id="fizzbuzz"> </p>
-          </div>
+        <div id="fizz-container" class="">
+          <p id="fizzbuzz"> </p>
         </div>
       </div>
     </div>
 
   </div>
+</div>
 </div>
 
 </body>

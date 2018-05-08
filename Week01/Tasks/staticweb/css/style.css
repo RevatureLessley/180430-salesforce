@@ -1,6 +1,25 @@
+
+
 body {
+  font-family: "Courier New";
   background-color: #484C54;
 }
+.main {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.bg {
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background-image: url('../assets/hacker.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size:cover
+}
+
 
 /* #title {
     text-align: center;
