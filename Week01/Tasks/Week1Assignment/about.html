@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,27 +44,33 @@
     </nav>
 
     <div class="container dav-container" style="margin-top:75px">
-        <h1 id="page_title">About me</h1>
-        <div class="well dav-about-well">
-            <p>
-                My name's David, and I am from Los Angeles, California. I have a passion for gaming and game design. You can check out my
-                <a href="hobby.html">hobbies</a> to find out my favorite type of game to play.
-            </p>
-            <p>
-                As for game design I really enjoy learining about how to write game/render engines. I have the most experience writing voxel
-                engines since I've gone through many failed attempts at making them. I have provided an example of one of
-                the first voxel engines I every wrote. It is absolute garbanzo beans but its small enought that is was relatively
-                easy to include into this project.
-            </p>
-            <p>
-                You can interact with the Mario below by clicking and dragging on the black box.
-            </p>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 id="page_title">About me</h1>
+            </div>
+            <div class="panel-body dav-panel">
+                <p>
+                    My name's David, and I was born and raised in Los Angeles, California. I am 24 years old and I graduated from the University of California,
+                    Santa Cruz in 2016. I have a passion for gaming and game design. You can check out my
+                    <a href="hobby.html">hobbies</a> to find out my favorite type of game to play.
+                </p>
+                <p>
+                    As for game design I really enjoy learining about how to write game/render engines. I have the most experience writing voxel
+                    engines since I've gone through many failed attempts at making them. I have provided an example of one
+                    of the first voxel renderers I every wrote. It is absolute garbanzo beans but its small enought that is
+                    was relatively easy to include into this project.
+                </p>
+                <p>
+                    You can interact with the Mario below by clicking and dragging on the black box.
+                </p>
+            </div>
         </div>
-        <div class="well dav-canvas" style="overflow: hidden">
-            <canvas id="webgl" class="center-block" width="400" height="400">
-                Please use a browser that supports "canvas"
-            </canvas>
-        </div>
+    </div>
+
+    <div class="well dav-canvas" style="overflow: hidden">
+        <canvas id="webgl" class="center-block" width="400" height="400">
+            Please use a browser that supports "canvas"
+        </canvas>
     </div>
 
     <script src="assets/voxel_render_stuff/lib/webgl-utils.js"></script>

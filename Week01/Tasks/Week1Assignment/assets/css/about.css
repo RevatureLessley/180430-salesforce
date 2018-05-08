@@ -13,12 +13,13 @@
 }
 
 #page_title {
-    color : white;
+    text-align: center;
 }
 
-body {
-    background-color : #394063;
+body { background-color : #030B16; }
+
+.dav-panel
+{
+    color : white !important;
+    background-color : #6b5b95 !important;
 }
-/*
-#dav-about-
-*/

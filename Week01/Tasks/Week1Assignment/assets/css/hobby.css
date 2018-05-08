@@ -3,22 +3,19 @@ img {
     margin-right: 30px;
 }
 
-body {
-    background-color : darkred;
-}
+body { background-color : #030B16; }
 
-.dav-container
+#page_title
 {
-    max-width: 900px;
+    text-align: center;
 }
 
-#page_title {
-    color : white;
-}
+.dav-container { max-width: 900px; }
 
 .dav-row, .dav-jumbo {
     text-align: center;
     padding : 0px;
+    background-color : #6b5b95 ;
 }
 
 .dav-narrow
@@ -27,7 +24,34 @@ body {
     margin : auto;
 }
 
-#dav-cropped-img
+.dav-panel
 {
-    clip: rect(0px,60px,200px,0px);
+    color : white !important;
+    background-color : #6b5b95 !important;
 }
+
+.dav-list
+{
+    color : white;
+    margin : 3px;
+    border-radius: 3px;
+    padding : 5px;
+    background-color : #4717f6;
+}
+
+div.dav-well
+{
+    background-color : #e7dfdd;
+    color : black;
+}
+
+/*
+    Used this css to style the li numbers
+    https://www.w3.org/Style/Examples/007/color-bullets.en.html
+*/
+
+ol {list-style: none; counter-reset: li}
+li.dav-list::before {content: counter(li); color: black;
+    display: inline-block; width: 1em;
+    margin-left: -1em}
+li.dav-list {counter-increment: li}

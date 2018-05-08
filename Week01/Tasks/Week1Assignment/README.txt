@@ -17,3 +17,6 @@ Mini Project:
     - All pages should have their own css.
     - leverage bootstrap
     - use at least 3 different css selector type
+
+required tags:
+p, table, ul, ol, img
