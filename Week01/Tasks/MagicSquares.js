@@ -1,0 +1,92 @@
+function MagicSquares(sideLength){
+    
+    var movesMade = {};
+    var players = [[],[],[]];
+    var turnNumber = 1;
+    var maxNumber = sideLength * sideLength;
+    var magicConstant = (sideLength * (sideLength * sideLength + 1)) / 2;
+
+    function validMove(number, player){
+            if(movesMade[number]){
+                return false;
+            }
+            else{
+                return true;
+            }
+    };
+
+    function stateSurrounding(number, player){
+        if(turnNumber > maxNumber)
+        {
+            return {"DRAW": player};
+        }
+        
+        for(var i = 0; i < players[player].length; i++)
+        {
+            for (var j = i+1; j<players[player].length;j++)
+                {
+                		let winningNumber = magicConstant - players[player][i] - players[player][j];
+                		console.log("WinState: "+players[player][i]+" "+players[player][j]+" "+winningNumber);
+                    if(players[player].includes(winningNumber)){
+                        return {"WIN": player};
+                    }
+                }
+        }
+
+
+        return {"ONGOING": player};
+    };
+
+    function makeMove(number, player = whoseTurn(turnNumber)){
+        if(!validMove(number,player)){
+            return {"INVALID": player};
+        }
+        else{
+              players[player].push(number);
+              movesMade[number] = player;
+              turnNumber++;
+        }
+            return stateSurrounding(number,player);
+    };
+
+    function whoseTurn(){
+        return ((turnNumber+1)%2)+1;
+        };
+    
+    function logState(){
+			//console.log("Constant: " + magicConstant);
+      console.log("----TURN " +turnNumber+"-----");
+    	console.log("Moves made: " + JSON.stringify(movesMade));
+      console.log("By P1: " + players[1]);
+      console.log("By P2: " + players[2]);
+    };
+
+
+		//public interface
+    return {
+        playNumber: makeMove,
+        display: logState,
+    };
+};
+
+var myGame = MagicSquares(3);
+console.log(myGame);
+myGame.display();
+console.log(myGame.playNumber(1));
+myGame.display();
+console.log(myGame.playNumber(2));
+myGame.display();
+console.log(myGame.playNumber(3));
+myGame.display();
+console.log(myGame.playNumber(4));
+myGame.display();
+console.log(myGame.playNumber(5));
+myGame.display();
+console.log(myGame.playNumber(6));
+myGame.display();
+console.log(myGame.playNumber(7));
+myGame.display();
+console.log(myGame.playNumber(8));
+myGame.display();
+console.log(myGame.playNumber(9));
+//myGame.display();
