@@ -1,0 +1,7 @@
+Javascript data types
+Closures (description was inelegant and incomplete)
+Callback functions (you probably confused this with the above)
+AJAX ready states
+Prototypal inheritance
+
+KEEP YOUR HANDS STILL!!!
