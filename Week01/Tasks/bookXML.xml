@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+	<book>
+		<title>Something</title>
+		<author>Jeremiah</author>
+		<year>1900</year>
+		<print>1900</print>
+	</book>
+	<book>
+		<title>Something Better</title>
+		<author>Jeremiah</author>
+		<year>2000</year>
+		<print>2000</print>
+	</book>
+	<book>
+		<title>Something even Better</title>
+		<author>Jeremiah</author>
+		<year>2100</year>
+		<print>2100</print>
+	</book>
+
+</bookstore>
