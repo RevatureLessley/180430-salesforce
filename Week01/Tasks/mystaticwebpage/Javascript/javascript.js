@@ -145,16 +145,20 @@ window.onload = function(){
     d2.addEventListener("click",d2click);
     d3.addEventListener("click",d3click);
 
+
+    //normally, we are required to have an event parameter in this function. that would be the 'event' in 'event.stopPropagation();'
+    //however, by using addEventListener, the specified event - "click", in this case - is passed as an event object into our callback function
+    //as the first parameter. this way, we aren't requried to specify that our function takes a parameter.
     function d1click(){
         window.alert("d1 clicked!");
-        //event.stopPropagation(); //this line will stop bubbling and capturing for this event
+        event.stopPropagation(); //this line will stop bubbling and capturing for this event
     }
     function d2click(){
         window.alert("d2 clicked!");
-        //event.stopPropagation();
+        event.stopPropagation();
     }
     function d3click(){
         window.alert("d3 clicked!");
-        //event.stopPropagation();
+        event.stopPropagation();
     }
 }
