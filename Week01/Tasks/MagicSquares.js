@@ -15,6 +15,9 @@ function MagicSquares(sideLength){
             }
     };
 
+    //determining a "WIN" is essentially a variation of the subset sum problem
+    //therefore an O(N^2) time and O(N) space complexity solution is absolutely
+    //acceptable
     function stateSurrounding(number, player){
         if(turnNumber > maxNumber)
         {
@@ -66,9 +69,13 @@ function MagicSquares(sideLength){
     return {
         playNumber: makeMove,
         display: logState,
+        turn: turnNumber,
+        playing: whoseTurn,
+        numbersChosen: movesMade
     };
 };
 
+function testMagicSquares(){
 var myGame = MagicSquares(3);
 console.log(myGame);
 myGame.display();
@@ -90,3 +97,4 @@ console.log(myGame.playNumber(8));
 myGame.display();
 console.log(myGame.playNumber(9));
 //myGame.display();
+};
