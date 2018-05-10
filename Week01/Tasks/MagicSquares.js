@@ -1,3 +1,4 @@
+//this game is isomorphic to tic-tac-toe
 function MagicSquares(sideLength){
     
     var movesMade = {};
@@ -64,6 +65,20 @@ function MagicSquares(sideLength){
       console.log("By P2: " + players[2]);
     };
 
+    function drawBoard(){
+        console.log("kms");
+        $("div#gameBoard").empty();
+
+        $("div#gameBoard").append(document.createElement("table"));
+        $("div#gameBoard table").append(document.createElement("tr"));
+        
+        for (var i = 1 ; i <= 9 ; i++)
+        {
+            console.log("on"+ $("div#gameBoard table tr"));
+            $("div#gameBoard table tr").append("<td id="+i+">"+i+"</td>");
+        }
+    };
+
 
 		//public interface
     return {
@@ -71,7 +86,8 @@ function MagicSquares(sideLength){
         display: logState,
         turn: turnNumber,
         playing: whoseTurn,
-        numbersChosen: movesMade
+        numbersChosen: movesMade,
+        draw: drawBoard
     };
 };
 
@@ -98,3 +114,7 @@ myGame.display();
 console.log(myGame.playNumber(9));
 //myGame.display();
 };
+
+$( document ).ready(function(){
+    var myGame = MagicSquares(3);
+    myGame.draw()});
