@@ -1,3 +1,29 @@
+let myClass = {
+    classNum: 4
+};
+
+let subClass1 = {
+    tables: 5,
+    __proto__: myClass
+};
+
+let subClass2 = {
+    chairs: 25,
+    __proto__: subClass1
+};
+
+let subClass3 = {
+    beds: 4,
+    __proto__: subClass2
+};
+
+function printClass() {
+    alert(subClass3.classNum);
+    alert(subClass1.classNum);
+    alert(subClass2.tables);
+    alert(myClass.beds);
+}
+
 let addCount = 0;
 function appendText() {
     document.getElementById("para1").innerHTML += ("<br>Added Stuff! #" + ++addCount);
@@ -5,31 +31,31 @@ function appendText() {
 function logit() {
     console.log('Logged it!: ' + ++addCount)
 }
-function writeToPage(){
+function writeToPage() {
     document.write("<h1>Document.write!</h1>")
 }
-function changeWell(){
+function changeWell() {
     var el = document.getElementById("magicWell");
-    
-    var random = Math.floor((Math.random()*4));
-    switch(random){
+
+    var random = Math.floor((Math.random() * 4));
+    switch (random) {
         case 0:
-        el.setAttribute("style", "background-color:red");
-        break;
+            el.setAttribute("style", "background-color:red");
+            break;
         case 1:
-        el.setAttribute("style", "background-color:blue");
-        break;
+            el.setAttribute("style", "background-color:blue");
+            break;
         case 2:
-        el.setAttribute("style", "background-color:yellow");
-        break;
+            el.setAttribute("style", "background-color:yellow");
+            break;
         case 3:
-        el.setAttribute("style", "background-color:green");
-        break;
+            el.setAttribute("style", "background-color:green");
+            break;
     }
 }
 
-var empCounter=0;
-function addEmp(){
+var empCounter = 0;
+function addEmp() {
     //Store input values first!
     var empName = document.getElementById("empName").value;
     //.value represents content of an input box
@@ -48,9 +74,9 @@ function addEmp(){
     var td4 = document.createElement('td'); //<td></td>
 
     var delBut = document.createElement('button'); //<button></button>
-    delBut.setAttribute("onclick","removeRow(" + empCounter + ")");
+    delBut.setAttribute("onclick", "removeRow(" + empCounter + ")");
     //<button onclick="removeRow(empCounter)></button>
-    delBut.setAttribute("style","color:red");
+    delBut.setAttribute("style", "color:red");
     //<button onclick="removeRow(empCounter) style="color:red"></button>
     delBut.appendChild(del);
     //<button onclick="removeRow(empCounter) style="color:red">X</button>
@@ -86,7 +112,7 @@ function addEmp(){
     document.getElementById("favDog").value = "";
 }
 
-function removeRow(x){
+function removeRow(x) {
     document.getElementById(x).remove();
 }
 
@@ -94,8 +120,8 @@ function removeRow(x){
     window.onload is a property that triggers a callback function to execute once a
     webpage has been fully loaded.
 */
-window.onload = function(){
-    document.getElementById("para1").innerHTML="TEST";
+window.onload = function () {
+    document.getElementById("para1").innerHTML = "TEST";
 
     var d1 = document.getElementById("d1");
     var d2 = document.getElementById("d2");
@@ -108,15 +134,15 @@ window.onload = function(){
     //the event, the callback, useCapture <- this is set to false by default
     //We can use event propogation to prevent bubbling/capturing in it entirety.
 
-    function d1click(event){
+    function d1click(event) {
         window.alert("d1 clicked!");
         //event.stopPropagation();
     }
-    function d2click(event){
+    function d2click(event) {
         window.alert("d2 clicked!");
         //event.stopPropagation();
     }
-    function d3click(event){
+    function d3click(event) {
         window.alert("d3 clicked!");
         //event.stopPropagation();
     }
