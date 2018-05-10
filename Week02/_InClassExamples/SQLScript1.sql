@@ -237,5 +237,93 @@ delete from pet_shop;
 rollback;
 select * from pet_shop;
 
-delete from recordTable
-where id=66253;
+
+
+commit; --SQL Developer does NOT autocommit, remember to do so.
+
+DROP TABLE TA;
+DROP TABLE TB;
+
+CREATE TABLE TA(
+    nums number(6),
+    chars varchar(6)
+);
+
+CREATE TABLE TB(
+    ints number(6),
+    letters varchar(6)
+);
+
+INSERT INTO TA VALUES(1,'A');
+INSERT INTO TA VALUES(2,'B');
+INSERT INTO TA VALUES(3,'C');
+INSERT INTO TA VALUES(4,'D');
+INSERT INTO TA VALUES(1,'a');
+
+INSERT INTO TB VALUES(3,'C');
+INSERT INTO TB VALUES(4,'D');
+INSERT INTO TB VALUES(5,'E');
+INSERT INTO TB VALUES(6,'F');
+INSERT INTO TB VALUES(7,'G');
+
+SELECT * FROM TA
+UNION
+SELECT * FROM TB;
+
+SELECT * FROM TA
+UNION ALL
+SELECT * FROM TB;
+
+SELECT * FROM TA
+INTERSECT
+SELECT * FROM TB;
+
+SELECT * FROM TA
+MINUS
+SELECT * FROM TB;
+
+--IN statement
+--IN acts as essentially an OR statement that uses a list of items instead of
+--a ton of if statements/OR statements
+select * from TA 
+where nums IN (1,3,4);
+
+--Nested select:
+SELECT PET_NAME, ANIMAL_NAME FROM pets 
+inner join animals
+on pets.ANIMAL_ID = animals.ANIMAL_ID
+WHERE shop_id in
+(SELECT shop_ID FROM pet_shop WHERE shop_owner_id in
+(SELECT owner_id from owners WHERE owner_name = 'Jared'));
+
+--EXISTS
+/*
+    EXISTS works like IN, except as oopsoed to seeing if a specfici value is in
+    a collection, EXISTS only aims to succeed if a least ONE record id is
+    returned to is.
+*/
+SELECT pets.pet_name, animals.animal_name FROM pets 
+inner join animals
+on pets.animal_id = animals.animal_id
+WHERE EXISTS(
+    SELECT * FROM pet_shop WHERE EXISTS(
+        SELECT * FROM owners WHERE owner_name = 'Jared' AND
+            pet_shop.shop_owner_id=owner_id
+    ) AND pets.shop_id = pet_shop.shop_id
+);
+
+/*
+    IN VS EXISTS
+    -Both of these commands cna be used to perform conditional checks.
+    -HIGH level overview; EXISTS is GARBAGE
+    -It is highly inefficient if the outer query is even remotely large;
+    This is because, with EXISTS, for each record in the outer query, we run
+    the inner query once. Should there be, yet another inner query, we run the
+    innermost for each record of the middle query, and again for each record in the
+    outermost query in an exponential fashion.
+    
+    Nested slect statements with IN, works to combine queries togehter as it digs
+    in deeper. So to combine a query with low record count, to an innter query with
+    high record count will yield slower results than EXISTS.
+    But vice versa, it is significantly faster.
+*/
