@@ -5,7 +5,10 @@
 
 --DDL
 
-DROP TABLE animals;
+DROP TABLE animals CASCADE CONSTRAINTS;
+DROP TABLE pets CASCADE CONSTRAINTS;
+DROP TABLE pet_shop CASCADE CONSTRAINTS;
+DROP TABLE owners CASCADE CONSTRAINTS;
 / --Separates transactions from eachother
 
 CREATE TABLE animals (
@@ -24,7 +27,6 @@ CREATE TABLE owners (
     --CONSTRAINT constraintName TypeOfConstraint (column applied to)
 );
 /
-
 CREATE TABLE pet_shop (
     shop_id number(6),
     shop_name varchar(100) not null,
@@ -72,4 +74,99 @@ INSERT INTO animals VALUES (3,'Cat', 4);
 INSERT INTO animals VALUES (4,'Octopus', 8);
 INSERT INTO animals VALUES (5,'Alaskan Bull Worm', 0);
 
+INSERT INTO owners
+VALUES (1,'kyle m', 'here', '510', 70);
+INSERT INTO owners
+VALUES (2,'Jared', 'there', '511', 46);
+INSERT INTO owners
+VALUES (3,'Logan', 'over there', '86', 23);
+INSERT INTO owners
+VALUES (4,'bobby', 'where', '620', 31);
+INSERT INTO owners
+VALUES (5,'Ryan', 'Outside', '981', 31);
+INSERT INTO owners
+VALUES (6,'David', 'Inside', '12', 70);
+INSERT INTO owners
+VALUES (7,'Jeffrey', 'Outerside', '1234', 31);
+
+INSERT INTO pet_shop VALUES
+(1, 'Mario''s Muppets', 2);
+INSERT INTO pet_shop VALUES
+(2, 'Kyle''s Kittens', 1);
+
+INSERT INTO pets VALUES (1, 'Vulture Candy', 5, null, 4);
+INSERT INTO pets VALUES (2, 'Trident', 4, 1, null);
+INSERT INTO pets VALUES (3, 'A2', 3, null, 4);
+INSERT INTO pets VALUES (4, 'Sam', 2, 2, null);
+INSERT INTO pets VALUES (5, 'Senorito', 3, null, 3);
+
+--Where
+SELECT * FROM pets WHERE OWNER_ID = 4;
+
+--Selecting specific columns
+SELECT pet_name FROM pets WHERE owner_id = 4;
+--Use aliases to rename columns or substitute a variable name for a table name. 
+
+SELECT * FROM pets WHERE owner_id <> 4; -- <> = not equal
+SELECT * FROM owners;
+
+/*
+    Aggragate Function
+    Any Function that you apply to an entire column to yield one result.
+    Examples include average or max/min or sum.
+    Key functions:
+    SUM()
+    AVG()
+    MAX()
+    MIN()
+    STDDEV()
+    VARIANCE()
+    COUNT() <- This one is extraordinarily important for testing databases
+    LAST()
+    FIRST()
+*/
+SELECT count(*) FROM owners; --Count the amount of owners
+
+SELECT sum(owner_height) from owners;
+SELECT avg(owner_height) from owners;
+
+--Where applies to every record individually 
+--HAVING applies to aggragated information (happens after a WHERE clause
+
+/*
+    Order of operations
+    WHERE 
+    GROUP BY
+    HAVING
+    SELECT
+    ORDER BY
+*/
+
+SELECT sum(owner_height), owner_age from owners
+WHERE owner_id > 2
+GROUP BY owner_age
+HAVING sum(owner_height) > 25;
+ORDER BY owner_age ASC;
+
+/*
+    SCALAR FUNCTIONS
+    -A scalr function applies to each record individually of a column
+    -e.g. Alters the value within each cell of a column
+    -When in doubt, think String manipulation functions
+    lower() -converts string to lower case
+    upper() 
+    ABS()
+    cos(),sin(),tan()
+    ROUND()
+    TRUNC()
+    CONCAT()
+    LENGTH()
+    TRIM() --Removes all extra white space from both sides of a string
+    LTRIM() --removes white space from left side
+    RTRIM() 
+    
+*/
+
+select upper(owner_name) from owners;
+--using operators within the column
 
