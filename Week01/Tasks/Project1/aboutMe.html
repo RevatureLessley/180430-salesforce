@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body id="body">
 		<!--Title header and main text for this webpage, all with individual IDs-->
@@ -43,7 +44,13 @@
 					<div class="well" >
 						<h2>Home Town:</h2>
 						<p>Pittsburgh Pennsylvania</p>
+						<div class="well" id="pittFacts">Click here for Pittsburgh Fun Facts&#8482
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5 well rowHeight" style="background-color:black">
+					<p  class="rowHeight" id="pittFactsP"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -54,7 +61,7 @@
 					</p>
 				</div>
 			</div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<div class="row">
 				<div class="col-sm-5 well">
 					<h4>does this page bore you</h4>
@@ -68,5 +75,24 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			lastChosen=100;
+			function funFacts(){
+				factArray=["<p><img src=https://i.redd.it/fr9alhjtc4t01.jpg><br>Pittsburgh is located where the Ohio, Monogahela and Allegheny rivers meet</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/800px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg></img><br>Pittsburgh historically had 18 opperational funiculars, 2 of which (the Monogahela and Duquesne Inclines) are still operational</p>","<p><img>Every year Pittsburgh's David Lawrence convention cetner hosts the worlds largest furry convention</p>","<p><img src>The Cathedral of Learning is a neat building</p>","<p><img></p>"]
+				var i=Math.floor(Math.random()*Math.floor(factArray.length));
+				while(i==lastChosen){var i=Math.floor(Math.random()*Math.floor(factArray.length));}
+				lastChosen=i;
+				return(factArray[i]);
+			}
+			$(document).ready(function(){
+			$("#pittFacts").click(function(){
+				var $fact1=$("FACT"),
+					fact2=document.createElement("p"),
+					factDiv=document.getElementById("pittFactsLoc");
+				$("#pittFactsP").html("<br>"+funFacts(lastChosen));
+				console.log(lastChosen);
+			});
+			});
+		</script>
 	</body>
 </html>

@@ -1,5 +1,28 @@
 @charset "utf-8";
 
+#pittFacts{
+	background-color:green;
+	color:white;
+	cursor:pointer;
+}
+#pittFacts:hover{
+	background-color:yellow;
+	color:black;
+}
+
+.rowHeight{
+	height:100%;
+}
+
+img{
+	max-width:100%;
+	max-height: 200px;
+    height: inherit !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p ~ p{
 	color:#A0A0A0;
 	font-size:12px;
