@@ -1,23 +1,23 @@
 html {
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   height: 100%;
-  width: 100%; 
+  width: 100%;
 }
 
 body {
   background-color: #000000;
 	color: #FFFFFF;
   height: 100%;
-  width: 100%; 
+  width: 100%;
 }
 
 /*Nav bar and all that resides inside of it */
 nav {
-  line-height: 10px; 
+  line-height: 10px;
 }
 
 .bgColorNav {
-  background-color: #000000; 
+  background-color: #000000;
 	border-bottom: solid;
 	border-bottom-width: 1px;
 	border-color: #FF0000;
@@ -26,24 +26,33 @@ nav {
 #logo {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 32px; 
-}
-
-#logo:hover {
-  color: #FF0000; 
-}
-
-#two {
-	margin-top: -25px;
+  font-size: 32px;
 }
 
 #about, #hobby, .mainText {
 	color: #FFFFFF;
 }
 
-#about:hover, #hobby:hover {
-	color: #FF0000;
+#logo:hover, #about:hover, #hobby:hover {
+  color: #FF0000;
 }
+
+#logo-blue {color: #FFFFFF; font-weight: 900; font-size: 32px;}
+#logo-yellow {color: #FFFFFF; font-weight: 900; font-size: 32px;}
+#logo-green {color: #FFFFFF; font-weight: 900; font-size: 32px;}
+
+#about-green, #hobby-green {color: #FFFFFF;}
+#about-yellow, #hobby-yellow {color: #FFFFFF;}
+#about-blue, #hobby-blue {color: #FFFFFF;}
+
+#logo-blue:hover, #about-blue:hover, #hobby-blue:hover {color: blue;}
+#logo-yellow:hover, #about-yellow:hover, #hobby-yellow:hover {color: yellow;}
+#logo-green:hover, #about-green:hover, #hobby-green:hover {color: green;}
+
+#two {
+	margin-top: -25px;
+}
+
 
 .meBro {
 	border-radius: 25px;
