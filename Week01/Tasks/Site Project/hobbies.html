@@ -15,6 +15,47 @@
         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Bring in supplemental javascript for bootstrap -->
 
+    <script>
+    $(document).ready(function(){
+
+        $("#slideDesign").hover((function () {
+            $(".fancyslideContent").finish();
+            $("#slideDesignContent").animate({left: "50px"});
+        }),
+        function () {
+            $("#slideDesignContent").animate({left: "0px"});
+        });
+        $("#slideGaming").hover((function () {
+            $(".fancyslideContent").finish();
+            $("#slideGamingContent").animate({left: "50px"});
+        }),
+        function () {
+            $("#slideGamingContent").animate({left: "0px"});
+        });
+        $("#slideArt").hover((function () {
+            $(".fancyslideContent").finish();
+            $("#slideArtContent").animate({left: "50px"});
+        }),
+        function () {
+            $("#slideArtContent").animate({left: "0px"});
+        });
+        $("#slideWriting").hover((function () {
+            $(".fancyslideContent").finish();
+            $("#slideWritingContent").animate({left: "50px"});
+        }),
+        function () {
+            $("#slideWritingContent").animate({left: "0px"});
+        });
+        $("#slideMusic").hover((function () {
+            $(".fancyslideContent").finish();
+            $("#slideMusicContent").animate({left: "50px"});
+        }),
+        function () {
+            $("#slideMusicContent").animate({left: "0px"});
+        });
+    });
+    </script>
+
     <link rel="stylesheet" type="text/css" href="hobbies.css">
     <meta charset="utf-8" />
     <title>Hobbies</title>
@@ -53,8 +94,8 @@
                     <th>Favorite Thing About It</th>
                 </tr>
                 <tr>
-                    <td>Design</td>
-                    <td>Design, as I refer to it here, encompasses a large variety of subjects.
+                    <td id="slideDesign" class="fancyslide">Design</td>
+                    <td id="slideDesignContent" class="fancyslideContent" style="position: relative;">Design, as I refer to it here, encompasses a large variety of subjects.
                         I am fascinated by the way all kinds of things interact with each other,
                         how they function, and what they are composed of.
                         It's hard to accurately describe what I like about it and even what it signifies,
@@ -69,29 +110,29 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Gaming</td>
-                    <td>Of course, I have been a gamer for as long as I can remember.
+                    <td id="slideGaming" class="fancyslide">Gaming</td>
+                    <td id="slideGamingContent" class="fancyslideContent" style="position: relative;">Of course, I have been a gamer for as long as I can remember.
                         Growing up with the Nintendo 64, I've since played countless games.
                         I even have a degree in Game Design, if that means anything.
-                        The game I'm playing the most right now is: <a href="https://na.finalfantasyxiv.com/lodestone/">Final Fantasy XIV</a>
+                        The game I'm playing the most right now is: <a href="https://na.finalfantasyxiv.com/lodestone/" target="_blank">Final Fantasy XIV</a>
                     </td>
                 </tr>
                 <tr>
-                    <td>Art</td>
-                    <td>My sisters are very skilled at drawing so it is no surprise that I took an interest in the field myself.
+                    <td id="slideArt" class="fancyslide">Art</td>
+                    <td id="slideArtContent" class="fancyslideContent" style="position: relative;">My sisters are very skilled at drawing so it is no surprise that I took an interest in the field myself.
                         While my skills can't possibly compare, I still like to draw and doodle now and then.
                     </td>
                 </tr>
                 <tr>
-                    <td>Writing</td>
-                    <td>When I was younger, I would spend time writing stories.
+                    <td id="slideWriting" class="fancyslide">Writing</td>
+                    <td id="slideWritingContent" class="fancyslideContent" style="position: relative;">When I was younger, I would spend time writing stories.
                         I never finished any, but I wrote a lot and pretty often at that.
                         I haven't done anything recently, but I hope to get back into it again.
                     </td>
                 </tr>
                 <tr>
-                    <td>Music</td>
-                    <td>Just like with my interest in writing, I also spent a lot of time playing and making music.
+                    <td id="slideMusic" class="fancyslide">Music</td>
+                    <td id="slideMusicContent" class="fancyslideContent" style="position: relative;">Just like with my interest in writing, I also spent a lot of time playing and making music.
                         I joined the orchestra in middle school and rock ensemble in high school.
                         I played both the double bass, guitar, and bass guitar.
                         I hardly touch them nowadays so they just sit in the back of my closet gathering dust.
