@@ -1,0 +1,49 @@
+body{
+    background-color:#444040;
+    font-family: Georgia;
+}
+div>h2, .well, h1{
+    display: block;
+    text-align: center;
+}
+.well, .footer{
+    background-color: rgb(234, 232, 236);
+}
+/* idk about this list part */
+li p {
+    padding: 15px;
+}
+
+img{
+    border: 10px solid #A5B574;
+    padding: 10px;
+    margin:10px;
+}
+
+h1 { 
+    color: #ffffff;
+}
+
+
+h2, a {
+    color: #694e8d;
+
+}
+
+.link{
+    text-decoration: underline;
+}
+#list{ 
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.portrait {
+    height: 855px;
+    width: 640px;
+}
+.ls{
+    height:855px;
+    width: 1000px;
+}
