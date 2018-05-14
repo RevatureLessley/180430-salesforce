@@ -37,7 +37,30 @@ SELECT * FROM INVOICE WHERE TOTAL BETWEEN 15 AND 50;
 SELECT * FROM EMPLOYEE WHERE HIREDATE BETWEEN '01-JUN-03' AND '01-MAR-04';
 --2.7 DELETE
 --Task – Delete a record in Customer table where the name is Robert Walter (There may be constraints that rely on this, find out how to resolve them).
-DELETE FROM CUSTOMER WHERE FIRSTNAME = 'Robert' AND LASTNAME = 'Walter'; --TODO: resolve constraint
+
+--if not done already, alter the Aaron Mitchell row to Robert Walter
+UPDATE CUSTOMER SET FIRSTNAME = 'Robert', LASTNAME = 'Walter' WHERE FIRSTNAME = 'Aaron' AND LASTNAME = 'Mitchell'; 
+--now, delete the supportrepID from that record, nullifying the foreign key
+UPDATE CUSTOMER SET SUPPORTREPID = null WHERE FIRSTNAME = 'Robert' AND LASTNAME = 'Walter';
+--Now, we want to delete the invoices the customer was associated with. To do that, we must first delete each invoice line for those invoices.
+--However, InvoiceLine also contains a foreign key for Track. Since InvoiceLine:Track is N:1, it is illogical to delete the track when we want to delete an invoiceline.
+--Therefore, we will temporarily disable its constraints...
+ALTER TABLE INVOICELINE
+DISABLE CONSTRAINT FK_INVOICELINEINVOICEID;
+ALTER TABLE INVOICELINE
+DISABLE CONSTRAINT FK_INVOICELINETRACKID;
+--...Then delete each InvoiceLine record that corresponds to the customer's invoices
+DELETE FROM INVOICELINE WHERE INVOICEID IN (SELECT INVOICEID FROM INVOICE WHERE CUSTOMERID IN (SELECT CUSTOMERID FROM CUSTOMER WHERE FIRSTNAME = 'Robert' AND LASTNAME = 'Walter'));
+--reactivate constraints
+ALTER TABLE INVOICELINE
+ENABLE CONSTRAINT FK_INVOICELINEINVOICEID;
+ALTER TABLE INVOICELINE
+ENABLE CONSTRAINT FK_INVOICELINETRACKID;
+--delete the customer's invoices
+DELETE FROM INVOICE WHERE CUSTOMERID IN (SELECT CUSTOMERID FROM CUSTOMER WHERE FIRSTNAME = 'Robert' AND LASTNAME = 'Walter');
+--Finally, delete the customer
+DELETE FROM CUSTOMER WHERE FIRSTNAME = 'Robert' AND LASTNAME = 'Walter'; 
+SELECT * FROM CUSTOMER;
 --7.0 JOINS
 --7.1 INNER
 --Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
