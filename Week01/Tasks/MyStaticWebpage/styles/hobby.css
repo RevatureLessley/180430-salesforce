@@ -2,18 +2,29 @@
     border-radius: 0px;
 }
 body {
-    background-color: lightgrey;
+    background-color: rgb(83, 65, 52);
 }
 #main-content {
-    box-shadow: -2px 4px 8px 2px #BBBBBB;
+    box-shadow: -1px 1px 8px 2px #222020;
     max-width: 60%;
     
-    background-color: white;
+    background-color:rgba(238, 203, 167, 0.671);
     
 }
 
+#main-content p {
+    color:white;
+    font-size: 20px;
+}
+
 .top-nav {
-    box-shadow: 0px 3px 6px 2px #BBBBBB;
+    box-shadow: 0px 1px 4px 2px #222020;
+}
+
+
+.banner {
+    background-color: rgb(185, 145, 116);
+    color: white;
 }
 
 .footer {

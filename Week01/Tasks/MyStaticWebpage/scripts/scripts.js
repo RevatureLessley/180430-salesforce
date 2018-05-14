@@ -1,8 +1,7 @@
 
-//This function should maybe be split over two functions
+//Dynamically generate carousel
 function mtDetails(mtid){
-    
-    //I definitely think that this backtick notation is easiest to read, but is it a good practice?
+
     document.getElementById('mtsum').innerHTML = "";
     document.getElementById('mtimg').innerHTML = "";
     switch(mtid){
@@ -12,7 +11,8 @@ function mtDetails(mtid){
             <h3>Mt. Lafayette New Hampshire</h3>
             <hr>
             <p>Situated in the Franconia Notch, Mt. Lafayette at 5,249 feet is the fourth largest peak in New England.</p>
-            <p>Because of it's lack of many immediate geological neighbors, the views at it's peak are stunning.  </p>
+            <p>Because of it's lack of many immediate geological neighbors, the views at it's peak are stunning.</p>
+            <p>My hike there began at the base of Mt. Lafayette's immediate neighbor, the Little Haystack.  Weaving back and forth over Dry Brook a number of times, the trail eventually reaches the summit of the Little Haystack.  From there, it's a ridgeline hike across the summit of Mt. Lincoln up to the peak of Mt. Lafayette.  Followed by a gradual descent back to it's base.
 
             `;
             document.getElementById("mtimg").innerHTML = `
@@ -52,6 +52,7 @@ function mtDetails(mtid){
             <h3>Bear Mountain Connecticut</h3>
             <hr>
             <p>At roughly 2,300 feet, Bear Mountain is the largest Mountain in Connecticut.  It is located in the northwest corner of the state. In spring it is known for for it's numerous wild blueberry bushes and large mountain laurel blooms.</p>
+            <p>The trail I hiked runs along along the Appalachian Trail for four miles, beginning at a lookout point called the Lion's Head and ending at the summit of Bear Mountain. The trail crosses a number of streams and campsites set aside for Appalachian through hikers.
             
             
             `;
