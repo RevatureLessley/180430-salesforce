@@ -5,6 +5,9 @@ body, html{
 #leet{
     color: green;
 }
+#flashy{
+    font-size: 30px;
+}
 .well{
     background-color: lightgrey;
 }

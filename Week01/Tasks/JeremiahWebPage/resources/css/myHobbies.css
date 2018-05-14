@@ -1,6 +1,6 @@
 body, html{
     height: 100%;
-
+    background-color: black;
 }
 
 .bg{
@@ -10,4 +10,9 @@ body, html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.well{
+    background-color: lightgrey;
+    margin-top: 20px;
 }
