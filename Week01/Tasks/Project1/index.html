@@ -5,41 +5,66 @@
 	<head>
 		<!-- store metadata about page, like page title or charset encodings-->
 		<meta charset="UTF-8" http-equiv="Content-Type">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"/></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"/></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"/></script>
+		<link rel="stylesheet" type="text/css" href="CSS/aboutMeStyleSheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<style>
 		<!--set font and size of all text within <p> tags-->
 		p{ 
 			color:white;
 			font-family: "Times New Roman", Times, serif;
-			font-style: italic;
+			font-style: bold;
 			font-size: 29px;
 			font-weight: bold;
+		}
+		div.clear{
+			background-color:rgba(255, 0, 0, 0.0);
 		}
 		</style>
 	</head>
 	<body id="body">
 		<!--Title header and main text for this webpage, all with individual IDs-->
 		<title>My website</title>
-		<h1 id="header">Website from Week1 Day1</h1>
-		<p id="desc">This is the homepage for the first mini project, it contains links to other pages (at the bottom of the page).<br>It also changes color on occasion and displays todays date and time. <br>Thank you.</p>
-		<p id="date">Todays date is displayed below</p>
-		<p id="dateJavascript"></p>
-		<!--links to the other pages in this project-->
-		<h3>Here be links</h3>
-		<ol>
-			<li><a href="hobby.html" style="color:white" id="hobbyLink">hobby</a></li>
-			<li><a href="aboutMe.html" style="color:white" id="aboutMeLink">about me</a></li>
-			<!--<li><a href="forms.html">forms</a></li>-->
-		</ol>
-		<table border style="border:green; width:10%">
-			<tr>
-				<th>PUT STUFF HERE</th>
-				<th>Output</th>
-			</tr>
-			<tr>
-				<td><input id="inputBox" type="text" onkeypress="return inputToDataBox(event)"></td>
-				<td id="dataGoHere"></td>
-			</tr>
-		</table>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-7 well clear">
+					<h1 id="header">Website from Week1 Day1</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 well clear">
+					<p id="desc">This is the homepage for the first mini project, it contains links to other pages (at the bottom of the page).<br>It also changes color on occasion and displays todays date and time. <br>Thank you.</p>
+				</div>
+				<div class="col-sm-3 well clear">
+					<p id="date">Todays date is displayed below</p>
+					<p id="dateJavascript"></p>
+				</div>
+			</div>
+			<div class="row col-sm-8">
+				<!--links to the other pages in this project-->
+				<h3>Here be links</h3>
+				<ol>
+					<li><a href="hobby.html" style="color:white" id="hobbyLink">hobby</a></li>
+					<li><a href="aboutMe.html" style="color:white" id="aboutMeLink">about me</a></li>
+				</ol>
+				<table border style="border:green; width:10%">
+					<tr>
+						<th>Enter Text HERE</th>
+						<th>Output</th>
+					</tr>
+					<tr>
+						<td><input id="inputBox" type="text" onkeypress="return inputToDataBox(event)"></td>
+						<td id="dataGoHere"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 		<!-- javascript to change the webpages color and update the date time paragraph-->
 		<script>
 			<!--update the webpage, changing color and updating the date time displayed-->

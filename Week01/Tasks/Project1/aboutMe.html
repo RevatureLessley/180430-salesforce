@@ -43,13 +43,16 @@
 				<div class="col-sm-3">
 					<div class="well" >
 						<h2>Home Town:</h2>
-						<p>Pittsburgh Pennsylvania</p>
+						<p>Born in Pittsburgh Pennsylvania<br>
+						Moved to Columbus Ohio<br>
+						Moved to West Palm Beach Florida<br>
+						Moved back to Pittsburgh</p>
 						<div class="well" id="pittFacts">Click here for Pittsburgh Fun Facts&#8482
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-5 well rowHeight" style="background-color:black">
+				<div class="col-sm-5 well rowHeight">
 					<p  class="rowHeight" id="pittFactsP"></p>
 				</div>
 			</div>
@@ -76,13 +79,10 @@
 			</div>
 		</div>
 		<script>
-			lastChosen=100;
+			lastChosen=0;
 			function funFacts(){
-				factArray=["<p><img src=https://i.redd.it/fr9alhjtc4t01.jpg><br>Pittsburgh is located where the Ohio, Monogahela and Allegheny rivers meet</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/800px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg></img><br>Pittsburgh historically had 18 opperational funiculars, 2 of which (the Monogahela and Duquesne Inclines) are still operational</p>","<p><img>Every year Pittsburgh's David Lawrence convention cetner hosts the worlds largest furry convention</p>","<p><img src>The Cathedral of Learning is a neat building</p>","<p><img></p>"]
-				var i=Math.floor(Math.random()*Math.floor(factArray.length));
-				while(i==lastChosen){var i=Math.floor(Math.random()*Math.floor(factArray.length));}
-				lastChosen=i;
-				return(factArray[i]);
+				factArray=["<p><img src=https://i.redd.it/fr9alhjtc4t01.jpg><br>Pittsburgh is located where the Ohio, Monogahela and Allegheny rivers meet</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/800px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg></img><br>Pittsburgh historically had 18 opperational funiculars, 2 of which (the Monogahela and Duquesne Inclines) are still operational</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/ConventionCenterfromNorthside.jpg/1200px-ConventionCenterfromNorthside.jpg>Every year Pittsburgh's David Lawrence convention cetner hosts the worlds largest furry convention</p>","<p><img src=https://static.thousandwonders.net/Cathedral.of.Learning.640.14777.jpg>The Cathedral of Learning is a neat building</p>"]
+				return(factArray[lastChosen]);
 			}
 			$(document).ready(function(){
 			$("#pittFacts").click(function(){
@@ -91,6 +91,8 @@
 					factDiv=document.getElementById("pittFactsLoc");
 				$("#pittFactsP").html("<br>"+funFacts(lastChosen));
 				console.log(lastChosen);
+				lastChosen++;
+				if(lastChosen>=4){lastChosen=0;}
 			});
 			});
 		</script>
