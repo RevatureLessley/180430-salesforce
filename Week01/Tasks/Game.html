@@ -12,7 +12,7 @@
 
     <script src="MagicSquares.js"></script>
 
-    <link rel="stylesheet" stype="text/css" href="index.css">
+    <link rel="stylesheet" stype="text/css" href="Game.css">
 
     <title>Sarah Kohl</title>
     <style>
@@ -23,11 +23,26 @@
             border-color: black;
             border-style: solid;
         }
-    
+
+        div#gameBoard td:hover{
+            background-color: yellow;
+        }
+
+        div#gameBoard td:active{
+            background-color: goldenrod;
+        }   
+
         div#gameBoard table{
             border-collapse: collapse;
         }
 
+        .Player1 {
+            background-color: blue;
+        }
+
+        .Player2 {
+            background-color: red;
+        };
     </style>
 </head>
 
@@ -37,7 +52,7 @@
 
     <nav class="navbar navbar-inverse">
         <ul class="nav navbar-nav">
-            <li class="active">
+            <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -46,13 +61,18 @@
             <li>
                 <a href="hobby.html">Hobby</a>
             </li>
+            <li class="active">
+                <a href="Game.html">Game</a>
+            </li>
         </ul>
     </nav>
     <div class="container">
         <div class="col-lg-12">
             <div class="well">
                 <h3 id="gameName">Make 15</h3>
-                <input type="button" onclick="myGame.draw()">
+                <input type="button" onclick="ToggleBoard()" value="Toggle">
+                <br>
+                <br>
                 <div id="gameBoard">
                 </div>
             </div>

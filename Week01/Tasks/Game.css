@@ -1,0 +1,26 @@
+div#well 
+{
+	color:black; 
+	margin:0px; 
+	background-color:azure; 
+	width:95%;
+}
+
+body {
+	background-color:rgb(51, 51, 51);
+}
+
+h1{
+	font-family: 'Arial Black' , sans-serif;
+	margin: 0px; 
+	padding: 0px; 
+	color:azure;
+}
+
+div.page-header{
+	margin: 0px; 
+	border: 0px;
+	padding-top: 2em; 
+	padding-bottom: 2em; 
+	background-image: linear-gradient(45deg, rgb(53, 0, 48),rgb(165, 0, 143));
+}
