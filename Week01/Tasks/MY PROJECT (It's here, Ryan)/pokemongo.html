@@ -10,6 +10,13 @@
     <title>Pokémon Go</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Bring Bootstrap 3 libraries -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Bring in jQuery-->
+
+    <script src="Javascript/pokefind.js"></script>
+    <!-- AJAX script -->
+
     <link rel="stylesheet" type="text/css" href="css/pogo.css">
     <style>
         table {
@@ -71,7 +78,7 @@
         <h3>Pokémon Available to Capture</h3>
         <p>
             Currently, PoGo allows you to capture any Pokémon up to and including Generation 3 (there are around 400 available to capture!).
-            The more rare breeds of pokemon can only be acquired by teaming up with others to complete raids in which you
+            The more rare breeds of pokémon can only be acquired by teaming up with others to complete raids in which you
             use your Pokémon to take down and possibly capture the rare beast.
         </p>
         <h3>Pokéstops</h3>
@@ -298,7 +305,26 @@
                 <td class="ground">Earthquake</td>
             </tr>
         </table>
+
+        <h3>My Favorite Pokémon</h3>
+        <p>Add an awesome Pokémon:</p>
+        <input type="text" id="poke-to-add"><button onclick="addpoke()" id="add-button">Add</button>
+        <p style="color:red";"font-size:15px" id="inv-poke-p"></p>
+        
+        <div>
+            <table id="favpokes" border="2px">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Sprite</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
     </div>
+
+    <!-- Favorite Pokémon table will be populated with AJAX and jQuery DOM manipulation. -->
+
 </body>
 
 </html>
