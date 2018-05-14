@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Fizz Buzz!</title>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">David's Domain</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="../hobby.html">HOBBY</a>
+                    </li>
+                    <li>
+                        <a href="fizzbuzz.html">FIZZBUZZ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="buzz_container" class="container" style="margin-top:75px">
+        <div class="panel panel-default">
+            <div class="panel-heading dav-panel ">
+                <h1>Welcome to the Fizz Buzz page!</h1>
+            </div>
+            <div class="panel-body dav-panel">
+                <h3>
+                    Please enter a min and a max:
+                </h3>
+                <div class="row">
+                    <div class="col-xs-3">
+                        MIN:
+                    </div>
+                    <div class="col-xs-2">
+                        <input class="form-control" type="number" id="input_min" value="0">
+                    </div>
+                    <div class="col-xs-3">
+                        MAX:
+                    </div>
+                    <div class="col-xs-2">
+                        <input class="form-control" type="number" id="input_max" value="0">
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn btn-default" onclick="generate()">GENERATE</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="well" width="80%">
+            <h3>RESULTS</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+
+</html>
