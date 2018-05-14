@@ -1,0 +1,22 @@
+
+.navbar-nav {
+    margin-left:200px;
+}
+.navbar-nav a  {
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+body{
+    align-content: center;
+}
+.list-icons {
+    font-size: 3rem;
+}
+
+ #educationSection{
+     margin-top: 100px;
+     margin-bottom: 100px;
+ }
+ #educationSection p{
+     margin-top: 20px;
+ }
