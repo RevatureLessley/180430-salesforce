@@ -124,7 +124,7 @@ public class Driver {
 		
 		System.out.println("=====StringBuilder and StringBuffer=====");
 		/*
-		 * In situations wher a string will go through numerous manipulations, one can reach
+		 * In situations where a string will go through numerous manipulations, one can reach
 		 * a point where you are dealing with huge overhead and memory consumption since you
 		 * are creating a new string every time.
 		 * Java offers a mutable type of string that you can work with.

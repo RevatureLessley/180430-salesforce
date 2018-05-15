@@ -1,6 +1,5 @@
 package com.revature.polymorphism;
 
-import com.revature.example.HelloWorld;
 
 public class Driver {
 
