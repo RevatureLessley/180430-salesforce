@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Joompin</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bring Bootstrap 3 libraries -->
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bring in supplemental javascript for bootstrap -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+    crossorigin="anonymous">
+  <!--Font Awsome libraries for icons-->
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Joompin-Web.json", { onProgress: UnityProgress });
+  </script>
+
+<style>
+  .nav.navbar-nav li.active a{
+  background-color:rgb(0, 100, 255);
+}
+
+.nav.navbar-nav{
+  font-size: 24px;
+}
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" >
+    <div class="container-fluid" >
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../index.html" style="font-size: 20px">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="../aboutme.html">About Me</a>
+        </li>
+        <li>
+          <a href="../hobby.html">Hobby</a>
+        </li>
+        <li>
+          <a href="../fizzbuzz.html">FizzBuzz</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="webgl-content" style="margin-top: 25px">
+    <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">Joompin</div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
