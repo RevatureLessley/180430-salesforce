@@ -17,11 +17,23 @@ p{
 }
 
 ol{
-    margin-left:280px;
+    margin-left:180px;
 }
 
 li{
     text-align:left;
+}
+
+td{
+    width:128px;
+}
+
+a{
+    color:inherit;
+}
+
+a:visited{
+    color:inherit;
 }
 
 .well{

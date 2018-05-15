@@ -4,6 +4,14 @@ body{
     color: white;
 }
 
+a{
+    color:inherit;
+}
+
+a:visited{
+    color:inherit;
+}
+
 table{
     text-align:left;
 }
@@ -65,7 +73,12 @@ div h2~p{
     color:#1a1a1a;
 }
 
-/* this will change the text color of this element on hover */
+/* 
+    this will change the text color of this element on hover 
+    using :hover is a pseudo class. pseudo classes deal with
+    states of elements in css. :hover is one state. others are:
+        :visited (link), :active, :link (unvisited link)
+*/
 div h2~p:hover{
     color:deeppink;
 }
