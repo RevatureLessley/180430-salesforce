@@ -22,34 +22,65 @@
                 background:#a5acaf;
                 color:black;
             }
+            a{ 
+                color: white;
+            }
         </style>
         <link rel="stylesheet" href="aboutMe.css">
     </head>
     <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="Index.html" style="color:white">My Website</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="">About Me</a></li>
+                        <li><a style="color: white" href="Hobbies.html">Hobbies</a></li>
+                        <li><a style="color: white" href="Index.html">Main Page</a></li>  
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         <h1 style="color:#acc0c6"> About Me</h1>
         <hr style="border:#acc0c6">
-        <div class="container-fluid">
+        <div class="container-fluid" style="font-size: 16pt">
             <ul>
                 <li> My name is Resty Del Rosario </li>
                 <li> I was born on August 10, 1995</li>
                 <li> Grew up in a small town in California</li>
                 <li> Graduated in University California of Santa Cruz</li>
                 <li> I have a bachelors degree in Computer Science</li>
-                <li> Some of my favorite artist includes</li>
+                <li> Some of my favorite artist include</li>
                     <ol type="A">
                         <li>J. Cole</li>
-                        <li>Logic</li>
+                            <ol>
+                                <li>ATM</li>
+                                <li>Home For The Holidays</li>
+                                <li>Higher</li>
+                                <li>Crooked Smile</li>
+                            </ol>
                         <li>Chance the Rapper</li>
+                            <ol>
+                                <li>Finish Line</li>
+                                <li>Sunday Candy</li>
+                            </ol>
                     </ol>
                 <li> Some of my favorite tv shows are
-                    <table class = "coolTable">
+                    <table class = "coolTable" >
                         <tr>
                             <td>Game of Thrones</td>
                             <td><img id = "shows"src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Game_of_Thrones_title_card.jpg/250px-Game_of_Thrones_title_card.jpg"></td>
                         </tr>
                         <tr>
                             <td>Lucifer</td>
-                            <td><img class="shows" src="https://i1.wp.com/seriesonday.com/wp-content/uploads/2017/08/primera-promo-de-la-tercera-temporada-de-lucifer-e1503703638926.jpg?resize=752%2C440"></td>
+                            <td><img class="shows" src="https://i1.sndcdn.com/artworks-000187200511-sviwv4-t500x500.jpg"></td>
                         </tr>
                         <tr>
                             <td>How I Met Your Mother</td>
@@ -59,10 +90,7 @@
                             <td>The Office</td>
                             <td><img class="shows" src="https://nghscrimsontimes.com/wp-content/uploads/2018/03/office.jpg"></td>
                         </tr>
-                        <tr>
-                            <td>That 70's Show</td>
-                            <td><img class="shows" src="https://ia.media-imdb.com/images/M/MV5BN2RkZGE0MjAtZGVkOS00MzVhLTg0OWItZTc4OGRjOTQ1ZTM4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX182_CR0,0,182,268_AL_.jpg"></td>
-                        </tr>
+
                     </table>
                 </li>
                 <li> My favorite teams are
@@ -85,7 +113,7 @@
                         <tr>
                             <td>Football</td>
                             <td>Philadelphia Eagles</td>
-                            <td><img class = "sports" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbFBsKahM7Mz7u9DSGena8zNjKoSXJkAd5T1PFKs0KtRQwiHtqA"></td>
+                            <td><img class = "sports" src = "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/072012/philadelphia_eagles_helmet06.jpg?itok=4WdGVqfc"></td>
                         </tr>
                     </table>
                 </li>
