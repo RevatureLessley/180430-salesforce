@@ -8,7 +8,7 @@ function mtDetails(mtid){
         case "lafayette":
 
             document.getElementById("mtsum").innerHTML = `
-            <h3>Mt. Lafayette New Hampshire</h3>
+            <h3>Mt. Lafayette, New Hampshire</h3>
             <hr>
             <p>Situated in the Franconia Notch, Mt. Lafayette at 5,249 feet is the fourth largest peak in New England.</p>
             <p>Because of it's lack of many immediate geological neighbors, the views at it's peak are stunning.</p>
@@ -49,7 +49,7 @@ function mtDetails(mtid){
         case "bear":
             document.getElementById("mtsum").innerHTML = `
             
-            <h3>Bear Mountain Connecticut</h3>
+            <h3>Bear Mountain, Connecticut</h3>
             <hr>
             <p>At roughly 2,300 feet, Bear Mountain is the largest Mountain in Connecticut.  It is located in the northwest corner of the state. In spring it is known for for it's numerous wild blueberry bushes and large mountain laurel blooms.</p>
             <p>The trail I hiked runs along along the Appalachian Trail for four miles, beginning at a lookout point called the Lion's Head and ending at the summit of Bear Mountain. The trail crosses a number of streams and campsites set aside for Appalachian through hikers.
@@ -96,3 +96,56 @@ function mtDetails(mtid){
     }
 
 }
+
+
+
+function displayConcertVideo(vidID){
+    document.getElementById('video-wrapper').innerHTML="";
+
+    switch (vidID){
+        //Mahler
+        case "mahler1":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/UjmthMDpyco" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "mahler2":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/wWxX-kf-2MI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "mahler3":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/InHMgvLozrE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        //Sibelius
+        case "sib1":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/SAOf46CXaaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "sib2":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/XHHfvdAqvn8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "sib3":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/F5zg_af9b8c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        //Aaron Copland
+        case "copland1":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/8e3rVcSy3IQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "copland2":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/s_MxTZlYL14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+        case "copland3":
+        document.getElementById('video-wrapper').innerHTML=`
+        <iframe class="concert-video" src="https://www.youtube.com/embed/9GnJBLwOjFo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        break;
+    }
+    
+
+
+}
+
+

@@ -2,7 +2,7 @@
     border-radius: 0px;
 }
 body {
-    background-color: white;
+    background-color: gray;
 }
 
 .top-nav {
@@ -10,5 +10,6 @@ body {
 }
 
 .banner {
-    background-color: rgb(214, 226, 214);
+    background-color: rgba(0, 0, 0, 0.384);
+    color: white;
 }

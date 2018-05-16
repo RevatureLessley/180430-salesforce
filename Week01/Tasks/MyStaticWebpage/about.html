@@ -13,6 +13,7 @@
         </script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/scripts.js"></script>
 
     <!-- Internal CSS -->
     <style>
@@ -24,7 +25,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse top-nav" style="border-radius: 0px;">         <!-- In-line CSS -->
+    <nav class="navbar navbar-inverse top-nav" style="border-radius: 0px;">
+        <!-- In-line CSS -->
 
         <div class="container-fluid">
             <div class="navbar-header">
@@ -47,50 +49,101 @@
         <h1 class="text-center display3">Personal Bio</h1>
     </div>
     <div class="container" id="main-content">
+
         <!-- Bio -->
-        <p>My name is Matt Kostich, I was born July 21st 1992 in Lansing Michigan, I'm 25 years old, and a graduate of Southern Connecticut State University with a BA in Music. Along with my passion for music, I have a passion for programming and technology and I'm working hard to make a career
-        as a developer!</p>
-        <p>My interest in music started when I was young, in the 5th grade. I attended a music workshop for kids and wound up with a trumpet in my hands and I've been playing ever since.  My interest in programming started much later, in college. I was first exposed to it through an introduction to programming course (which was in VB).  From then on my desire to learn more grew and two years after I was doing web development for University's Office of Residence Life.</p>
-        <hr>
+        <img class="img-thumbnail col-md-3" src="media/thumbnail.jpg" width="200px" height="200px">
+        <p class="col-md-9">
+
+            My name is Matt Kostich, I was born July 21st 1992 in Lansing Michigan, I'm 25 years old, and a graduate of Southern Connecticut
+            State University with a BA in Music. Along with my passion for music, I have a passion for programming and technology
+            and I'm working hard to make a career as a developer!
+            <br />
+            <br /> My interest in music started when I was young, in the 5th grade. I attended a music workshop for kids and wound
+            up with a trumpet in my hands and I've been playing ever since. My interest in programming started much later,
+            in college. I was first exposed to it through an introduction to programming course (which was in VB). From then
+            on my desire to learn more grew and two years after I was doing web development for University's Office of Residence
+            Life.
+        </p>
         <!-- Link -->
-        <h2 class="col-md-6">Cool Link</h3><img src="media/imslp-2.png" width="200px" height="100px">
-        <p>For my cool link, I would like to share a resource that I've used numerous times over the years: <a href="http://imslp.org/">IMSLP</a>.  This site is an online library of scores, parts, and recordings for classicly oriented musicians. </p>
-        <p>The content is free for personal use, and the site offers some rare and interesting scores and parts.</p>
-        <hr>
-        <!-- Addtional music stuff -->
-        <p>In the interest of sharing some more about myself (and my passion for the music of dead white guys), below are some of my favorite composers and a little info about them!</p>
+        <h2 class="col-md-6">Cool Link</h3>
+            <img src="media/imslp-2.png" width="200px" height="100px">
+            <p>For my cool link, I would like to share a resource that I've used numerous times over the years:
+                <a href="http://imslp.org/">IMSLP</a>. This site is an online library of scores, parts, and recordings for classicly oriented musicians.
+            </p>
+            <p>The content is free for personal use, and the site offers some rare and interesting scores and parts.</p>
+            <hr>
+            <!-- Addtional music stuff -->
+            <p>In the interest of sharing some more about myself (and my passion for the music of dead white guys), below are
+                some of my favorite composers and a little info about them!</p>
 
-        
+            <!--Container for JS functions-->
+            <div id="video-wrapper" class="text-center">
 
-        <h3>My Favorite Composers</h3>
-        <table class="table">
-            <tr>
-                <th class="col">Composer Name</th>
-                <th class="col">Birthdate</th>
-                <th class="col">Image</th>
-            </tr>
-            <tr>
-                <td>Gustav Mahler</td>
-                <td>July 7th, 1860</td>
-                <td>
-                    <img src="media/mahler.jpg">
-                </td>
-            </tr>
-            <tr>
-                <td>Jean Sibelius</td>
-                <td>December 8th, 1865</td>
-                <td>
-                    <img src="media/sibelius.jpg">
-                </td>
-            </tr>
-            <tr>
-                <td>Aaron Copland</td>
-                <td>November 14th, 1900</td>
-                <td>
-                    <img src="media/copland.jpg">
-                </td>
-            </tr>
-        </table>
+            </div>
+            <h3>My Favorite Composers</h3>
+
+            <table class="table table-hover">
+                <tr>
+                    <th class="col">Composer Name</th>
+                    <th class="col">Famous Works</th>
+                    <th class="col">Image</th>
+                </tr>
+                <tr>
+                    <td>Gustav Mahler</td>
+                    <td>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('mahler1')">Symphony #5 in C#</a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('mahler2')">Symphony #9 in D</li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('mahler3')">Kindertotenlieder</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="media/mahler.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jean Sibelius</td>
+                    <td>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('sib1')">Symphony # 2 in D</a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('sib2')">Symphony # 7 in C</a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('sib3')">Finlandia</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="media/sibelius.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aaron Copland</td>
+                    <td>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('copland1')">Appalachian Spring</a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('copland2')">Quiet City</a>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="displayConcertVideo('copland3')">Clarient Concerto</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="media/copland.jpg">
+                    </td>
+                </tr>
+            </table>
     </div>
 </body>
 

@@ -1,29 +1,46 @@
 * {
     border-radius: 0px;
 }
-body {
-    background-color: rgb(83, 65, 52);
+body, html {
+    height: 100%;
+}
+
+
+.bg {
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+
+          /* Full height */
+    height: 100%; 
+
+          /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #main-content {
-    box-shadow: -1px 1px 8px 2px #222020;
+    
     max-width: 60%;
-    
-    background-color:rgba(238, 203, 167, 0.671);
-    
+    color: black;
+    background-color:rgb(255, 255, 255);
+    box-shadow: -1px 2px 8px 4px #0000004f;
 }
 
 #main-content p {
-    color:white;
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
+#mtsum {
+    border-left: solid #BBBBBB 1px;
+    border-right: solid #BBBBBB 1px;
+}
 .top-nav {
-    box-shadow: 0px 1px 4px 2px #222020;
+    box-shadow: 0px 1px 8px 4px #22202065;
 }
-
 
 .banner {
-    background-color: rgb(185, 145, 116);
+    background-color: rgba(0, 0, 0, 0.404);
     color: white;
 }
 
