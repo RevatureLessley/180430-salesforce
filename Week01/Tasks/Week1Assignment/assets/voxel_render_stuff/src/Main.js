@@ -6,8 +6,7 @@ var MainCamera;
 var MarioModel;
 var gl;
 
-function InitializeGame()
-{
+function InitializeGame() {
   var canvas = document.getElementById('webgl');
   gl = getWebGLContext(canvas);
 
@@ -26,15 +25,22 @@ function InitializeGame()
 
   MarioModel = new VoxelModel(super_mario);
   MainCamera = new Camera();
-  MarioModel.scale((1.0 / 20.0));
   MainCamera.set_uniforms();
 
   initDragEvents(canvas);
 
   // Start drawing
-  var tick = function ()
-  {
+  var tick = function () {
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+    let scale = Number(document.getElementById("scaleRange").value);
+
+    MarioModel.scale((1.0 / 20.0) * (scale / 25));
+
+    if (Camera.changed) {
+      Camera.changed = false;
+      MainCamera.set_uniforms();
+    }
 
     MarioModel.draw();
 
@@ -43,8 +49,7 @@ function InitializeGame()
   tick();
 }
 
-function initDragEvents(canvas)
-{
+function initDragEvents(canvas) {
   var dragging = false;         // Dragging or not
   var lastX = -1, lastY = -1;   // Last position of the mouse
 
@@ -75,7 +80,6 @@ function initDragEvents(canvas)
   };
 }
 
-window.onload = function ()
-{
+window.onload = function () {
   InitializeGame();
 }

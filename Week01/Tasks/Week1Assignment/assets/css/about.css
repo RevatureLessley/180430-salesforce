@@ -23,3 +23,12 @@ body { background-color : #030B16; }
     color : white !important;
     background-color : #6b5b95 !important;
 }
+
+.well{
+    color : black;
+}
+
+#persInput
+{
+    float : right;
+}

@@ -1,8 +1,25 @@
+var pers = true;
 
 class Camera {
 
+	static get projmat ()
+	{
+		let proj = mat4.create();
+
+		if (pers)
+		{
+			mat4.ortho(proj, -1, 1, -1, 1, -1, 1);
+		}
+		else {
+			mat4.perspective( proj, 0.8, 1, -1.0, 1.0);
+		}
+
+		return proj;
+	}
+
 	constructor() {
-		this.view_matrix = mat4.create(); // ortho(-100, -100, 100, -100, 100, 100);
+		this.view_matrix = mat4.create();
+		mat4.lookAt(this.view_matrix, [0, 0, 0], [0, 0, -1], [0, 1, 0]);
 		this.u_view_matrix = gl.getUniformLocation(gl.program, 'u_view_mat');
 
 		if (!this.u_view_matrix) {
@@ -23,8 +40,15 @@ class Camera {
 		mat4.rotateY(result, result, this.rot_vec[1]); 
 		mat4.rotateZ(result, result, this.rot_vec[2]); 
 
-		// console.log("CAMERA: " + this.rot_vec[0] + ' ' + this.rot_vec[1] + ' ' + this.rot_vec[2]);
+		mat4.mul(result , Camera.projmat, result);
 
 		gl.uniformMatrix4fv(this.u_view_matrix, false, result);
 	}
+
+	static change_proj ()
+	{
+		pers = !pers;
+		Camera.changed = true;
+	}
+
 }

@@ -22,7 +22,7 @@ class VoxelModel {
 	rotate_y(rad_y) { this.rot_vec[1] += rad_y; }
 	rotate_z(rad_z) { this.rot_vec[2] += rad_z; }
 
-	scale(value) { vec3.add(this.scale_vec, this.scale_vec, [value, value, value]); }
+	scale(value) { this.scale_vec = [value, value, value]; }
 
 	set_uniforms() {
 		var result = mat4.create();
@@ -31,11 +31,9 @@ class VoxelModel {
 		mat4.rotateY(result, result, this.rot_vec[1], [0, 1, 0]);
 		mat4.rotateZ(result, result, this.rot_vec[2], [0, 0, 1]);
 
-
 		mat4.scale(result, this.model_matrix, this.scale_vec);
-		mat4.translate(result, result, [-6.0, -8.0, -4.0] );
+		mat4.translate(result, result, [-6.0, -8.0, -3.0] );
 	
-
 		gl.uniformMatrix4fv(this.u_model_matrix, false, result);
 	}
 
