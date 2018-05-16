@@ -31,6 +31,9 @@
 					<a class="nav-link disabled" href="myHobbies.html"> My Hobbies </a>
 				</li>
 			</ul>
+			<form class="form-inline mt-2 mt-md-0">
+				<button id="logout" class="btn btn-lg btn-primary my-2 my-sm-0" type="button">Log Out</button>
+			</form>
 		</div>
 	</nav>
 
@@ -48,6 +51,11 @@
 		</div>
 	</div>
 
+	<script type="text/javascript">
+		$('#logout').click(function () {
+			window.location.href = 'signin.html';
+		});
+	</script>
 </body>
 
 </html>
