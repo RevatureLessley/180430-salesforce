@@ -3,6 +3,10 @@ body, html{
     background-color: black;
 }
 
+h3{
+    padding: 10px
+}
+
 .color1{
     background-color: rgb(232, 236, 20);
 }

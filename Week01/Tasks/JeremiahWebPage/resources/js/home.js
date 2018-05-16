@@ -1,3 +1,7 @@
+$('#logout').click(function () {
+    window.location.href = 'signin.html';
+});
+
 function changeColor(curNumber){
     curNumber++;
 
