@@ -1,5 +1,6 @@
 body{
     background-color:#444040;
+    background-image: url('../photos/blackwood_wallpaper.jpg');
     font-family: Georgia;
 }
 div>h2, .well, h1{
@@ -10,40 +11,63 @@ div>h2, .well, h1{
     background-color: rgb(234, 232, 236);
 }
 /* idk about this list part */
-li p {
+/* li p {
     padding: 15px;
-}
+} */
 
 img{
     border: 10px solid #A5B574;
     padding: 10px;
     margin:10px;
 }
-
 h1 { 
-    color: #ffffff;
+    background-color: #A5B574;
+    border-radius: 40px;
+    padding: 10px;
 }
 
+a>img:hover {
+    border:0px;
+}
 
 h2, a {
     color: #694e8d;
 
 }
-
 .link{
     text-decoration: underline;
 }
-#list{ 
-    text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
+#aboutMe p {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#hobbyIntro{
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-.portrait {
+.portrait { /* portrait photos, carousel */
     height: 855px;
     width: 640px;
 }
-.ls{
+.ls{ /* landscape photo, carousel */
     height:855px;
     width: 1000px;
+}
+
+.carousel-inner > .item > img { /* center carousel photos */
+    margin: 0 auto;
+}
+
+.carousel-inner p { /* give background color to carousel text */
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #A5B574 ;
+    padding: 0.8em 0.8em 0.8em 0.8em;    
+}
+
+#rndBtn{
+    height: 75px;
+    width: 150px;
+    font-size: 20px;
 }
