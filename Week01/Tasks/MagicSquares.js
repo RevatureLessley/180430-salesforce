@@ -35,9 +35,6 @@ function MagicSquares(sideLength){
             for (var j = i+1; j<players[player].length;j++)
                 {
                 		let winningNumber = magicConstant - players[player][i] - players[player][j];
-                        console.log("WinState: "+players[player][i]+" "+players[player][j]+" "+winningNumber);
-                        console.log("Includes?:" + players[player].includes(winningNumber.toString()));
-                        console.log(players[player]);
                     if(players[player].includes(winningNumber.toString()) && players[player][i]!=winningNumber && players[player][j] != winningNumber ){
                         $("#gameBoard").append("<span style='color: green; font-size: 72px;'>Player "+player+" WINS</span>");
                         gameOver = true;
@@ -88,7 +85,6 @@ function MagicSquares(sideLength){
     };
 
     function drawBoard(){
-        console.log("kms");
         $("div#gameBoard").empty();
 
         $("div#gameBoard").append(document.createElement("table"));
@@ -96,8 +92,11 @@ function MagicSquares(sideLength){
         
         for (var i = 1 ; i <= 9 ; i++)
         {
+            //you can either use visibility: hidden or display: none
+            //hidden still takes up space so thats an advantage or disadvatage depending
+            //on how you end up doing the x's and o's.
             console.log("on"+ $("div#gameBoard table tr"));
-            $("div#gameBoard table tr").append("<td id="+i+">"+i+"</td>");
+            $("div#gameBoard table tr").append("<td id="+i+"><div class='hider'><div class='number'>"+i+"</div></div></td>");
             document.getElementById(i).addEventListener("click", makeMove);
         }
 
@@ -139,63 +138,4 @@ myGame.display();
 console.log(myGame.playNumber(9));
 //myGame.display();
 };
-
-$(function(){
-    var myGame = MagicSquares(3);
-    myGame.draw()});
-
-
-var isMake15 = true;
-
-
-    function ToggleBoard(){
-        if(isMake15)
-        {
-            ticTacArrange();
-            isMake15 = false;
-        }
-        else
-        {
-            Make15Arrange();
-            isMake15 = true;
-        }
-    }
-
-    function ticTacArrange(){
-        $("div#gameBoard table").append("<tr id='r2'><td id='row2'></td></tr>");
-        $("div#gameBoard table").append("<tr id='r3'><td id='row3'></td></tr>");
-
-
-
-        $("#6").insertBefore("#row3");
-        $("#1").insertBefore("#6");
-        $("#8").insertBefore("#1");
-        
-        $("#7").insertBefore("#row2");
-        $("#5").insertBefore("#7");
-        $("#3").insertBefore("#5");
-        
-        //$("#7").insertBefore("#6");
-        $("#9").insertBefore("#2");
-        $("#4").insertBefore("#9");
-
-        $("#row3").remove();
-        $("#row2").remove();
-    }
-
-    function Make15Arrange(){
-        $("#8").insertBefore("#9");
-        $("#7").insertBefore("#8");
-        $("#6").insertBefore("#7");
-        $("#5").insertBefore("#6");
-        $("#4").insertBefore("#5");
-        $("#3").insertBefore("#4");
-        $("#2").insertBefore("#3");
-        $("#1").insertBefore("#2");
-        
-        $("#r2").remove();
-        $("#r3").remove();
-    }
-
-
 

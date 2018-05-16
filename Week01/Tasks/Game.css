@@ -24,3 +24,48 @@ div.page-header{
 	padding-bottom: 2em; 
 	background-image: linear-gradient(45deg, rgb(53, 0, 48),rgb(165, 0, 143));
 }
+
+div#gameBoard td{
+	font-size: 300%;
+	border: 5px;
+	padding: 15px;
+	border-color: black;
+	border-style: solid;
+}
+
+div#gameBoard td:hover{
+	background-color: yellow;
+}
+
+div#gameBoard td:active{
+	background-color: goldenrod;
+}   
+
+div#gameBoard table{
+	border-collapse: collapse;
+}
+
+.Player1 {
+	background-color: blue;
+}
+
+.Player2 {
+	background-color: red;
+}
+
+
+hider{
+	padding: 0;
+}
+
+
+td .ticTac {
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+td:hover .ticTac {
+	visibility: visible;
+}
+

@@ -11,39 +11,11 @@
     <!-- Bring in supplemental javascript for bootstrap -->
 
     <script src="MagicSquares.js"></script>
+    <script src="TicTacToe.js"></script>
 
     <link rel="stylesheet" stype="text/css" href="Game.css">
 
     <title>Sarah Kohl</title>
-    <style>
-        div#gameBoard td{
-            font-size: 300%;
-            border: 5px;
-            padding: 15px;
-            border-color: black;
-            border-style: solid;
-        }
-
-        div#gameBoard td:hover{
-            background-color: yellow;
-        }
-
-        div#gameBoard td:active{
-            background-color: goldenrod;
-        }   
-
-        div#gameBoard table{
-            border-collapse: collapse;
-        }
-
-        .Player1 {
-            background-color: blue;
-        }
-
-        .Player2 {
-            background-color: red;
-        };
-    </style>
 </head>
 
 <body>
@@ -70,7 +42,10 @@
         <div class="col-lg-12">
             <div class="well">
                 <h3 id="gameName">Make 15</h3>
-                <input type="button" onclick="ToggleBoard()" value="Toggle">
+                <p>Make 15 is a two player game.  Take turns clicking numbers with a friend.</p>
+                      <p>Rules: <br>Players alternate turns choosing numbers.  Once a player has chosen a number, it cannot be chosen by the other player.  The first player to have three distinct numbers that add up to exactly 15 wins!  Draws are possible.</p>
+                      <p>Can you guess which other game this resembles?  Click the toggle button below for a hint!</p>
+                <input type="button" onclick="ToggleBoard()" value="Toggle" class="btn btn-primary">
                 <br>
                 <br>
                 <div id="gameBoard">
