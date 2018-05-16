@@ -7,10 +7,10 @@ function retrieve () {
     xhr.open("GET", url);
     xhr.send();
 
-    console.log("sending" + xhr.readyState);
+    //console.log("sending" + xhr.readyState);
 
     xhr.onreadystatechange = function () {
-        console.log("blah?" + xhr.readyState);
+        //console.log("blah?" + xhr.readyState);
 
         if (xhr.readyState == 4 && xhr.status == 200) {
             var response = JSON.parse(xhr.response);
@@ -19,13 +19,14 @@ function retrieve () {
             
             var img = document.createElement("img");
             img.setAttribute("src", portrait);
+            img.setAttribute("style", "width:300px; height:600; object-fit:scale-down");
 
-            console.log(portrait);
+            //console.log(portrait);
 
             document.getElementById("characterP").appendChild(img);
 
         } else if (xhr.readyState == 4 && xhr.status != 200){
-            console.log("Uh oh.");
+            //console.log("Uh oh.");
         }
     }
 }
