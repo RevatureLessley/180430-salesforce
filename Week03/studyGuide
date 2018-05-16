@@ -1,0 +1,23 @@
+MONDAY
+SALESFORCE:
+PERMISSION SET + PROFILE PERMISSION
+ROLE
+OWD
+PERMISSION TYPES
+ACCESS MODIFIERS (PRIVATE, PUBLIC READ ONLY, PUBLIC READ WRITE)
+CRED (create,read,edit,delete)
+OBJECT PERMISSIONS (VA,MA)
+BUCKET MODEL
+
+TUESDAY:
+List View
+	create new view
+Global search
+	search layout
+Object/tab search layouts
+Login history
+LOGIN POLICY
+	Password policy
+	Account Freeze
+	Deactive
+	USER NAME IS UNIQUE TO THE ENTIRETY OF SALESFORCE

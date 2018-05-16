@@ -18,81 +18,71 @@
 	<body id="body">
 		<!--Title header and main text for this webpage, all with individual IDs-->
 		<title>About Me</title>
+		<br>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-5">
-					<div class="well" >
-						<h1>ABOUT ME</h1>
+				<div id="iframeHolder" class="col-sm-3 affix" style="height:400px; background-color:#0001; ">
+					<iframe style=border:0px;width:100%;height:100%; src=customElements/sideNavAboutMe.html>
+					</iframe>
+				</div>
+				<div class="col-sm-9 col-sm-offset-3">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="well" >
+								<h2>Name:</h2>
+								<p>Jeffrey Deely<p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="well" >
+								<h2>Education:</h2>
+								<p>Bachelor Degree in Computer Engineering</p>
+								<p>From The University of Pittsburgh</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="well" >
+								<h2>Home Town:</h2>
+								<p>Pittsburgh Pennsylvania
+								<div class="well" id="pittFacts">Click here for Pittsburgh Fun Facts&#8482</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="well" >
-						<h2>Name:</h2>
-						<p>Jeffrey Deely<p>
+					<div class="row">
+						<div class="col-sm-5 well rowHeight">
+							<p  class="rowHeight" id="pittFactsP"></p>
+						</div>
 					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="well" >
-						<h2>Education:</h2>
-						<p>Bachelor Degree in Computer Engineering</p>
-						<p>From The University of Pittsburgh</p>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<div class="row">
+						<div class="col-sm-5 well">
+							<h4>does this page bore you</h4>
+							<form>
+								<input type="radio" name="bored">YES
+								<input type="radio" name="bored">YES
+								<input type="radio" name="bored"><a style="color:white">YES</a>
+								<br>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
 					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="well" >
-						<h2>Home Town:</h2>
-						<p>Born in Pittsburgh Pennsylvania<br>
-						Moved to Columbus Ohio<br>
-						Moved to West Palm Beach Florida<br>
-						Moved back to Pittsburgh</p>
-						<div class="well" id="pittFacts">Click here for Pittsburgh Fun Facts&#8482
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-5 well rowHeight">
-					<p  class="rowHeight" id="pittFactsP"></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-5 well">
-					<p>LINKS
-						<li><a href="hobby.html">hobby</a></li>
-						<li><a href="index.html">index</a></li>
-					</p>
-				</div>
-			</div>
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<div class="row">
-				<div class="col-sm-5 well">
-					<h4>does this page bore you</h4>
-					<form>
-						<input type="radio" name="bored">YES
-						<input type="radio" name="bored">YES
-						<input type="radio" name="bored"><a style="color:white">YES</a>
-						<br>
-						<input type="submit" value="Submit">
-					</form>
 				</div>
 			</div>
 		</div>
+		</div>
 		<script>
-			lastChosen=0;
+			lastChosen=1;
+			factArray=["<p><img src=https://i.redd.it/fr9alhjtc4t01.jpg><br>Pittsburgh is located where the Ohio, monongahela and Allegheny rivers meet</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/800px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg></img><br>Pittsburgh historically had 18 opperational funiculars (a cable railroad in which ascending and descending cars are counterbalanced), 2 of which (the Monogahela and Duquesne Inclines) are still operational</p>","<p><img src=https://static.thousandwonders.net/Cathedral.of.Learning.640.14777.jpg>The Cathedral of Learning dedicated in 1937 is the main administrative building for the University of Pittsburgh and it is also a neat building</p>","<p><img src=https://5.imimg.com/data5/UO/FB/MY-10726817/200-ml-aluminium-can-500x500.jpg>In 1888 Charles Martin Hall founded the Pittsburgh Reduction Company which built the worlds first large scale alluminum production factory in Pittsburgh.<br> the Pittsburgh Reduction Company was eventually renamed ALCOA</p>","<p><img src=http://www.fortpittblockhouse.com/wp-content/uploads/2013/03/construction.jpg>The Fort Pitt blockhouse, constructed in 1764 to store munitions for Fort Pitt, is the oldest building in Pittsburgh</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/William_Pitt%2C_1st_Earl_of_Chatham_by_Richard_Brompton.jpg/435px-William_Pitt%2C_1st_Earl_of_Chatham_by_Richard_Brompton.jpg>Pittsburgh is named after Pitt the Elder who was Prime Minister of the United Kingdom from 1766-1768.<br>Pitt the Elder's family crest is displayed on Pittsburgh's flag and is the origin for cities colors black and gold</p>"];
 			function funFacts(){
-				factArray=["<p><img src=https://i.redd.it/fr9alhjtc4t01.jpg><br>Pittsburgh is located where the Ohio, Monogahela and Allegheny rivers meet</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg/800px-Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg></img><br>Pittsburgh historically had 18 opperational funiculars, 2 of which (the Monogahela and Duquesne Inclines) are still operational</p>","<p><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/ConventionCenterfromNorthside.jpg/1200px-ConventionCenterfromNorthside.jpg>Every year Pittsburgh's David Lawrence convention cetner hosts the worlds largest furry convention</p>","<p><img src=https://static.thousandwonders.net/Cathedral.of.Learning.640.14777.jpg>The Cathedral of Learning is a neat building</p>"]
 				return(factArray[lastChosen]);
 			}
 			$(document).ready(function(){
+			$("#pittFactsP").html("<br>"+funFacts(0));
 			$("#pittFacts").click(function(){
-				var $fact1=$("FACT"),
-					fact2=document.createElement("p"),
-					factDiv=document.getElementById("pittFactsLoc");
 				$("#pittFactsP").html("<br>"+funFacts(lastChosen));
 				console.log(lastChosen);
 				lastChosen++;
-				if(lastChosen>=4){lastChosen=0;}
+				if(lastChosen>=factArray.length){lastChosen=0;}
 			});
 			});
 		</script>
