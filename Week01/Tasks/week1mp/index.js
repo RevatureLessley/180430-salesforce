@@ -5,17 +5,27 @@ function changeFont()
   //  a.style.fontSize = "25px";
 }
 
-$("#changeFont").hover(function () {
-    $(this).css("background-color", "red");
-})
+$("#introSection").hover(function () 
+{
+    $(this).css("background-color", "grey");
+    $(this).css("color", "white");
+ 
 
- $(function(){
+});
+$("#introSection").mouseleave(function () 
+{
+    $(this).css("background-color", "white");
+    $(this).css("color", "black");
+ 
+
+});
+
+$(function(){
 
     $("#hobbiesDesc").hover(changeToBlue);
     $("#hobbiesDesc").mouseleave(changeToBlack);
   
 }); 
-
 
 function changeToBlue(){
    
