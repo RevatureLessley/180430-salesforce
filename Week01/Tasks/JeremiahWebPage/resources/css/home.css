@@ -1,6 +1,7 @@
 body, html{
     padding-top: 50px;
     background-color: black;
+    height: 100%;
 }
 
 h3{
