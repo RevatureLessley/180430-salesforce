@@ -20,11 +20,11 @@ body{
     position: /*sticky; /**/fixed; /* Set the navbar to fixed position */
    top: 0; /* Position the navbar at the bottom of the page */
    width: 100%; /* Full width */
-	z-index=99999;
+	z-index:99999;
 	
 } 
 #Boo1{
-	z-index=0;
+	z-index:0;
 }
 
 /* Main content */

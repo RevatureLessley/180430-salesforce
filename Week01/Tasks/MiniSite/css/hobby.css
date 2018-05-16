@@ -23,7 +23,7 @@ body{
     position: /*sticky; /**/fixed; /* Set the navbar to fixed position */
    top: 0; /* Position the navbar at the bottom of the page */
    width: 100%; /* Full width */
-	z-index=99999;
+	z-index:99999;
 	
 } 
 #Hob1{
@@ -39,7 +39,7 @@ body{
 
 /* Main content */
 #main {
-    margin-top: 80px; /* Add a  margin to avoid content overlay */
+    margin-top: 40px; /* Add a  margin to avoid content overlay */
 	background-color:black;
 	
 }
